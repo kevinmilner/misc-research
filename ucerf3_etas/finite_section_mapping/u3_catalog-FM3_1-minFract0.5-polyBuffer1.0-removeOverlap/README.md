@@ -10,76 +10,76 @@
 *&ast; Ruptures are considered to reset a fault section if at least this fraction of the section's area ruptures inside its polygon*
 
 ## Table Of Contents
-* [M7.5 on 1812/12/08 08:40:39 PST](#m75-on-18121208-084039-pst)
-* [M7.1 on 1812/12/21 12:40:39 PST](#m71-on-18121221-124039-pst)
-* [M7.4 on 1838/09/10 20:40:39 PST](#m74-on-18380910-204039-pst)
-* [M6.5 on 1852/11/29 12:01:39 PST](#m65-on-18521129-120139-pst)
-* [M7.9 on 1857/01/09 08:25:39 PST](#m79-on-18570109-082539-pst)
-* [M7 on 1868/10/21 07:54:39 PST](#m7-on-18681021-075439-pst)
-* [M7.6 on 1872/03/26 02:31:39 PST](#m76-on-18720326-023139-pst)
-* [M6.8 on 1872/03/26 06:07:39 PST](#m68-on-18720326-060739-pst)
-* [M6.8 on 1872/04/11 11:01:39 PST](#m68-on-18720411-110139-pst)
-* [M6.5 on 1885/04/11 20:06:39 PST](#m65-on-18850411-200639-pst)
-* [M6.8 on 1890/02/09 04:07:39 PST](#m68-on-18900209-040739-pst)
-* [M7.3 on 1892/02/23 23:21:39 PST](#m73-on-18920223-232139-pst)
-* [M6.6 on 1892/04/19 02:51:39 PST](#m66-on-18920419-025139-pst)
-* [M6.5 on 1892/05/28 03:16:39 PST](#m65-on-18920528-031639-pst)
-* [M6.7 on 1899/12/25 04:26:39 PST](#m67-on-18991225-042639-pst)
-* [M7.8 on 1906/04/18 05:12:21 PST](#m78-on-19060418-051221-pst)
-* [M6.6 on 1915/11/20 16:13:42 PST](#m66-on-19151120-161342-pst)
-* [M6.8 on 1918/04/21 15:32:25 PDT](#m68-on-19180421-153225-pdt)
-* [M6.8 on 1925/06/29 06:42:16 PST](#m68-on-19250629-064216-pst)
-* [M7.1 on 1927/11/04 05:50:53 PST](#m71-on-19271104-055053-pst)
-* [M6.4 on 1933/03/10 17:54:09 PST](#m64-on-19330310-175409-pst)
-* [M6 on 1934/06/07 20:47:00 PST](#m6-on-19340607-204700-pst)
-* [M6.42 on 1934/12/31 10:45:43 PST](#m642-on-19341231-104543-pst)
-* [M6 on 1937/03/25 08:49:02 PST](#m6-on-19370325-084902-pst)
-* [M6.9 on 1940/05/18 20:36:40 PST](#m69-on-19400518-203640-pst)
-* [M6.6 on 1942/10/21 09:22:11 PDT](#m66-on-19421021-092211-pdt)
-* [M6.3 on 1946/03/15 05:49:37 PST](#m63-on-19460315-054937-pst)
-* [M6.5 on 1947/04/10 07:58:05 PST](#m65-on-19470410-075805-pst)
-* [M6 on 1948/12/04 16:43:16 PDT](#m6-on-19481204-164316-pdt)
-* [M7.5 on 1952/07/21 04:52:14 PDT](#m75-on-19520721-045214-pdt)
-* [M6 on 1952/11/21 23:46:37 PST](#m6-on-19521121-234637-pst)
-* [M6.4 on 1954/03/19 01:54:27 PST](#m64-on-19540319-015427-pst)
-* [M6.5 on 1954/12/21 11:56:29 PST](#m65-on-19541221-115629-pst)
-* [M6.1 on 1959/06/23 07:35:00 PDT](#m61-on-19590623-073500-pdt)
-* [M6 on 1966/06/27 21:26:13 PDT](#m6-on-19660627-212613-pdt)
-* [M6.6 on 1968/04/08 18:28:58 PST](#m66-on-19680408-182858-pst)
-* [M6.6 on 1971/02/09 06:00:41 PST](#m66-on-19710209-060041-pst)
-* [M6.51 on 1979/10/15 16:16:53 PDT](#m651-on-19791015-161653-pdt)
-* [M6.2 on 1980/05/25 09:33:44 PDT](#m62-on-19800525-093344-pdt)
-* [M6 on 1980/05/25 09:49:27 PDT](#m6-on-19800525-094927-pdt)
-* [M6.33 on 1980/06/08 20:28:19 PDT](#m633-on-19800608-202819-pdt)
-* [M7.3 on 1980/11/08 02:27:33 PST](#m73-on-19801108-022733-pst)
-* [M5.9 on 1981/04/26 05:09:28 PDT](#m59-on-19810426-050928-pdt)
-* [M6.3 on 1983/05/02 16:42:38 PDT](#m63-on-19830502-164238-pdt)
-* [M6.15 on 1984/04/24 13:15:18 PST](#m615-on-19840424-131518-pst)
-* [M6.6 on 1984/09/09 20:14:28 PDT](#m66-on-19840909-201428-pdt)
-* [M6.08 on 1985/08/04 05:01:55 PDT](#m608-on-19850804-050155-pdt)
-* [M6.02 on 1986/07/08 02:20:44 PDT](#m602-on-19860708-022044-pdt)
-* [M6.22 on 1986/07/21 07:42:26 PDT](#m622-on-19860721-074226-pdt)
-* [M5.98 on 1987/07/31 16:56:57 PDT](#m598-on-19870731-165657-pdt)
-* [M5.89 on 1987/10/01 07:42:20 PDT](#m589-on-19871001-074220-pdt)
-* [M6.04 on 1987/11/23 17:54:14 PST](#m604-on-19871123-175414-pst)
-* [M6.5 on 1987/11/24 05:15:56 PST](#m65-on-19871124-051556-pst)
-* [M6.89 on 1989/10/17 17:04:15 PDT](#m689-on-19891017-170415-pdt)
-* [M6.12 on 1991/08/17 12:29:40 PDT](#m612-on-19910817-122940-pdt)
-* [M6.15 on 1992/04/22 21:50:23 PDT](#m615-on-19920422-215023-pdt)
-* [M7.15 on 1992/04/25 11:06:05 PDT](#m715-on-19920425-110605-pdt)
-* [M6.45 on 1992/04/26 00:41:40 PDT](#m645-on-19920426-004140-pdt)
-* [M6.6 on 1992/04/26 04:18:25 PDT](#m66-on-19920426-041825-pdt)
-* [M7.28 on 1992/06/28 04:57:34 PDT](#m728-on-19920628-045734-pdt)
-* [M6.49 on 1992/06/28 08:05:30 PDT](#m649-on-19920628-080530-pdt)
-* [M6.11 on 1993/05/17 16:20:50 PDT](#m611-on-19930517-162050-pdt)
-* [M6.65 on 1994/01/17 04:30:55 PST](#m665-on-19940117-043055-pst)
-* [M7.12 on 1999/10/16 02:46:44 PDT](#m712-on-19991016-024644-pdt)
-* [M5.86 on 2000/03/16 07:19:56 PST](#m586-on-20000316-071956-pst)
-* [M6.55 on 2003/12/22 11:15:56 PST](#m655-on-20031222-111556-pst)
-* [M5.97 on 2004/09/28 10:15:24 PDT](#m597-on-20040928-101524-pdt)
-* [M6.51 on 2010/01/09 16:27:39 PST](#m651-on-20100109-162739-pst)
-* [M7.19 on 2010/04/04 15:40:41 PDT](#m719-on-20100404-154041-pdt)
-## M7.5 on 1812/12/08 08:40:39 PST
+* [M7.5 on 1812/12/08 08:40:39 PST, UCERF3-mapped, match: YES](#m75-on-18121208-084039-pst-ucerf3-mapped-match-yes)
+* [M7.1 on 1812/12/21 12:40:39 PST, UCERF3-mapped, match: NO](#m71-on-18121221-124039-pst-ucerf3-mapped-match-no)
+* [M7.4 on 1838/09/10 20:40:39 PST, UCERF3-mapped, match: YES](#m74-on-18380910-204039-pst-ucerf3-mapped-match-yes)
+* [M6.5 on 1852/11/29 12:01:39 PST, UCERF3-mapped, match: YES](#m65-on-18521129-120139-pst-ucerf3-mapped-match-yes)
+* [M7.9 on 1857/01/09 08:25:39 PST, UCERF3-mapped, match: YES](#m79-on-18570109-082539-pst-ucerf3-mapped-match-yes)
+* [M7 on 1868/10/21 07:54:39 PST, UCERF3-mapped, match: YES](#m7-on-18681021-075439-pst-ucerf3-mapped-match-yes)
+* [M7.6 on 1872/03/26 02:31:39 PST, UCERF3-mapped, match: YES](#m76-on-18720326-023139-pst-ucerf3-mapped-match-yes)
+* [M6.8 on 1872/03/26 06:07:39 PST, UCERF3-mapped, match: YES](#m68-on-18720326-060739-pst-ucerf3-mapped-match-yes)
+* [M6.8 on 1872/04/11 11:01:39 PST, UCERF3-mapped, match: NO](#m68-on-18720411-110139-pst-ucerf3-mapped-match-no)
+* [M6.5 on 1885/04/11 20:06:39 PST, UCERF3-mapped, match: NO](#m65-on-18850411-200639-pst-ucerf3-mapped-match-no)
+* [M6.8 on 1890/02/09 04:07:39 PST, UCERF3-mapped, match: NO](#m68-on-18900209-040739-pst-ucerf3-mapped-match-no)
+* [M7.3 on 1892/02/23 23:21:39 PST, UCERF3-mapped, match: YES](#m73-on-18920223-232139-pst-ucerf3-mapped-match-yes)
+* [M6.6 on 1892/04/19 02:51:39 PST, UCERF3-mapped, match: NO](#m66-on-18920419-025139-pst-ucerf3-mapped-match-no)
+* [M6.5 on 1892/05/28 03:16:39 PST, UCERF3-mapped, match: YES](#m65-on-18920528-031639-pst-ucerf3-mapped-match-yes)
+* [M6.7 on 1899/12/25 04:26:39 PST, UCERF3-mapped, match: NO](#m67-on-18991225-042639-pst-ucerf3-mapped-match-no)
+* [M7.8 on 1906/04/18 05:12:21 PST, UCERF3-mapped, match: YES](#m78-on-19060418-051221-pst-ucerf3-mapped-match-yes)
+* [M6.6 on 1915/11/20 16:13:42 PST, UCERF3-mapped, match: YES](#m66-on-19151120-161342-pst-ucerf3-mapped-match-yes)
+* [M6.8 on 1918/04/21 15:32:25 PDT, UCERF3-mapped, match: YES](#m68-on-19180421-153225-pdt-ucerf3-mapped-match-yes)
+* [M6.8 on 1925/06/29 06:42:16 PST, UCERF3-mapped, match: YES](#m68-on-19250629-064216-pst-ucerf3-mapped-match-yes)
+* [M7.1 on 1927/11/04 05:50:53 PST, UCERF3-mapped, match: YES](#m71-on-19271104-055053-pst-ucerf3-mapped-match-yes)
+* [M6.4 on 1933/03/10 17:54:09 PST, UCERF3-mapped, match: YES](#m64-on-19330310-175409-pst-ucerf3-mapped-match-yes)
+* [M6 on 1934/06/07 20:47:00 PST, UCERF3-mapped, match: YES](#m6-on-19340607-204700-pst-ucerf3-mapped-match-yes)
+* [M6.42 on 1934/12/31 10:45:43 PST, UCERF3-mapped, match: YES](#m642-on-19341231-104543-pst-ucerf3-mapped-match-yes)
+* [M6 on 1937/03/25 08:49:02 PST, UCERF3-mapped, match: YES](#m6-on-19370325-084902-pst-ucerf3-mapped-match-yes)
+* [M6.9 on 1940/05/18 20:36:40 PST, UCERF3-mapped, match: NO](#m69-on-19400518-203640-pst-ucerf3-mapped-match-no)
+* [M6.6 on 1942/10/21 09:22:11 PDT, UCERF3-mapped, match: YES](#m66-on-19421021-092211-pdt-ucerf3-mapped-match-yes)
+* [M6.3 on 1946/03/15 05:49:37 PST, UCERF3-mapped, match: NO](#m63-on-19460315-054937-pst-ucerf3-mapped-match-no)
+* [M6.5 on 1947/04/10 07:58:05 PST, UCERF3-mapped, match: NO](#m65-on-19470410-075805-pst-ucerf3-mapped-match-no)
+* [M6 on 1948/12/04 16:43:16 PDT, UCERF3-mapped, match: NO](#m6-on-19481204-164316-pdt-ucerf3-mapped-match-no)
+* [M7.5 on 1952/07/21 04:52:14 PDT, UCERF3-mapped, match: YES](#m75-on-19520721-045214-pdt-ucerf3-mapped-match-yes)
+* [M6 on 1952/11/21 23:46:37 PST, UCERF3-mapped, match: YES](#m6-on-19521121-234637-pst-ucerf3-mapped-match-yes)
+* [M6.4 on 1954/03/19 01:54:27 PST, UCERF3-mapped, match: YES](#m64-on-19540319-015427-pst-ucerf3-mapped-match-yes)
+* [M6.5 on 1954/12/21 11:56:29 PST, UCERF3-mapped, match: NO](#m65-on-19541221-115629-pst-ucerf3-mapped-match-no)
+* [M6.1 on 1959/06/23 07:35:00 PDT, UCERF3-mapped, match: YES](#m61-on-19590623-073500-pdt-ucerf3-mapped-match-yes)
+* [M6 on 1966/06/27 21:26:13 PDT, UCERF3-mapped, match: YES](#m6-on-19660627-212613-pdt-ucerf3-mapped-match-yes)
+* [M6.6 on 1968/04/08 18:28:58 PST, UCERF3-mapped, match: YES](#m66-on-19680408-182858-pst-ucerf3-mapped-match-yes)
+* [M6.6 on 1971/02/09 06:00:41 PST, UCERF3-mapped, match: YES](#m66-on-19710209-060041-pst-ucerf3-mapped-match-yes)
+* [M6.51 on 1979/10/15 16:16:53 PDT, UCERF3-mapped, match: NO](#m651-on-19791015-161653-pdt-ucerf3-mapped-match-no)
+* [M6.2 on 1980/05/25 09:33:44 PDT, UCERF3-mapped, match: YES](#m62-on-19800525-093344-pdt-ucerf3-mapped-match-yes)
+* [M6 on 1980/05/25 09:49:27 PDT, UCERF3-mapped, match: YES](#m6-on-19800525-094927-pdt-ucerf3-mapped-match-yes)
+* [M6.33 on 1980/06/08 20:28:19 PDT, UCERF3-mapped, match: NO](#m633-on-19800608-202819-pdt-ucerf3-mapped-match-no)
+* [M7.3 on 1980/11/08 02:27:33 PST, UCERF3-mapped, match: YES](#m73-on-19801108-022733-pst-ucerf3-mapped-match-yes)
+* [M5.9 on 1981/04/26 05:09:28 PDT, UCERF3-mapped, match: NO](#m59-on-19810426-050928-pdt-ucerf3-mapped-match-no)
+* [M6.3 on 1983/05/02 16:42:38 PDT, UCERF3-mapped, match: YES](#m63-on-19830502-164238-pdt-ucerf3-mapped-match-yes)
+* [M6.15 on 1984/04/24 13:15:18 PST, UCERF3-mapped, match: YES](#m615-on-19840424-131518-pst-ucerf3-mapped-match-yes)
+* [M6.6 on 1984/09/09 20:14:28 PDT, UCERF3-mapped, match: YES](#m66-on-19840909-201428-pdt-ucerf3-mapped-match-yes)
+* [M6.08 on 1985/08/04 05:01:55 PDT, UCERF3-mapped, match: YES](#m608-on-19850804-050155-pdt-ucerf3-mapped-match-yes)
+* [M6.02 on 1986/07/08 02:20:44 PDT, UCERF3-mapped, match: NO](#m602-on-19860708-022044-pdt-ucerf3-mapped-match-no)
+* [M6.22 on 1986/07/21 07:42:26 PDT, UCERF3-mapped, match: YES](#m622-on-19860721-074226-pdt-ucerf3-mapped-match-yes)
+* [M5.98 on 1987/07/31 16:56:57 PDT, UCERF3-mapped, match: YES](#m598-on-19870731-165657-pdt-ucerf3-mapped-match-yes)
+* [M5.89 on 1987/10/01 07:42:20 PDT, UCERF3-mapped, match: YES](#m589-on-19871001-074220-pdt-ucerf3-mapped-match-yes)
+* [M6.04 on 1987/11/23 17:54:14 PST, UCERF3-mapped, match: NO](#m604-on-19871123-175414-pst-ucerf3-mapped-match-no)
+* [M6.5 on 1987/11/24 05:15:56 PST, UCERF3-mapped, match: YES](#m65-on-19871124-051556-pst-ucerf3-mapped-match-yes)
+* [M6.89 on 1989/10/17 17:04:15 PDT, UCERF3-mapped, match: YES](#m689-on-19891017-170415-pdt-ucerf3-mapped-match-yes)
+* [M6.12 on 1991/08/17 12:29:40 PDT, UCERF3-mapped, match: NO](#m612-on-19910817-122940-pdt-ucerf3-mapped-match-no)
+* [M6.15 on 1992/04/22 21:50:23 PDT, UCERF3-mapped, match: YES](#m615-on-19920422-215023-pdt-ucerf3-mapped-match-yes)
+* [M7.15 on 1992/04/25 11:06:05 PDT, UCERF3-mapped, match: NO](#m715-on-19920425-110605-pdt-ucerf3-mapped-match-no)
+* [M6.45 on 1992/04/26 00:41:40 PDT, UCERF3-mapped, match: YES](#m645-on-19920426-004140-pdt-ucerf3-mapped-match-yes)
+* [M6.6 on 1992/04/26 04:18:25 PDT, UCERF3-mapped, match: YES](#m66-on-19920426-041825-pdt-ucerf3-mapped-match-yes)
+* [M7.28 on 1992/06/28 04:57:34 PDT, UCERF3-mapped, match: YES](#m728-on-19920628-045734-pdt-ucerf3-mapped-match-yes)
+* [M6.49 on 1992/06/28 08:05:30 PDT, UCERF3-mapped, match: NO](#m649-on-19920628-080530-pdt-ucerf3-mapped-match-no)
+* [M6.11 on 1993/05/17 16:20:50 PDT, UCERF3-mapped, match: YES](#m611-on-19930517-162050-pdt-ucerf3-mapped-match-yes)
+* [M6.65 on 1994/01/17 04:30:55 PST, UCERF3-mapped, match: YES](#m665-on-19940117-043055-pst-ucerf3-mapped-match-yes)
+* [M7.12 on 1999/10/16 02:46:44 PDT, UCERF3-mapped, match: YES](#m712-on-19991016-024644-pdt-ucerf3-mapped-match-yes)
+* [M5.86 on 2000/03/16 07:19:56 PST, UCERF3-mapped, match: NO](#m586-on-20000316-071956-pst-ucerf3-mapped-match-no)
+* [M6.55 on 2003/12/22 11:15:56 PST, UCERF3-mapped, match: YES](#m655-on-20031222-111556-pst-ucerf3-mapped-match-yes)
+* [M5.97 on 2004/09/28 10:15:24 PDT, UCERF3-mapped, match: YES](#m597-on-20040928-101524-pdt-ucerf3-mapped-match-yes)
+* [M6.51 on 2010/01/09 16:27:39 PST, UCERF3-mapped, match: YES](#m651-on-20100109-162739-pst-ucerf3-mapped-match-yes)
+* [M7.19 on 2010/04/04 15:40:41 PDT, UCERF3-mapped, match: NO](#m719-on-20100404-154041-pdt-ucerf3-mapped-match-no)
+## M7.5 on 1812/12/08 08:40:39 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1812_12_08-08_40_39-PST_m7.5.png)
@@ -115,7 +115,7 @@
 | 1948 | San Andreas (San Bernardino N), Subsection 4 | **YES** | 75.38 [km^2] | 75.38 [km^2] | 75.38 [km^2] | 1 | mean=0.12 [0 0.23] [km] | **YES** |
 | 1949 | San Andreas (San Bernardino N), Subsection 5 | **YES** | 75.38 [km^2] | 81.66 [km^2] | 81.66 [km^2] | 1.08 | mean=0.12 [0 0.23] [km] | **YES** |
 
-## M7.1 on 1812/12/21 12:40:39 PST
+## M7.1 on 1812/12/21 12:40:39 PST, UCERF3-mapped, match: NO
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1812_12_21-12_40_39-PST_m7.1.png)
@@ -138,7 +138,7 @@
 | 1596 | Pitas Point (Lower)-Montalvo, Subsection 0 | *NO* | 607.58 [km^2] | 98.6 [km^2] | 90.73 [km^2] | 0.15 | mean=15.37 [5.36 33.62] [km] | *NO* |
 | 1597 | Pitas Point (Lower)-Montalvo, Subsection 1 | *NO* | 607.58 [km^2] | 227.7 [km^2] | 162.78 [km^2] | 0.27 | mean=13.13 [4.97 28.57] [km] | *NO* |
 
-## M7.4 on 1838/09/10 20:40:39 PST
+## M7.4 on 1838/09/10 20:40:39 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1838_09_10-20_40_39-PST_m7.4.png)
@@ -182,13 +182,13 @@
 | 2601 | Zayante-Vergeles 2011 CFM, Subsection 3 | *NO* | 240.26 [km^2] | 13.74 [km^2] | 0 [km^2] | 0 | mean=14.58 [6.59 22.92] [km] | *NO* |
 | 2603 | Zayante-Vergeles 2011 CFM, Subsection 5 | *NO* | 240.26 [km^2] | 0.47 [km^2] | 0 [km^2] | 0 | mean=14.94 [7.05 22.95] [km] | *NO* |
 
-## M6.5 on 1852/11/29 12:01:39 PST
+## M6.5 on 1852/11/29 12:01:39 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1852_11_29-12_01_39-PST_m6.5.png)
 
 
-## M7.9 on 1857/01/09 08:25:39 PST
+## M7.9 on 1857/01/09 08:25:39 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1857_01_09-08_25_39-PST_m7.9.png)
@@ -257,7 +257,7 @@
 | 1925 | San Andreas (Parkfield), Subsection 5 | **YES** | 9.96 [km^2] | 10.23 [km^2] | 10.23 [km^2] | 1.03 | mean=0.3 [0 0.52] [km] | **YES** |
 | 1926 | San Andreas (Parkfield), Subsection 6 | *NO* | 7.3 [km^2] | 1 [km^2] | 1 [km^2] | 0.14 | mean=2.55 [0.13 5.02] [km] | *NO* |
 
-## M7 on 1868/10/21 07:54:39 PST
+## M7 on 1868/10/21 07:54:39 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1868_10_21-07_54_39-PST_m7.png)
@@ -291,7 +291,7 @@
 | 1293 | Mission (connected) 2011 CFM, Subsection 10 | *NO* | 10.73 [km^2] | 2.73 [km^2] | 0 [km^2] | 0 | mean=3.2 [2.57 3.83] [km] | *NO* |
 | 1294 | Mission (connected) 2011 CFM, Subsection 11 | *NO* | 10.73 [km^2] | 3.64 [km^2] | 0 [km^2] | 0 | mean=3.11 [2.49 3.74] [km] | *NO* |
 
-## M7.6 on 1872/03/26 02:31:39 PST
+## M7.6 on 1872/03/26 02:31:39 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1872_03_26-02_31_39-PST_m7.6.png)
@@ -327,7 +327,7 @@
 | 2379 | Sierra Nevada  (No Extension), Subsection 2 | *NO* | 137.16 [km^2] | 99.43 [km^2] | 0 [km^2] | 0 | mean=3.32 [0.15 8.01] [km] | *NO* |
 | 2380 | Sierra Nevada  (No Extension), Subsection 3 | *NO* | 137.16 [km^2] | 99.43 [km^2] | 0 [km^2] | 0 | mean=2.92 [0.25 7.24] [km] | *NO* |
 
-## M6.8 on 1872/03/26 06:07:39 PST
+## M6.8 on 1872/03/26 06:07:39 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1872_03_26-06_07_39-PST_m6.8.png)
@@ -344,7 +344,7 @@
 | 1489 | Owens Valley, Subsection 11 | *NO* | 77.34 [km^2] | 24.84 [km^2] | 24.84 [km^2] | 0.32 | mean=1.44 [0.65 2.32] [km] | *NO* |
 | 1490 | Owens Valley, Subsection 12 | *NO* | 77.34 [km^2] | 24.33 [km^2] | 24.33 [km^2] | 0.31 | mean=1.5 [0.58 2.56] [km] | *NO* |
 
-## M6.8 on 1872/04/11 11:01:39 PST
+## M6.8 on 1872/04/11 11:01:39 PST, UCERF3-mapped, match: NO
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1872_04_11-11_01_39-PST_m6.8.png)
@@ -356,7 +356,7 @@
 | 1496 | Owens Valley Keough Hot Springs, Subsection 1 | **YES** | 87.63 [km^2] | 59.44 [km^2] | 59.44 [km^2] | 0.68 | mean=2.61 [0.3 6.12] [km] | *NO* |
 | 1497 | Owens Valley Keough Hot Springs, Subsection 2 | **YES** | 87.63 [km^2] | 71.33 [km^2] | 71.33 [km^2] | 0.81 | mean=3.03 [0.14 7.4] [km] | *NO* |
 
-## M6.5 on 1885/04/11 20:06:39 PST
+## M6.5 on 1885/04/11 20:06:39 PST, UCERF3-mapped, match: NO
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1885_04_11-20_06_39-PST_m6.5.png)
@@ -370,7 +370,7 @@
 | 1817 | San Andreas (Creeping Section) 2011 CFM, Subsection 6 | **YES** | 6.93 [km^2] | 7.1 [km^2] | 7.1 [km^2] | 1.02 | mean=5.16 [4.5 5.86] [km] | *NO* |
 | 1818 | San Andreas (Creeping Section) 2011 CFM, Subsection 7 | *NO* | 6.93 [km^2] | 0.25 [km^2] | 0.25 [km^2] | 0.04 | mean=6.6 [5.18 8.52] [km] | *NO* |
 
-## M6.8 on 1890/02/09 04:07:39 PST
+## M6.8 on 1890/02/09 04:07:39 PST, UCERF3-mapped, match: NO
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1890_02_09-04_07_39-PST_m6.8.png)
@@ -382,7 +382,7 @@
 | 2166 | San Jacinto (Clark) rev, Subsection 1 | **YES** | 118.01 [km^2] | 99.62 [km^2] | 99.62 [km^2] | 0.84 | mean=4.91 [4.42 6.71] [km] | *NO* |
 | 2167 | San Jacinto (Clark) rev, Subsection 2 | *NO* | 118.01 [km^2] | 37.36 [km^2] | 37.36 [km^2] | 0.32 | mean=4.86 [4.48 6.62] [km] | *NO* |
 
-## M7.3 on 1892/02/23 23:21:39 PST
+## M7.3 on 1892/02/23 23:21:39 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1892_02_23-23_21_39-PST_m7.3.png)
@@ -397,7 +397,7 @@
 | 1052 | Laguna Salada, Subsection 10 | **YES** | 44.13 [km^2] | 40.98 [km^2] | 40.98 [km^2] | 0.93 | mean=0.28 [0 0.5] [km] | **YES** |
 | 1053 | Laguna Salada, Subsection 11 | **YES** | 44.13 [km^2] | 44.13 [km^2] | 44.13 [km^2] | 1 | mean=0.28 [0 0.5] [km] | **YES** |
 
-## M6.6 on 1892/04/19 02:51:39 PST
+## M6.6 on 1892/04/19 02:51:39 PST, UCERF3-mapped, match: NO
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1892_04_19-02_51_39-PST_m6.6.png)
@@ -409,7 +409,7 @@
 | 707 | Great Valley 04b Gordon Valley, Subsection 1 | **YES** | 93.69 [km^2] | 110.66 [km^2] | 110.66 [km^2] | 1.18 | mean=1.97 [0.3 4.35] [km] | *NO* |
 | 708 | Great Valley 04b Gordon Valley, Subsection 2 | **YES** | 93.69 [km^2] | 86.95 [km^2] | 86.95 [km^2] | 0.93 | mean=2.08 [0.33 4.65] [km] | *NO* |
 
-## M6.5 on 1892/05/28 03:16:39 PST
+## M6.5 on 1892/05/28 03:16:39 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1892_05_28-03_16_39-PST_m6.5.png)
@@ -423,7 +423,7 @@
 | 2162 | San Jacinto (Borrego), Subsection 3 | *NO* | 37.93 [km^2] | 4.36 [km^2] | 4.36 [km^2] | 0.12 | mean=2.99 [0.03 5.93] [km] | *NO* |
 | 2176 | San Jacinto (Coyote Creek), Subsection 5 | *NO* | 110.26 [km^2] | 5.87 [km^2] | 0 [km^2] | 0 | mean=3.75 [0.15 7.53] [km] | *NO* |
 
-## M6.7 on 1899/12/25 04:26:39 PST
+## M6.7 on 1899/12/25 04:26:39 PST, UCERF3-mapped, match: NO
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1899_12_25-04_26_39-PST_m6.7.png)
@@ -437,7 +437,7 @@
 | 2190 | San Jacinto (Stepovers Combined), Subsection 2 | *NO* | 98.65 [km^2] | 36.38 [km^2] | 36.38 [km^2] | 0.37 | mean=1.79 [0.69 5.04] [km] | *NO* |
 | 2191 | San Jacinto (Stepovers Combined), Subsection 3 | **YES** | 98.65 [km^2] | 60.64 [km^2] | 60.64 [km^2] | 0.61 | mean=1.44 [0.69 4.67] [km] | *NO* |
 
-## M7.8 on 1906/04/18 05:12:21 PST
+## M7.8 on 1906/04/18 05:12:21 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1906_04_18-05_12_21-PST_m7.8.png)
@@ -555,13 +555,13 @@
 | 2603 | Zayante-Vergeles 2011 CFM, Subsection 5 | *NO* | 240.26 [km^2] | 0.47 [km^2] | 0 [km^2] | 0 | mean=14.94 [7.05 22.95] [km] | *NO* |
 | 2605 | Zayante-Vergeles 2011 CFM, Subsection 7 | *NO* | 240.26 [km^2] | 45.26 [km^2] | 0 [km^2] | 0 | mean=12.53 [2.56 22.46] [km] | *NO* |
 
-## M6.6 on 1915/11/20 16:13:42 PST
+## M6.6 on 1915/11/20 16:13:42 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1915_11_20-16_13_42-PST_m6.6.png)
 
 
-## M6.8 on 1918/04/21 15:32:25 PDT
+## M6.8 on 1918/04/21 15:32:25 PDT, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1918_04_21-15_32_25-PDT_m6.8.png)
@@ -574,7 +574,7 @@
 | 2156 | San Jacinto (Anza) rev, Subsection 3 | **YES** | 125.44 [km^2] | 125.44 [km^2] | 125.44 [km^2] | 1 | mean=0.33 [0 0.55] [km] | **YES** |
 | 2157 | San Jacinto (Anza) rev, Subsection 4 | *NO* | 125.44 [km^2] | 7.84 [km^2] | 7.84 [km^2] | 0.06 | mean=4.04 [0 8.01] [km] | *NO* |
 
-## M6.8 on 1925/06/29 06:42:16 PST
+## M6.8 on 1925/06/29 06:42:16 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1925_06_29-06_42_16-PST_m6.8.png)
@@ -587,13 +587,13 @@
 | 1594 | Pitas Point (Lower West), Subsection 1 | *NO* | 338.41 [km^2] | 42.93 [km^2] | 42.93 [km^2] | 0.13 | mean=13.38 [2.29 26.44] [km] | *NO* |
 | 1597 | Pitas Point (Lower)-Montalvo, Subsection 1 | *NO* | 607.58 [km^2] | 137.69 [km^2] | 137.69 [km^2] | 0.23 | mean=9.16 [0.08 24.71] [km] | *NO* |
 
-## M7.1 on 1927/11/04 05:50:53 PST
+## M7.1 on 1927/11/04 05:50:53 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1927_11_04-05_50_53-PST_m7.1.png)
 
 
-## M6.4 on 1933/03/10 17:54:09 PST
+## M6.4 on 1933/03/10 17:54:09 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1933_03_10-17_54_09-PST_m6.4.png)
@@ -606,7 +606,7 @@
 | 1388 | Newport-Inglewood alt 1, Subsection 2 | **YES** | 98.13 [km^2] | 98.13 [km^2] | 98.13 [km^2] | 1 | mean=0.38 [0 0.67] [km] | **YES** |
 | 1389 | Newport-Inglewood alt 1, Subsection 3 | *NO* | 98.13 [km^2] | 6.13 [km^2] | 6.13 [km^2] | 0.06 | mean=3.54 [0 7.01] [km] | *NO* |
 
-## M6 on 1934/06/07 20:47:00 PST
+## M6 on 1934/06/07 20:47:00 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1934_06_07-20_47_00-PST_m6.png)
@@ -622,7 +622,7 @@
 | 1925 | San Andreas (Parkfield), Subsection 5 | **YES** | 9.96 [km^2] | 10.23 [km^2] | 10.23 [km^2] | 1.03 | mean=0.3 [0 0.52] [km] | **YES** |
 | 1926 | San Andreas (Parkfield), Subsection 6 | *NO* | 7.3 [km^2] | 1 [km^2] | 1 [km^2] | 0.14 | mean=2.55 [0.13 5.02] [km] | *NO* |
 
-## M6.42 on 1934/12/31 10:45:43 PST
+## M6.42 on 1934/12/31 10:45:43 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1934_12_31-10_45_43-PST_m6.42.png)
@@ -632,7 +632,7 @@
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | 290 | Cerro Prieto, Subsection 3 | *NO* | 95.71 [km^2] | 31.67 [km^2] | 31.67 [km^2] | 0.33 | mean=2.42 [0.44 5.6] [km] | *NO* |
 
-## M6 on 1937/03/25 08:49:02 PST
+## M6 on 1937/03/25 08:49:02 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1937_03_25-08_49_02-PST_m6.png)
@@ -644,7 +644,7 @@
 | 2165 | San Jacinto (Clark) rev, Subsection 0 | *NO* | 118.01 [km^2] | 48.37 [km^2] | 48.37 [km^2] | 0.41 | mean=5.71 [2.68 11.28] [km] | *NO* |
 | 2166 | San Jacinto (Clark) rev, Subsection 1 | *NO* | 118.01 [km^2] | 9.07 [km^2] | 9.07 [km^2] | 0.08 | mean=6.72 [2.63 12.95] [km] | *NO* |
 
-## M6.9 on 1940/05/18 20:36:40 PST
+## M6.9 on 1940/05/18 20:36:40 PST, UCERF3-mapped, match: NO
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1940_05_18-20_36_40-PST_m6.9.png)
@@ -666,7 +666,7 @@
 | 971 | Imperial, Subsection 10 | **YES** | 51.96 [km^2] | 49.8 [km^2] | 49.8 [km^2] | 0.96 | mean=0.22 [0 0.4] [km] | **YES** |
 | 972 | Imperial, Subsection 11 | **YES** | 51.96 [km^2] | 50.01 [km^2] | 50.01 [km^2] | 0.96 | mean=0.22 [0 0.4] [km] | **YES** |
 
-## M6.6 on 1942/10/21 09:22:11 PDT
+## M6.6 on 1942/10/21 09:22:11 PDT, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1942_10_21-09_22_11-PDT_m6.6.png)
@@ -680,7 +680,7 @@
 | 2164 | San Jacinto (Borrego), Subsection 5 | **YES** | 37.4 [km^2] | 40.28 [km^2] | 40.28 [km^2] | 1.08 | mean=0.28 [0 0.54] [km] | **YES** |
 | 2192 | San Jacinto (Superstition Mtn), Subsection 0 | *NO* | 55.43 [km^2] | 3.12 [km^2] | 0 [km^2] | 0 | mean=3.18 [0.24 6.86] [km] | *NO* |
 
-## M6.3 on 1946/03/15 05:49:37 PST
+## M6.3 on 1946/03/15 05:49:37 PST, UCERF3-mapped, match: NO
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1946_03_15-05_49_37-PST_m6.3.png)
@@ -694,7 +694,7 @@
 | 2358 | Scodie Lineament, Subsection 3 | **YES** | 16.13 [km^2] | 16.21 [km^2] | 16.21 [km^2] | 1.01 | mean=1.24 [0.29 2.39] [km] | *NO* |
 | 2359 | Scodie Lineament, Subsection 4 | *NO* | 16.13 [km^2] | 2.7 [km^2] | 2.7 [km^2] | 0.17 | mean=1.95 [0.45 3.53] [km] | *NO* |
 
-## M6.5 on 1947/04/10 07:58:05 PST
+## M6.5 on 1947/04/10 07:58:05 PST, UCERF3-mapped, match: NO
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1947_04_10-07_58_05-PST_m6.5.png)
@@ -705,7 +705,7 @@
 | 1225 | Manix-Afton Hills, Subsection 2 | **YES** | 77.77 [km^2] | 52.47 [km^2] | 52.47 [km^2] | 0.67 | mean=1.79 [0.47 5.48] [km] | *NO* |
 | 1226 | Manix-Afton Hills, Subsection 3 | *NO* | 77.77 [km^2] | 28.25 [km^2] | 28.25 [km^2] | 0.36 | mean=2.11 [0.35 6.19] [km] | *NO* |
 
-## M6 on 1948/12/04 16:43:16 PDT
+## M6 on 1948/12/04 16:43:16 PDT, UCERF3-mapped, match: NO
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1948_12_04-16_43_16-PDT_m6.png)
@@ -720,7 +720,7 @@
 | 1960 | San Andreas (San Gorgonio Pass-Garnet HIll), Subsection 3 | **YES** | 94.91 [km^2] | 85.4 [km^2] | 85.4 [km^2] | 0.9 | mean=2.75 [0.36 6.6] [km] | *NO* |
 | 1961 | San Andreas (San Gorgonio Pass-Garnet HIll), Subsection 4 | *NO* | 94.91 [km^2] | 12.2 [km^2] | 0 [km^2] | 0 | mean=4.44 [0.36 9.07] [km] | *NO* |
 
-## M7.5 on 1952/07/21 04:52:14 PDT
+## M7.5 on 1952/07/21 04:52:14 PDT, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1952_07_21-04_52_14-PDT_m7.5.png)
@@ -740,13 +740,13 @@
 | 2575 | White Wolf, Subsection 7 | **YES** | 95.84 [km^2] | 95.41 [km^2] | 95.41 [km^2] | 1 | mean=0.31 [0 0.57] [km] | **YES** |
 | 2576 | White Wolf, Subsection 8 | **YES** | 95.84 [km^2] | 95.41 [km^2] | 95.41 [km^2] | 1 | mean=0.31 [0 0.58] [km] | **YES** |
 
-## M6 on 1952/11/21 23:46:37 PST
+## M6 on 1952/11/21 23:46:37 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1952_11_21-23_46_37-PST_m6.png)
 
 
-## M6.4 on 1954/03/19 01:54:27 PST
+## M6.4 on 1954/03/19 01:54:27 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1954_03_19-01_54_27-PST_m6.4.png)
@@ -757,7 +757,7 @@
 | 2169 | San Jacinto (Clark) rev, Subsection 4 | *NO* | 118.01 [km^2] | 4.25 [km^2] | 4.25 [km^2] | 0.04 | mean=4.3 [0.46 9.77] [km] | *NO* |
 | 2170 | San Jacinto (Clark) rev, Subsection 5 | *NO* | 118.01 [km^2] | 32.99 [km^2] | 32.99 [km^2] | 0.28 | mean=2.3 [0.62 6.73] [km] | *NO* |
 
-## M6.5 on 1954/12/21 11:56:29 PST
+## M6.5 on 1954/12/21 11:56:29 PST, UCERF3-mapped, match: NO
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1954_12_21-11_56_29-PST_m6.5.png)
@@ -777,13 +777,13 @@
 | 2509 | Trinidad (alt1), Subsection 0 | *NO* | 225.54 [km^2] | 113.93 [km^2] | 20.91 [km^2] | 0.09 | mean=3.16 [0.61 6.65] [km] | *NO* |
 | 2510 | Trinidad (alt1), Subsection 1 | *NO* | 225.54 [km^2] | 96.43 [km^2] | 0 [km^2] | 0 | mean=5.15 [2.25 9.38] [km] | *NO* |
 
-## M6.1 on 1959/06/23 07:35:00 PDT
+## M6.1 on 1959/06/23 07:35:00 PDT, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1959_06_23-07_35_00-PDT_m6.1.png)
 
 
-## M6 on 1966/06/27 21:26:13 PDT
+## M6 on 1966/06/27 21:26:13 PDT, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1966_06_27-21_26_13-PDT_m6.png)
@@ -799,7 +799,7 @@
 | 1925 | San Andreas (Parkfield), Subsection 5 | **YES** | 9.96 [km^2] | 10.23 [km^2] | 10.23 [km^2] | 1.03 | mean=0.3 [0 0.52] [km] | **YES** |
 | 1926 | San Andreas (Parkfield), Subsection 6 | *NO* | 7.3 [km^2] | 1 [km^2] | 1 [km^2] | 0.14 | mean=2.55 [0.13 5.02] [km] | *NO* |
 
-## M6.6 on 1968/04/08 18:28:58 PST
+## M6.6 on 1968/04/08 18:28:58 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1968_04_08-18_28_58-PST_m6.6.png)
@@ -816,7 +816,7 @@
 | 2176 | San Jacinto (Coyote Creek), Subsection 5 | *NO* | 110.26 [km^2] | 5.87 [km^2] | 0 [km^2] | 0 | mean=3.75 [0.15 7.53] [km] | *NO* |
 | 2192 | San Jacinto (Superstition Mtn), Subsection 0 | *NO* | 55.43 [km^2] | 3.12 [km^2] | 0 [km^2] | 0 | mean=3.18 [0.24 6.86] [km] | *NO* |
 
-## M6.6 on 1971/02/09 06:00:41 PST
+## M6.6 on 1971/02/09 06:00:41 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1971_02_09-06_00_41-PST_m6.6.png)
@@ -841,7 +841,7 @@
 | 2527 | Verdugo, Subsection 2 | *NO* | 125.99 [km^2] | 0.67 [km^2] | 0 [km^2] | 0 | mean=8.66 [5.77 13.09] [km] | *NO* |
 | 2528 | Verdugo, Subsection 3 | *NO* | 125.99 [km^2] | 39.47 [km^2] | 0 [km^2] | 0 | mean=5.54 [3.07 8.68] [km] | *NO* |
 
-## M6.51 on 1979/10/15 16:16:53 PDT
+## M6.51 on 1979/10/15 16:16:53 PDT, UCERF3-mapped, match: NO
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1979_10_15-16_16_53-PDT_m6.51.png)
@@ -859,7 +859,7 @@
 | 971 | Imperial, Subsection 10 | **YES** | 51.96 [km^2] | 49.8 [km^2] | 49.8 [km^2] | 0.96 | mean=0.22 [0 0.4] [km] | **YES** |
 | 972 | Imperial, Subsection 11 | **YES** | 51.96 [km^2] | 50.01 [km^2] | 50.01 [km^2] | 0.96 | mean=0.22 [0 0.4] [km] | **YES** |
 
-## M6.2 on 1980/05/25 09:33:44 PDT
+## M6.2 on 1980/05/25 09:33:44 PDT, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1980_05_25-09_33_44-PDT_m6.2.png)
@@ -873,7 +873,7 @@
 | 867 | Hilton Creek 2011 CFM, Subsection 2 | **YES** | 132.68 [km^2] | 129 [km^2] | 129 [km^2] | 0.97 | mean=0.35 [0 0.6] [km] | **YES** |
 | 868 | Hilton Creek 2011 CFM, Subsection 3 | **YES** | 132.68 [km^2] | 129 [km^2] | 129 [km^2] | 0.97 | mean=0.35 [0 0.6] [km] | **YES** |
 
-## M6 on 1980/05/25 09:49:27 PDT
+## M6 on 1980/05/25 09:49:27 PDT, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1980_05_25-09_49_27-PDT_m6.png)
@@ -883,7 +883,7 @@
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | 867 | Hilton Creek 2011 CFM, Subsection 2 | *NO* | 132.68 [km^2] | 32.68 [km^2] | 32.68 [km^2] | 0.25 | mean=9.65 [6.92 14.26] [km] | *NO* |
 
-## M6.33 on 1980/06/08 20:28:19 PDT
+## M6.33 on 1980/06/08 20:28:19 PDT, UCERF3-mapped, match: NO
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1980_06_08-20_28_19-PDT_m6.33.png)
@@ -893,13 +893,13 @@
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | 1042 | Laguna Salada, Subsection 0 | **YES** | 44.13 [km^2] | 30.01 [km^2] | 30.01 [km^2] | 0.68 | mean=4.79 [3.47 6.13] [km] | *NO* |
 
-## M7.3 on 1980/11/08 02:27:33 PST
+## M7.3 on 1980/11/08 02:27:33 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1980_11_08-02_27_33-PST_m7.3.png)
 
 
-## M5.9 on 1981/04/26 05:09:28 PDT
+## M5.9 on 1981/04/26 05:09:28 PDT, UCERF3-mapped, match: NO
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1981_04_26-05_09_28-PDT_m5.9.png)
@@ -909,7 +909,7 @@
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | 163 | Brawley (Seismic Zone) alt 1, Subsection 6 | **YES** | 7.91 [km^2] | 60.37 [km^2] | 60.37 [km^2] | 7.64 | mean=4.39 [2.89 6.48] [km] | *NO* |
 
-## M6.3 on 1983/05/02 16:42:38 PDT
+## M6.3 on 1983/05/02 16:42:38 PDT, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1983_05_02-16_42_38-PDT_m6.3.png)
@@ -923,7 +923,7 @@
 | 772 | Great Valley 13 (Coalinga), Subsection 2 | **YES** | 223.29 [km^2] | 213.14 [km^2] | 213.14 [km^2] | 0.95 | mean=0.39 [0 0.66] [km] | **YES** |
 | 773 | Great Valley 14 (Kettleman Hills), Subsection 0 | *NO* | 415.33 [km^2] | 0.46 [km^2] | 0 [km^2] | 0 | mean=11.22 [1.38 24.01] [km] | *NO* |
 
-## M6.15 on 1984/04/24 13:15:18 PST
+## M6.15 on 1984/04/24 13:15:18 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1984_04_24-13_15_18-PST_m6.15.png)
@@ -939,13 +939,13 @@
 | 836 | Hayward (So) extension 2011 CFM, Subsection 0 | *NO* | 13.58 [km^2] | 19.17 [km^2] | 0 [km^2] | 0 | mean=1.53 [0.44 2.68] [km] | *NO* |
 | 837 | Hayward (So) extension 2011 CFM, Subsection 1 | *NO* | 13.58 [km^2] | 4.01 [km^2] | 0 [km^2] | 0 | mean=1.81 [0.35 4.07] [km] | *NO* |
 
-## M6.6 on 1984/09/09 20:14:28 PDT
+## M6.6 on 1984/09/09 20:14:28 PDT, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1984_09_09-20_14_28-PDT_m6.6.png)
 
 
-## M6.08 on 1985/08/04 05:01:55 PDT
+## M6.08 on 1985/08/04 05:01:55 PDT, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1985_08_04-05_01_55-PDT_m6.08.png)
@@ -957,7 +957,7 @@
 | 773 | Great Valley 14 (Kettleman Hills), Subsection 0 | *NO* | 415.33 [km^2] | 22.78 [km^2] | 22.78 [km^2] | 0.05 | mean=17.23 [0.23 35.69] [km] | *NO* |
 | 774 | Great Valley 14 (Kettleman Hills), Subsection 1 | *NO* | 415.33 [km^2] | 14.86 [km^2] | 14.86 [km^2] | 0.04 | mean=14.9 [0.34 32.11] [km] | *NO* |
 
-## M6.02 on 1986/07/08 02:20:44 PDT
+## M6.02 on 1986/07/08 02:20:44 PDT, UCERF3-mapped, match: NO
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1986_07_08-02_20_44-PDT_m6.02.png)
@@ -976,7 +976,7 @@
 | 1963 | San Andreas (San Gorgonio Pass-Garnet HIll), Subsection 6 | **YES** | 94.91 [km^2] | 53.18 [km^2] | 53.18 [km^2] | 0.56 | mean=1.15 [0.07 3.35] [km] | *NO* |
 | 1964 | San Andreas (San Gorgonio Pass-Garnet HIll), Subsection 7 | *NO* | 94.91 [km^2] | 17.31 [km^2] | 17.31 [km^2] | 0.18 | mean=2.94 [0.4 5.81] [km] | *NO* |
 
-## M6.22 on 1986/07/21 07:42:26 PDT
+## M6.22 on 1986/07/21 07:42:26 PDT, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1986_07_21-07_42_26-PDT_m6.22.png)
@@ -988,13 +988,13 @@
 | 2558 | White Mountains, Subsection 8 | **YES** | 71.97 [km^2] | 71.97 [km^2] | 71.97 [km^2] | 1 | mean=0.29 [0 0.5] [km] | **YES** |
 | 2559 | White Mountains, Subsection 9 | **YES** | 71.97 [km^2] | 66.83 [km^2] | 66.83 [km^2] | 0.93 | mean=0.29 [0 0.5] [km] | **YES** |
 
-## M5.98 on 1987/07/31 16:56:57 PDT
+## M5.98 on 1987/07/31 16:56:57 PDT, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1987_07_31-16_56_57-PDT_m5.98.png)
 
 
-## M5.89 on 1987/10/01 07:42:20 PDT
+## M5.89 on 1987/10/01 07:42:20 PDT, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1987_10_01-07_42_20-PDT_m5.89.png)
@@ -1008,7 +1008,7 @@
 | 1636 | Puente Hills, Subsection 2 | *NO* | 150.54 [km^2] | 39.99 [km^2] | 28.71 [km^2] | 0.19 | mean=6.82 [3.52 13.52] [km] | *NO* |
 | 1637 | Puente Hills, Subsection 3 | *NO* | 150.54 [km^2] | 18.16 [km^2] | 8.1 [km^2] | 0.05 | mean=7.21 [3.91 12.7] [km] | *NO* |
 
-## M6.04 on 1987/11/23 17:54:14 PST
+## M6.04 on 1987/11/23 17:54:14 PST, UCERF3-mapped, match: NO
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1987_11_23-17_54_14-PST_m6.04.png)
@@ -1024,7 +1024,7 @@
 | 508 | Elmore Ranch, Subsection 3 | **YES** | 49.62 [km^2] | 50.1 [km^2] | 50.1 [km^2] | 1.01 | mean=0.85 [0.77 1.4] [km] | *NO* |
 | 509 | Elmore Ranch, Subsection 4 | *NO* | 49.62 [km^2] | 15.03 [km^2] | 15.03 [km^2] | 0.3 | mean=1.57 [0.68 3.53] [km] | *NO* |
 
-## M6.5 on 1987/11/24 05:15:56 PST
+## M6.5 on 1987/11/24 05:15:56 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1987_11_24-05_15_56-PST_m6.5.png)
@@ -1040,7 +1040,7 @@
 | 2444 | Superstition Hills, Subsection 4 | **YES** | 64.44 [km^2] | 63.36 [km^2] | 63.36 [km^2] | 0.98 | mean=0.27 [0 0.52] [km] | **YES** |
 | 2445 | Superstition Hills, Subsection 5 | **YES** | 76.04 [km^2] | 80.64 [km^2] | 80.64 [km^2] | 1.06 | mean=0.31 [0 0.58] [km] | **YES** |
 
-## M6.89 on 1989/10/17 17:04:15 PDT
+## M6.89 on 1989/10/17 17:04:15 PDT, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1989_10_17-17_04_15-PDT_m6.89.png)
@@ -1062,7 +1062,7 @@
 | 2601 | Zayante-Vergeles 2011 CFM, Subsection 3 | *NO* | 240.26 [km^2] | 13.74 [km^2] | 0 [km^2] | 0 | mean=14.58 [6.59 22.92] [km] | *NO* |
 | 2603 | Zayante-Vergeles 2011 CFM, Subsection 5 | *NO* | 240.26 [km^2] | 0.47 [km^2] | 0 [km^2] | 0 | mean=14.94 [7.05 22.95] [km] | *NO* |
 
-## M6.12 on 1991/08/17 12:29:40 PDT
+## M6.12 on 1991/08/17 12:29:40 PDT, UCERF3-mapped, match: NO
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1991_08_17-12_29_40-PDT_m6.12.png)
@@ -1072,7 +1072,7 @@
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | 1026 | King Range 2011 CFM, Subsection 0 | **YES** | 72.56 [km^2] | 48.13 [km^2] | 48.13 [km^2] | 0.66 | mean=8.89 [6.39 13.72] [km] | *NO* |
 
-## M6.15 on 1992/04/22 21:50:23 PDT
+## M6.15 on 1992/04/22 21:50:23 PDT, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1992_04_22-21_50_23-PDT_m6.15.png)
@@ -1084,7 +1084,7 @@
 | 559 | Eureka Peak, Subsection 1 | **YES** | 84.89 [km^2] | 84.89 [km^2] | 84.89 [km^2] | 1 | mean=0.38 [0 0.64] [km] | **YES** |
 | 560 | Eureka Peak, Subsection 2 | **YES** | 84.89 [km^2] | 78.82 [km^2] | 78.82 [km^2] | 0.93 | mean=0.38 [0 0.64] [km] | **YES** |
 
-## M7.15 on 1992/04/25 11:06:05 PDT
+## M7.15 on 1992/04/25 11:06:05 PDT, UCERF3-mapped, match: NO
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1992_04_25-11_06_05-PDT_m7.15.png)
@@ -1102,19 +1102,19 @@
 | 1248 | Mendocino, Subsection 1 | *NO* | 44.57 [km^2] | 8.59 [km^2] | 8.59 [km^2] | 0.19 | mean=2.49 [0.35 4.86] [km] | *NO* |
 | 1249 | Mendocino, Subsection 2 | *NO* | 44.57 [km^2] | 0.51 [km^2] | 0.51 [km^2] | 0.01 | mean=3.47 [0.34 6.2] [km] | *NO* |
 
-## M6.45 on 1992/04/26 00:41:40 PDT
+## M6.45 on 1992/04/26 00:41:40 PDT, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1992_04_26-00_41_40-PDT_m6.45.png)
 
 
-## M6.6 on 1992/04/26 04:18:25 PDT
+## M6.6 on 1992/04/26 04:18:25 PDT, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1992_04_26-04_18_25-PDT_m6.6.png)
 
 
-## M7.28 on 1992/06/28 04:57:34 PDT
+## M7.28 on 1992/06/28 04:57:34 PDT, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1992_06_28-04_57_34-PDT_m7.28.png)
@@ -1139,7 +1139,7 @@
 | 1024 | Kickapoo, Subsection 0 | **YES** | 42.32 [km^2] | 63.6 [km^2] | 63.6 [km^2] | 1.5 | mean=0.29 [0 0.53] [km] | **YES** |
 | 1025 | Kickapoo, Subsection 1 | **YES** | 42.32 [km^2] | 83.2 [km^2] | 83.2 [km^2] | 1.97 | mean=0.29 [0 0.53] [km] | **YES** |
 
-## M6.49 on 1992/06/28 08:05:30 PDT
+## M6.49 on 1992/06/28 08:05:30 PDT, UCERF3-mapped, match: NO
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1992_06_28-08_05_30-PDT_m6.49.png)
@@ -1149,13 +1149,13 @@
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | 1395 | North Frontal  (East), Subsection 0 | **YES** | 214.85 [km^2] | 132.31 [km^2] | 132.31 [km^2] | 0.62 | mean=4.84 [0.31 12.36] [km] | *NO* |
 
-## M6.11 on 1993/05/17 16:20:50 PDT
+## M6.11 on 1993/05/17 16:20:50 PDT, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1993_05_17-16_20_50-PDT_m6.11.png)
 
 
-## M6.65 on 1994/01/17 04:30:55 PST
+## M6.65 on 1994/01/17 04:30:55 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1994_01_17-04_30_55-PST_m6.65.png)
@@ -1190,7 +1190,7 @@
 | 2391 | Simi-Santa Rosa, Subsection 1 | *NO* | 64.56 [km^2] | 0.7 [km^2] | 0.7 [km^2] | 0.01 | mean=8.86 [2.47 14.97] [km] | *NO* |
 | 2528 | Verdugo, Subsection 3 | *NO* | 125.99 [km^2] | 10.55 [km^2] | 0 [km^2] | 0 | mean=5.8 [0.41 11.03] [km] | *NO* |
 
-## M7.12 on 1999/10/16 02:46:44 PDT
+## M7.12 on 1999/10/16 02:46:44 PDT, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/1999_10_16-02_46_44-PDT_m7.12.png)
@@ -1208,7 +1208,7 @@
 | 1585 | Pisgah-Bullion Mtn-Mesquite Lk, Subsection 6 | **YES** | 76.41 [km^2] | 76.41 [km^2] | 76.41 [km^2] | 1 | mean=0.27 [0 0.49] [km] | **YES** |
 | 1586 | Pisgah-Bullion Mtn-Mesquite Lk, Subsection 7 | **YES** | 76.41 [km^2] | 90.59 [km^2] | 49.12 [km^2] | 0.64 | mean=0.26 [0 0.49] [km] | **YES** |
 
-## M5.86 on 2000/03/16 07:19:56 PST
+## M5.86 on 2000/03/16 07:19:56 PST, UCERF3-mapped, match: NO
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/2000_03_16-07_19_56-PST_m5.86.png)
@@ -1221,7 +1221,7 @@
 | 1264 | Mendocino, Subsection 17 | **YES** | 44.57 [km^2] | 30.2 [km^2] | 30.2 [km^2] | 0.68 | mean=1.13 [0.59 2.91] [km] | *NO* |
 | 1265 | Mendocino, Subsection 18 | *NO* | 44.57 [km^2] | 3.02 [km^2] | 3.02 [km^2] | 0.07 | mean=2.22 [0.56 4.91] [km] | *NO* |
 
-## M6.55 on 2003/12/22 11:15:56 PST
+## M6.55 on 2003/12/22 11:15:56 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/2003_12_22-11_15_56-PST_m6.55.png)
@@ -1238,7 +1238,7 @@
 | 1448 | Oceanic - West Huasna, Subsection 27 | **YES** | 30.18 [km^2] | 28.29 [km^2] | 28.29 [km^2] | 0.94 | mean=0.33 [0 0.56] [km] | **YES** |
 | 1449 | Oceanic - West Huasna, Subsection 28 | *NO* | 30.18 [km^2] | 2.83 [km^2] | 2.83 [km^2] | 0.09 | mean=2.03 [0 4] [km] | *NO* |
 
-## M5.97 on 2004/09/28 10:15:24 PDT
+## M5.97 on 2004/09/28 10:15:24 PDT, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/2004_09_28-10_15_24-PDT_m5.97.png)
@@ -1256,7 +1256,7 @@
 | 1926 | San Andreas (Parkfield), Subsection 6 | **YES** | 7.3 [km^2] | 8.03 [km^2] | 8.03 [km^2] | 1.1 | mean=0.33 [0 0.6] [km] | **YES** |
 | 1927 | San Andreas (Parkfield), Subsection 7 | **YES** | 4.65 [km^2] | 4.18 [km^2] | 4.18 [km^2] | 0.9 | mean=0.22 [0 0.44] [km] | **YES** |
 
-## M6.51 on 2010/01/09 16:27:39 PST
+## M6.51 on 2010/01/09 16:27:39 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/2010_01_09-16_27_39-PST_m6.51.png)
@@ -1267,7 +1267,7 @@
 | 2480 | Table Bluff, Subsection 3 | *NO* | 134.79 [km^2] | 52.93 [km^2] | 52.93 [km^2] | 0.39 | mean=16.74 [12.14 20.33] [km] | *NO* |
 | 2481 | Table Bluff, Subsection 4 | *NO* | 134.79 [km^2] | 22.69 [km^2] | 22.69 [km^2] | 0.17 | mean=16.66 [12.3 19.16] [km] | *NO* |
 
-## M7.19 on 2010/04/04 15:40:41 PDT
+## M7.19 on 2010/04/04 15:40:41 PDT, UCERF3-mapped, match: NO
 *[(top)](#table-of-contents)*
 
 ![Map Plot](resources/2010_04_04-15_40_41-PDT_m7.19.png)
