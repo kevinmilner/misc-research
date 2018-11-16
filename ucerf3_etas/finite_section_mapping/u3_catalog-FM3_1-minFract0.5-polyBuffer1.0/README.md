@@ -5,6 +5,7 @@
 | **Ruptures w/ Finite Surfaces** | 69 |
 | **Min Area Fraction**&ast; | 0.5 |
 | **Fault Polygon Buffer** | 1 [km] |
+| **Remove Polygon Overlap?** | No |
 
 *&ast; Ruptures are considered to reset a fault section if at least this fraction of the section's area ruptures inside its polygon*
 
