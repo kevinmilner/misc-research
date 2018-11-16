@@ -28,76 +28,79 @@ img {
 <p><em>* Ruptures are considered to reset a fault section if at least this fraction of the section's area ruptures inside its polygon</em></p>
 <h2 id="table-of-contents">Table Of Contents</h2>
 <ul>
+<li><a href="#ucerf3-mappings-summary">UCERF3 Mappings Summary</a></li>
 <li><a href="#m75-on-18121208-084039-pst-ucerf3-mapped-match-yes">M7.5 on 1812/12/08 08:40:39 PST, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m71-on-18121221-124039-pst-ucerf3-mapped-match-no">M7.1 on 1812/12/21 12:40:39 PST, UCERF3-mapped, match: NO</a></li>
+<li><a href="#m71-on-18121221-124039-pst">M7.1 on 1812/12/21 12:40:39 PST</a></li>
 <li><a href="#m74-on-18380910-204039-pst-ucerf3-mapped-match-no">M7.4 on 1838/09/10 20:40:39 PST, UCERF3-mapped, match: NO</a></li>
-<li><a href="#m65-on-18521129-120139-pst-ucerf3-mapped-match-yes">M6.5 on 1852/11/29 12:01:39 PST, UCERF3-mapped, match: YES</a></li>
+<li><a href="#m65-on-18521129-120139-pst">M6.5 on 1852/11/29 12:01:39 PST</a></li>
 <li><a href="#m79-on-18570109-082539-pst-ucerf3-mapped-match-no">M7.9 on 1857/01/09 08:25:39 PST, UCERF3-mapped, match: NO</a></li>
 <li><a href="#m7-on-18681021-075439-pst-ucerf3-mapped-match-no">M7 on 1868/10/21 07:54:39 PST, UCERF3-mapped, match: NO</a></li>
 <li><a href="#m76-on-18720326-023139-pst-ucerf3-mapped-match-no">M7.6 on 1872/03/26 02:31:39 PST, UCERF3-mapped, match: NO</a></li>
-<li><a href="#m68-on-18720326-060739-pst-ucerf3-mapped-match-no">M6.8 on 1872/03/26 06:07:39 PST, UCERF3-mapped, match: NO</a></li>
-<li><a href="#m68-on-18720411-110139-pst-ucerf3-mapped-match-no">M6.8 on 1872/04/11 11:01:39 PST, UCERF3-mapped, match: NO</a></li>
-<li><a href="#m65-on-18850411-200639-pst-ucerf3-mapped-match-no">M6.5 on 1885/04/11 20:06:39 PST, UCERF3-mapped, match: NO</a></li>
-<li><a href="#m68-on-18900209-040739-pst-ucerf3-mapped-match-no">M6.8 on 1890/02/09 04:07:39 PST, UCERF3-mapped, match: NO</a></li>
+<li><a href="#m68-on-18720326-060739-pst">M6.8 on 1872/03/26 06:07:39 PST</a></li>
+<li><a href="#m68-on-18720411-110139-pst">M6.8 on 1872/04/11 11:01:39 PST</a></li>
+<li><a href="#m65-on-18850411-200639-pst">M6.5 on 1885/04/11 20:06:39 PST</a></li>
+<li><a href="#m68-on-18900209-040739-pst">M6.8 on 1890/02/09 04:07:39 PST</a></li>
 <li><a href="#m73-on-18920223-232139-pst-ucerf3-mapped-match-yes">M7.3 on 1892/02/23 23:21:39 PST, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m66-on-18920419-025139-pst-ucerf3-mapped-match-no">M6.6 on 1892/04/19 02:51:39 PST, UCERF3-mapped, match: NO</a></li>
+<li><a href="#m66-on-18920419-025139-pst">M6.6 on 1892/04/19 02:51:39 PST</a></li>
 <li><a href="#m65-on-18920528-031639-pst-ucerf3-mapped-match-yes">M6.5 on 1892/05/28 03:16:39 PST, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m67-on-18991225-042639-pst-ucerf3-mapped-match-no">M6.7 on 1899/12/25 04:26:39 PST, UCERF3-mapped, match: NO</a></li>
+<li><a href="#m67-on-18991225-042639-pst">M6.7 on 1899/12/25 04:26:39 PST</a></li>
 <li><a href="#m78-on-19060418-051221-pst-ucerf3-mapped-match-no">M7.8 on 1906/04/18 05:12:21 PST, UCERF3-mapped, match: NO</a></li>
-<li><a href="#m66-on-19151120-161342-pst-ucerf3-mapped-match-yes">M6.6 on 1915/11/20 16:13:42 PST, UCERF3-mapped, match: YES</a></li>
+<li><a href="#m66-on-19151120-161342-pst">M6.6 on 1915/11/20 16:13:42 PST</a></li>
 <li><a href="#m68-on-19180421-153225-pdt-ucerf3-mapped-match-yes">M6.8 on 1918/04/21 15:32:25 PDT, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m68-on-19250629-064216-pst-ucerf3-mapped-match-yes">M6.8 on 1925/06/29 06:42:16 PST, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m71-on-19271104-055053-pst-ucerf3-mapped-match-yes">M7.1 on 1927/11/04 05:50:53 PST, UCERF3-mapped, match: YES</a></li>
+<li><a href="#m68-on-19250629-064216-pst">M6.8 on 1925/06/29 06:42:16 PST</a></li>
+<li><a href="#m71-on-19271104-055053-pst">M7.1 on 1927/11/04 05:50:53 PST</a></li>
 <li><a href="#m64-on-19330310-175409-pst-ucerf3-mapped-match-yes">M6.4 on 1933/03/10 17:54:09 PST, UCERF3-mapped, match: YES</a></li>
 <li><a href="#m6-on-19340607-204700-pst-ucerf3-mapped-match-yes">M6 on 1934/06/07 20:47:00 PST, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m642-on-19341231-104543-pst-ucerf3-mapped-match-yes">M6.42 on 1934/12/31 10:45:43 PST, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m6-on-19370325-084902-pst-ucerf3-mapped-match-yes">M6 on 1937/03/25 08:49:02 PST, UCERF3-mapped, match: YES</a></li>
+<li><a href="#m642-on-19341231-104543-pst">M6.42 on 1934/12/31 10:45:43 PST</a></li>
+<li><a href="#m6-on-19370325-084902-pst">M6 on 1937/03/25 08:49:02 PST</a></li>
 <li><a href="#m69-on-19400518-203640-pst-ucerf3-mapped-match-no">M6.9 on 1940/05/18 20:36:40 PST, UCERF3-mapped, match: NO</a></li>
 <li><a href="#m66-on-19421021-092211-pdt-ucerf3-mapped-match-yes">M6.6 on 1942/10/21 09:22:11 PDT, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m63-on-19460315-054937-pst-ucerf3-mapped-match-no">M6.3 on 1946/03/15 05:49:37 PST, UCERF3-mapped, match: NO</a></li>
-<li><a href="#m65-on-19470410-075805-pst-ucerf3-mapped-match-no">M6.5 on 1947/04/10 07:58:05 PST, UCERF3-mapped, match: NO</a></li>
-<li><a href="#m6-on-19481204-164316-pdt-ucerf3-mapped-match-no">M6 on 1948/12/04 16:43:16 PDT, UCERF3-mapped, match: NO</a></li>
+<li><a href="#m63-on-19460315-054937-pst">M6.3 on 1946/03/15 05:49:37 PST</a></li>
+<li><a href="#m65-on-19470410-075805-pst">M6.5 on 1947/04/10 07:58:05 PST</a></li>
+<li><a href="#m6-on-19481204-164316-pdt">M6 on 1948/12/04 16:43:16 PDT</a></li>
 <li><a href="#m75-on-19520721-045214-pdt-ucerf3-mapped-match-yes">M7.5 on 1952/07/21 04:52:14 PDT, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m6-on-19521121-234637-pst-ucerf3-mapped-match-yes">M6 on 1952/11/21 23:46:37 PST, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m64-on-19540319-015427-pst-ucerf3-mapped-match-yes">M6.4 on 1954/03/19 01:54:27 PST, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m65-on-19541221-115629-pst-ucerf3-mapped-match-no">M6.5 on 1954/12/21 11:56:29 PST, UCERF3-mapped, match: NO</a></li>
-<li><a href="#m61-on-19590623-073500-pdt-ucerf3-mapped-match-yes">M6.1 on 1959/06/23 07:35:00 PDT, UCERF3-mapped, match: YES</a></li>
+<li><a href="#m6-on-19521121-234637-pst">M6 on 1952/11/21 23:46:37 PST</a></li>
+<li><a href="#m64-on-19540319-015427-pst">M6.4 on 1954/03/19 01:54:27 PST</a></li>
+<li><a href="#m65-on-19541221-115629-pst">M6.5 on 1954/12/21 11:56:29 PST</a></li>
+<li><a href="#m61-on-19590623-073500-pdt">M6.1 on 1959/06/23 07:35:00 PDT</a></li>
 <li><a href="#m6-on-19660627-212613-pdt-ucerf3-mapped-match-yes">M6 on 1966/06/27 21:26:13 PDT, UCERF3-mapped, match: YES</a></li>
 <li><a href="#m66-on-19680408-182858-pst-ucerf3-mapped-match-yes">M6.6 on 1968/04/08 18:28:58 PST, UCERF3-mapped, match: YES</a></li>
 <li><a href="#m66-on-19710209-060041-pst-ucerf3-mapped-match-no">M6.6 on 1971/02/09 06:00:41 PST, UCERF3-mapped, match: NO</a></li>
 <li><a href="#m651-on-19791015-161653-pdt-ucerf3-mapped-match-no">M6.51 on 1979/10/15 16:16:53 PDT, UCERF3-mapped, match: NO</a></li>
 <li><a href="#m62-on-19800525-093344-pdt-ucerf3-mapped-match-yes">M6.2 on 1980/05/25 09:33:44 PDT, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m6-on-19800525-094927-pdt-ucerf3-mapped-match-yes">M6 on 1980/05/25 09:49:27 PDT, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m633-on-19800608-202819-pdt-ucerf3-mapped-match-no">M6.33 on 1980/06/08 20:28:19 PDT, UCERF3-mapped, match: NO</a></li>
-<li><a href="#m73-on-19801108-022733-pst-ucerf3-mapped-match-yes">M7.3 on 1980/11/08 02:27:33 PST, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m59-on-19810426-050928-pdt-ucerf3-mapped-match-no">M5.9 on 1981/04/26 05:09:28 PDT, UCERF3-mapped, match: NO</a></li>
+<li><a href="#m6-on-19800525-094927-pdt">M6 on 1980/05/25 09:49:27 PDT</a></li>
+<li><a href="#m633-on-19800608-202819-pdt">M6.33 on 1980/06/08 20:28:19 PDT</a></li>
+<li><a href="#m73-on-19801108-022733-pst">M7.3 on 1980/11/08 02:27:33 PST</a></li>
+<li><a href="#m59-on-19810426-050928-pdt">M5.9 on 1981/04/26 05:09:28 PDT</a></li>
 <li><a href="#m63-on-19830502-164238-pdt-ucerf3-mapped-match-yes">M6.3 on 1983/05/02 16:42:38 PDT, UCERF3-mapped, match: YES</a></li>
 <li><a href="#m615-on-19840424-131518-pst-ucerf3-mapped-match-no">M6.15 on 1984/04/24 13:15:18 PST, UCERF3-mapped, match: NO</a></li>
-<li><a href="#m66-on-19840909-201428-pdt-ucerf3-mapped-match-yes">M6.6 on 1984/09/09 20:14:28 PDT, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m608-on-19850804-050155-pdt-ucerf3-mapped-match-yes">M6.08 on 1985/08/04 05:01:55 PDT, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m602-on-19860708-022044-pdt-ucerf3-mapped-match-no">M6.02 on 1986/07/08 02:20:44 PDT, UCERF3-mapped, match: NO</a></li>
+<li><a href="#m66-on-19840909-201428-pdt">M6.6 on 1984/09/09 20:14:28 PDT</a></li>
+<li><a href="#m608-on-19850804-050155-pdt">M6.08 on 1985/08/04 05:01:55 PDT</a></li>
+<li><a href="#m602-on-19860708-022044-pdt">M6.02 on 1986/07/08 02:20:44 PDT</a></li>
 <li><a href="#m622-on-19860721-074226-pdt-ucerf3-mapped-match-yes">M6.22 on 1986/07/21 07:42:26 PDT, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m598-on-19870731-165657-pdt-ucerf3-mapped-match-yes">M5.98 on 1987/07/31 16:56:57 PDT, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m589-on-19871001-074220-pdt-ucerf3-mapped-match-yes">M5.89 on 1987/10/01 07:42:20 PDT, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m604-on-19871123-175414-pst-ucerf3-mapped-match-no">M6.04 on 1987/11/23 17:54:14 PST, UCERF3-mapped, match: NO</a></li>
+<li><a href="#m598-on-19870731-165657-pdt">M5.98 on 1987/07/31 16:56:57 PDT</a></li>
+<li><a href="#m589-on-19871001-074220-pdt">M5.89 on 1987/10/01 07:42:20 PDT</a></li>
+<li><a href="#m604-on-19871123-175414-pst">M6.04 on 1987/11/23 17:54:14 PST</a></li>
 <li><a href="#m65-on-19871124-051556-pst-ucerf3-mapped-match-yes">M6.5 on 1987/11/24 05:15:56 PST, UCERF3-mapped, match: YES</a></li>
 <li><a href="#m689-on-19891017-170415-pdt-ucerf3-mapped-match-no">M6.89 on 1989/10/17 17:04:15 PDT, UCERF3-mapped, match: NO</a></li>
-<li><a href="#m612-on-19910817-122940-pdt-ucerf3-mapped-match-no">M6.12 on 1991/08/17 12:29:40 PDT, UCERF3-mapped, match: NO</a></li>
+<li><a href="#m612-on-19910817-122940-pdt">M6.12 on 1991/08/17 12:29:40 PDT</a></li>
 <li><a href="#m615-on-19920422-215023-pdt-ucerf3-mapped-match-yes">M6.15 on 1992/04/22 21:50:23 PDT, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m715-on-19920425-110605-pdt-ucerf3-mapped-match-no">M7.15 on 1992/04/25 11:06:05 PDT, UCERF3-mapped, match: NO</a></li>
-<li><a href="#m645-on-19920426-004140-pdt-ucerf3-mapped-match-yes">M6.45 on 1992/04/26 00:41:40 PDT, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m66-on-19920426-041825-pdt-ucerf3-mapped-match-yes">M6.6 on 1992/04/26 04:18:25 PDT, UCERF3-mapped, match: YES</a></li>
+<li><a href="#m715-on-19920425-110605-pdt">M7.15 on 1992/04/25 11:06:05 PDT</a></li>
+<li><a href="#m645-on-19920426-004140-pdt">M6.45 on 1992/04/26 00:41:40 PDT</a></li>
+<li><a href="#m66-on-19920426-041825-pdt">M6.6 on 1992/04/26 04:18:25 PDT</a></li>
 <li><a href="#m728-on-19920628-045734-pdt-ucerf3-mapped-match-yes">M7.28 on 1992/06/28 04:57:34 PDT, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m649-on-19920628-080530-pdt-ucerf3-mapped-match-no">M6.49 on 1992/06/28 08:05:30 PDT, UCERF3-mapped, match: NO</a></li>
-<li><a href="#m611-on-19930517-162050-pdt-ucerf3-mapped-match-yes">M6.11 on 1993/05/17 16:20:50 PDT, UCERF3-mapped, match: YES</a></li>
+<li><a href="#m649-on-19920628-080530-pdt">M6.49 on 1992/06/28 08:05:30 PDT</a></li>
+<li><a href="#m611-on-19930517-162050-pdt">M6.11 on 1993/05/17 16:20:50 PDT</a></li>
 <li><a href="#m665-on-19940117-043055-pst-ucerf3-mapped-match-no">M6.65 on 1994/01/17 04:30:55 PST, UCERF3-mapped, match: NO</a></li>
 <li><a href="#m712-on-19991016-024644-pdt-ucerf3-mapped-match-yes">M7.12 on 1999/10/16 02:46:44 PDT, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m586-on-20000316-071956-pst-ucerf3-mapped-match-no">M5.86 on 2000/03/16 07:19:56 PST, UCERF3-mapped, match: NO</a></li>
+<li><a href="#m586-on-20000316-071956-pst">M5.86 on 2000/03/16 07:19:56 PST</a></li>
 <li><a href="#m655-on-20031222-111556-pst-ucerf3-mapped-match-yes">M6.55 on 2003/12/22 11:15:56 PST, UCERF3-mapped, match: YES</a></li>
 <li><a href="#m597-on-20040928-101524-pdt-ucerf3-mapped-match-yes">M5.97 on 2004/09/28 10:15:24 PDT, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m651-on-20100109-162739-pst-ucerf3-mapped-match-yes">M6.51 on 2010/01/09 16:27:39 PST, UCERF3-mapped, match: YES</a></li>
-<li><a href="#m719-on-20100404-154041-pdt-ucerf3-mapped-match-no">M7.19 on 2010/04/04 15:40:41 PDT, UCERF3-mapped, match: NO</a></li>
+<li><a href="#m651-on-20100109-162739-pst">M6.51 on 2010/01/09 16:27:39 PST</a></li>
+<li><a href="#m719-on-20100404-154041-pdt">M7.19 on 2010/04/04 15:40:41 PDT</a></li>
 </ul>
+<h3 id="ucerf3-mappings-summary">UCERF3 Mappings Summary</h3>
+<p>This catalog contains UCERF3-mapped ruptures where we can compare this algorithm against the external UCERF3 mapping</p>
 <h2 id="m75-on-18121208-084039-pst-ucerf3-mapped-match-yes">M7.5 on 1812/12/08 08:40:39 PST, UCERF3-mapped, match: YES</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1812_12_08-08_40_39-PST_m7.5.png" alt="Map Plot" /></p>
@@ -135,7 +138,7 @@ img {
 <tr><td>1949</td><td>San Andreas (San Bernardino N), Subsection 5</td><td><strong>YES</strong></td><td>75.38 [km^2]</td><td>81.66 [km^2]</td><td>1.08</td><td>mean=0.12 [0 0.23] [km]</td><td><strong>YES</strong></td></tr>
 </tbody>
 </table>
-<h2 id="m71-on-18121221-124039-pst-ucerf3-mapped-match-no">M7.1 on 1812/12/21 12:40:39 PST, UCERF3-mapped, match: NO</h2>
+<h2 id="m71-on-18121221-124039-pst">M7.1 on 1812/12/21 12:40:39 PST</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1812_12_21-12_40_39-PST_m7.1.png" alt="Map Plot" /></p>
 <table>
@@ -204,7 +207,7 @@ img {
 <tr><td>2603</td><td>Zayante-Vergeles 2011 CFM, Subsection 5</td><td><em>NO</em></td><td>240.26 [km^2]</td><td>0.47 [km^2]</td><td>0</td><td>mean=14.94 [7.05 22.95] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m65-on-18521129-120139-pst-ucerf3-mapped-match-yes">M6.5 on 1852/11/29 12:01:39 PST, UCERF3-mapped, match: YES</h2>
+<h2 id="m65-on-18521129-120139-pst">M6.5 on 1852/11/29 12:01:39 PST</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1852_11_29-12_01_39-PST_m6.5.png" alt="Map Plot" /></p>
 <h2 id="m79-on-18570109-082539-pst-ucerf3-mapped-match-no">M7.9 on 1857/01/09 08:25:39 PST, UCERF3-mapped, match: NO</h2>
@@ -349,7 +352,7 @@ img {
 <tr><td>2380</td><td>Sierra Nevada  (No Extension), Subsection 3</td><td><strong>YES</strong></td><td>137.16 [km^2]</td><td>99.43 [km^2]</td><td>0.72</td><td>mean=2.92 [0.25 7.24] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m68-on-18720326-060739-pst-ucerf3-mapped-match-no">M6.8 on 1872/03/26 06:07:39 PST, UCERF3-mapped, match: NO</h2>
+<h2 id="m68-on-18720326-060739-pst">M6.8 on 1872/03/26 06:07:39 PST</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1872_03_26-06_07_39-PST_m6.8.png" alt="Map Plot" /></p>
 <table>
@@ -367,7 +370,7 @@ img {
 <tr><td>1490</td><td>Owens Valley, Subsection 12</td><td><em>NO</em></td><td>77.34 [km^2]</td><td>24.33 [km^2]</td><td>0.31</td><td>mean=1.5 [0.58 2.56] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m68-on-18720411-110139-pst-ucerf3-mapped-match-no">M6.8 on 1872/04/11 11:01:39 PST, UCERF3-mapped, match: NO</h2>
+<h2 id="m68-on-18720411-110139-pst">M6.8 on 1872/04/11 11:01:39 PST</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1872_04_11-11_01_39-PST_m6.8.png" alt="Map Plot" /></p>
 <table>
@@ -380,7 +383,7 @@ img {
 <tr><td>1497</td><td>Owens Valley Keough Hot Springs, Subsection 2</td><td><strong>YES</strong></td><td>87.63 [km^2]</td><td>71.33 [km^2]</td><td>0.81</td><td>mean=3.03 [0.14 7.4] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m65-on-18850411-200639-pst-ucerf3-mapped-match-no">M6.5 on 1885/04/11 20:06:39 PST, UCERF3-mapped, match: NO</h2>
+<h2 id="m65-on-18850411-200639-pst">M6.5 on 1885/04/11 20:06:39 PST</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1885_04_11-20_06_39-PST_m6.5.png" alt="Map Plot" /></p>
 <table>
@@ -395,7 +398,7 @@ img {
 <tr><td>1818</td><td>San Andreas (Creeping Section) 2011 CFM, Subsection 7</td><td><em>NO</em></td><td>6.93 [km^2]</td><td>0.25 [km^2]</td><td>0.04</td><td>mean=6.6 [5.18 8.52] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m68-on-18900209-040739-pst-ucerf3-mapped-match-no">M6.8 on 1890/02/09 04:07:39 PST, UCERF3-mapped, match: NO</h2>
+<h2 id="m68-on-18900209-040739-pst">M6.8 on 1890/02/09 04:07:39 PST</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1890_02_09-04_07_39-PST_m6.8.png" alt="Map Plot" /></p>
 <table>
@@ -424,7 +427,7 @@ img {
 <tr><td>1053</td><td>Laguna Salada, Subsection 11</td><td><strong>YES</strong></td><td>44.13 [km^2]</td><td>44.13 [km^2]</td><td>1</td><td>mean=0.28 [0 0.5] [km]</td><td><strong>YES</strong></td></tr>
 </tbody>
 </table>
-<h2 id="m66-on-18920419-025139-pst-ucerf3-mapped-match-no">M6.6 on 1892/04/19 02:51:39 PST, UCERF3-mapped, match: NO</h2>
+<h2 id="m66-on-18920419-025139-pst">M6.6 on 1892/04/19 02:51:39 PST</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1892_04_19-02_51_39-PST_m6.6.png" alt="Map Plot" /></p>
 <table>
@@ -452,7 +455,7 @@ img {
 <tr><td>2176</td><td>San Jacinto (Coyote Creek), Subsection 5</td><td><em>NO</em></td><td>110.26 [km^2]</td><td>5.87 [km^2]</td><td>0.05</td><td>mean=3.75 [0.15 7.53] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m67-on-18991225-042639-pst-ucerf3-mapped-match-no">M6.7 on 1899/12/25 04:26:39 PST, UCERF3-mapped, match: NO</h2>
+<h2 id="m67-on-18991225-042639-pst">M6.7 on 1899/12/25 04:26:39 PST</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1899_12_25-04_26_39-PST_m6.7.png" alt="Map Plot" /></p>
 <table>
@@ -586,7 +589,7 @@ img {
 <tr><td>2605</td><td>Zayante-Vergeles 2011 CFM, Subsection 7</td><td><em>NO</em></td><td>240.26 [km^2]</td><td>45.26 [km^2]</td><td>0.19</td><td>mean=12.53 [2.56 22.46] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m66-on-19151120-161342-pst-ucerf3-mapped-match-yes">M6.6 on 1915/11/20 16:13:42 PST, UCERF3-mapped, match: YES</h2>
+<h2 id="m66-on-19151120-161342-pst">M6.6 on 1915/11/20 16:13:42 PST</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1915_11_20-16_13_42-PST_m6.6.png" alt="Map Plot" /></p>
 <h2 id="m68-on-19180421-153225-pdt-ucerf3-mapped-match-yes">M6.8 on 1918/04/21 15:32:25 PDT, UCERF3-mapped, match: YES</h2>
@@ -603,7 +606,7 @@ img {
 <tr><td>2157</td><td>San Jacinto (Anza) rev, Subsection 4</td><td><em>NO</em></td><td>125.44 [km^2]</td><td>7.84 [km^2]</td><td>0.06</td><td>mean=4.04 [0 8.01] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m68-on-19250629-064216-pst-ucerf3-mapped-match-yes">M6.8 on 1925/06/29 06:42:16 PST, UCERF3-mapped, match: YES</h2>
+<h2 id="m68-on-19250629-064216-pst">M6.8 on 1925/06/29 06:42:16 PST</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1925_06_29-06_42_16-PST_m6.8.png" alt="Map Plot" /></p>
 <table>
@@ -617,7 +620,7 @@ img {
 <tr><td>1597</td><td>Pitas Point (Lower)-Montalvo, Subsection 1</td><td><em>NO</em></td><td>607.58 [km^2]</td><td>137.69 [km^2]</td><td>0.23</td><td>mean=9.16 [0.08 24.71] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m71-on-19271104-055053-pst-ucerf3-mapped-match-yes">M7.1 on 1927/11/04 05:50:53 PST, UCERF3-mapped, match: YES</h2>
+<h2 id="m71-on-19271104-055053-pst">M7.1 on 1927/11/04 05:50:53 PST</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1927_11_04-05_50_53-PST_m7.1.png" alt="Map Plot" /></p>
 <h2 id="m64-on-19330310-175409-pst-ucerf3-mapped-match-yes">M6.4 on 1933/03/10 17:54:09 PST, UCERF3-mapped, match: YES</h2>
@@ -651,7 +654,7 @@ img {
 <tr><td>1926</td><td>San Andreas (Parkfield), Subsection 6</td><td><em>NO</em></td><td>7.3 [km^2]</td><td>1 [km^2]</td><td>0.14</td><td>mean=2.55 [0.13 5.02] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m642-on-19341231-104543-pst-ucerf3-mapped-match-yes">M6.42 on 1934/12/31 10:45:43 PST, UCERF3-mapped, match: YES</h2>
+<h2 id="m642-on-19341231-104543-pst">M6.42 on 1934/12/31 10:45:43 PST</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1934_12_31-10_45_43-PST_m6.42.png" alt="Map Plot" /></p>
 <table>
@@ -662,7 +665,7 @@ img {
 <tr><td>290</td><td>Cerro Prieto, Subsection 3</td><td><em>NO</em></td><td>95.71 [km^2]</td><td>31.67 [km^2]</td><td>0.33</td><td>mean=2.42 [0.44 5.6] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m6-on-19370325-084902-pst-ucerf3-mapped-match-yes">M6 on 1937/03/25 08:49:02 PST, UCERF3-mapped, match: YES</h2>
+<h2 id="m6-on-19370325-084902-pst">M6 on 1937/03/25 08:49:02 PST</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1937_03_25-08_49_02-PST_m6.png" alt="Map Plot" /></p>
 <table>
@@ -713,7 +716,7 @@ img {
 <tr><td>2192</td><td>San Jacinto (Superstition Mtn), Subsection 0</td><td><em>NO</em></td><td>55.43 [km^2]</td><td>3.12 [km^2]</td><td>0.06</td><td>mean=3.18 [0.24 6.86] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m63-on-19460315-054937-pst-ucerf3-mapped-match-no">M6.3 on 1946/03/15 05:49:37 PST, UCERF3-mapped, match: NO</h2>
+<h2 id="m63-on-19460315-054937-pst">M6.3 on 1946/03/15 05:49:37 PST</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1946_03_15-05_49_37-PST_m6.3.png" alt="Map Plot" /></p>
 <table>
@@ -728,7 +731,7 @@ img {
 <tr><td>2359</td><td>Scodie Lineament, Subsection 4</td><td><em>NO</em></td><td>16.13 [km^2]</td><td>2.7 [km^2]</td><td>0.17</td><td>mean=1.95 [0.45 3.53] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m65-on-19470410-075805-pst-ucerf3-mapped-match-no">M6.5 on 1947/04/10 07:58:05 PST, UCERF3-mapped, match: NO</h2>
+<h2 id="m65-on-19470410-075805-pst">M6.5 on 1947/04/10 07:58:05 PST</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1947_04_10-07_58_05-PST_m6.5.png" alt="Map Plot" /></p>
 <table>
@@ -740,7 +743,7 @@ img {
 <tr><td>1226</td><td>Manix-Afton Hills, Subsection 3</td><td><em>NO</em></td><td>77.77 [km^2]</td><td>28.25 [km^2]</td><td>0.36</td><td>mean=2.11 [0.35 6.19] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m6-on-19481204-164316-pdt-ucerf3-mapped-match-no">M6 on 1948/12/04 16:43:16 PDT, UCERF3-mapped, match: NO</h2>
+<h2 id="m6-on-19481204-164316-pdt">M6 on 1948/12/04 16:43:16 PDT</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1948_12_04-16_43_16-PDT_m6.png" alt="Map Plot" /></p>
 <table>
@@ -777,10 +780,10 @@ img {
 <tr><td>2576</td><td>White Wolf, Subsection 8</td><td><strong>YES</strong></td><td>95.84 [km^2]</td><td>95.41 [km^2]</td><td>1</td><td>mean=0.31 [0 0.58] [km]</td><td><strong>YES</strong></td></tr>
 </tbody>
 </table>
-<h2 id="m6-on-19521121-234637-pst-ucerf3-mapped-match-yes">M6 on 1952/11/21 23:46:37 PST, UCERF3-mapped, match: YES</h2>
+<h2 id="m6-on-19521121-234637-pst">M6 on 1952/11/21 23:46:37 PST</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1952_11_21-23_46_37-PST_m6.png" alt="Map Plot" /></p>
-<h2 id="m64-on-19540319-015427-pst-ucerf3-mapped-match-yes">M6.4 on 1954/03/19 01:54:27 PST, UCERF3-mapped, match: YES</h2>
+<h2 id="m64-on-19540319-015427-pst">M6.4 on 1954/03/19 01:54:27 PST</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1954_03_19-01_54_27-PST_m6.4.png" alt="Map Plot" /></p>
 <table>
@@ -792,7 +795,7 @@ img {
 <tr><td>2170</td><td>San Jacinto (Clark) rev, Subsection 5</td><td><em>NO</em></td><td>118.01 [km^2]</td><td>32.99 [km^2]</td><td>0.28</td><td>mean=2.3 [0.62 6.73] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m65-on-19541221-115629-pst-ucerf3-mapped-match-no">M6.5 on 1954/12/21 11:56:29 PST, UCERF3-mapped, match: NO</h2>
+<h2 id="m65-on-19541221-115629-pst">M6.5 on 1954/12/21 11:56:29 PST</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1954_12_21-11_56_29-PST_m6.5.png" alt="Map Plot" /></p>
 <table>
@@ -813,7 +816,7 @@ img {
 <tr><td>2510</td><td>Trinidad (alt1), Subsection 1</td><td><em>NO</em></td><td>225.54 [km^2]</td><td>96.43 [km^2]</td><td>0.43</td><td>mean=5.15 [2.25 9.38] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m61-on-19590623-073500-pdt-ucerf3-mapped-match-yes">M6.1 on 1959/06/23 07:35:00 PDT, UCERF3-mapped, match: YES</h2>
+<h2 id="m61-on-19590623-073500-pdt">M6.1 on 1959/06/23 07:35:00 PDT</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1959_06_23-07_35_00-PDT_m6.1.png" alt="Map Plot" /></p>
 <h2 id="m6-on-19660627-212613-pdt-ucerf3-mapped-match-yes">M6 on 1966/06/27 21:26:13 PDT, UCERF3-mapped, match: YES</h2>
@@ -911,7 +914,7 @@ img {
 <tr><td>868</td><td>Hilton Creek 2011 CFM, Subsection 3</td><td><strong>YES</strong></td><td>132.68 [km^2]</td><td>129 [km^2]</td><td>0.97</td><td>mean=0.35 [0 0.6] [km]</td><td><strong>YES</strong></td></tr>
 </tbody>
 </table>
-<h2 id="m6-on-19800525-094927-pdt-ucerf3-mapped-match-yes">M6 on 1980/05/25 09:49:27 PDT, UCERF3-mapped, match: YES</h2>
+<h2 id="m6-on-19800525-094927-pdt">M6 on 1980/05/25 09:49:27 PDT</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1980_05_25-09_49_27-PDT_m6.png" alt="Map Plot" /></p>
 <table>
@@ -922,7 +925,7 @@ img {
 <tr><td>867</td><td>Hilton Creek 2011 CFM, Subsection 2</td><td><em>NO</em></td><td>132.68 [km^2]</td><td>32.68 [km^2]</td><td>0.25</td><td>mean=9.65 [6.92 14.26] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m633-on-19800608-202819-pdt-ucerf3-mapped-match-no">M6.33 on 1980/06/08 20:28:19 PDT, UCERF3-mapped, match: NO</h2>
+<h2 id="m633-on-19800608-202819-pdt">M6.33 on 1980/06/08 20:28:19 PDT</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1980_06_08-20_28_19-PDT_m6.33.png" alt="Map Plot" /></p>
 <table>
@@ -933,10 +936,10 @@ img {
 <tr><td>1042</td><td>Laguna Salada, Subsection 0</td><td><strong>YES</strong></td><td>44.13 [km^2]</td><td>30.01 [km^2]</td><td>0.68</td><td>mean=4.79 [3.47 6.13] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m73-on-19801108-022733-pst-ucerf3-mapped-match-yes">M7.3 on 1980/11/08 02:27:33 PST, UCERF3-mapped, match: YES</h2>
+<h2 id="m73-on-19801108-022733-pst">M7.3 on 1980/11/08 02:27:33 PST</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1980_11_08-02_27_33-PST_m7.3.png" alt="Map Plot" /></p>
-<h2 id="m59-on-19810426-050928-pdt-ucerf3-mapped-match-no">M5.9 on 1981/04/26 05:09:28 PDT, UCERF3-mapped, match: NO</h2>
+<h2 id="m59-on-19810426-050928-pdt">M5.9 on 1981/04/26 05:09:28 PDT</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1981_04_26-05_09_28-PDT_m5.9.png" alt="Map Plot" /></p>
 <table>
@@ -979,10 +982,10 @@ img {
 <tr><td>837</td><td>Hayward (So) extension 2011 CFM, Subsection 1</td><td><em>NO</em></td><td>13.58 [km^2]</td><td>4.01 [km^2]</td><td>0.29</td><td>mean=1.81 [0.35 4.07] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m66-on-19840909-201428-pdt-ucerf3-mapped-match-yes">M6.6 on 1984/09/09 20:14:28 PDT, UCERF3-mapped, match: YES</h2>
+<h2 id="m66-on-19840909-201428-pdt">M6.6 on 1984/09/09 20:14:28 PDT</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1984_09_09-20_14_28-PDT_m6.6.png" alt="Map Plot" /></p>
-<h2 id="m608-on-19850804-050155-pdt-ucerf3-mapped-match-yes">M6.08 on 1985/08/04 05:01:55 PDT, UCERF3-mapped, match: YES</h2>
+<h2 id="m608-on-19850804-050155-pdt">M6.08 on 1985/08/04 05:01:55 PDT</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1985_08_04-05_01_55-PDT_m6.08.png" alt="Map Plot" /></p>
 <table>
@@ -995,7 +998,7 @@ img {
 <tr><td>774</td><td>Great Valley 14 (Kettleman Hills), Subsection 1</td><td><em>NO</em></td><td>415.33 [km^2]</td><td>14.86 [km^2]</td><td>0.04</td><td>mean=14.9 [0.34 32.11] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m602-on-19860708-022044-pdt-ucerf3-mapped-match-no">M6.02 on 1986/07/08 02:20:44 PDT, UCERF3-mapped, match: NO</h2>
+<h2 id="m602-on-19860708-022044-pdt">M6.02 on 1986/07/08 02:20:44 PDT</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1986_07_08-02_20_44-PDT_m6.02.png" alt="Map Plot" /></p>
 <table>
@@ -1028,10 +1031,10 @@ img {
 <tr><td>2559</td><td>White Mountains, Subsection 9</td><td><strong>YES</strong></td><td>71.97 [km^2]</td><td>66.83 [km^2]</td><td>0.93</td><td>mean=0.29 [0 0.5] [km]</td><td><strong>YES</strong></td></tr>
 </tbody>
 </table>
-<h2 id="m598-on-19870731-165657-pdt-ucerf3-mapped-match-yes">M5.98 on 1987/07/31 16:56:57 PDT, UCERF3-mapped, match: YES</h2>
+<h2 id="m598-on-19870731-165657-pdt">M5.98 on 1987/07/31 16:56:57 PDT</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1987_07_31-16_56_57-PDT_m5.98.png" alt="Map Plot" /></p>
-<h2 id="m589-on-19871001-074220-pdt-ucerf3-mapped-match-yes">M5.89 on 1987/10/01 07:42:20 PDT, UCERF3-mapped, match: YES</h2>
+<h2 id="m589-on-19871001-074220-pdt">M5.89 on 1987/10/01 07:42:20 PDT</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1987_10_01-07_42_20-PDT_m5.89.png" alt="Map Plot" /></p>
 <table>
@@ -1046,7 +1049,7 @@ img {
 <tr><td>1637</td><td>Puente Hills, Subsection 3</td><td><em>NO</em></td><td>150.54 [km^2]</td><td>18.16 [km^2]</td><td>0.12</td><td>mean=7.21 [3.91 12.7] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m604-on-19871123-175414-pst-ucerf3-mapped-match-no">M6.04 on 1987/11/23 17:54:14 PST, UCERF3-mapped, match: NO</h2>
+<h2 id="m604-on-19871123-175414-pst">M6.04 on 1987/11/23 17:54:14 PST</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1987_11_23-17_54_14-PST_m6.04.png" alt="Map Plot" /></p>
 <table>
@@ -1103,7 +1106,7 @@ img {
 <tr><td>2603</td><td>Zayante-Vergeles 2011 CFM, Subsection 5</td><td><em>NO</em></td><td>240.26 [km^2]</td><td>0.47 [km^2]</td><td>0</td><td>mean=14.94 [7.05 22.95] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m612-on-19910817-122940-pdt-ucerf3-mapped-match-no">M6.12 on 1991/08/17 12:29:40 PDT, UCERF3-mapped, match: NO</h2>
+<h2 id="m612-on-19910817-122940-pdt">M6.12 on 1991/08/17 12:29:40 PDT</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1991_08_17-12_29_40-PDT_m6.12.png" alt="Map Plot" /></p>
 <table>
@@ -1127,7 +1130,7 @@ img {
 <tr><td>560</td><td>Eureka Peak, Subsection 2</td><td><strong>YES</strong></td><td>84.89 [km^2]</td><td>78.82 [km^2]</td><td>0.93</td><td>mean=0.38 [0 0.64] [km]</td><td><strong>YES</strong></td></tr>
 </tbody>
 </table>
-<h2 id="m715-on-19920425-110605-pdt-ucerf3-mapped-match-no">M7.15 on 1992/04/25 11:06:05 PDT, UCERF3-mapped, match: NO</h2>
+<h2 id="m715-on-19920425-110605-pdt">M7.15 on 1992/04/25 11:06:05 PDT</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1992_04_25-11_06_05-PDT_m7.15.png" alt="Map Plot" /></p>
 <table>
@@ -1146,10 +1149,10 @@ img {
 <tr><td>1249</td><td>Mendocino, Subsection 2</td><td><em>NO</em></td><td>44.57 [km^2]</td><td>0.51 [km^2]</td><td>0.01</td><td>mean=3.47 [0.34 6.2] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m645-on-19920426-004140-pdt-ucerf3-mapped-match-yes">M6.45 on 1992/04/26 00:41:40 PDT, UCERF3-mapped, match: YES</h2>
+<h2 id="m645-on-19920426-004140-pdt">M6.45 on 1992/04/26 00:41:40 PDT</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1992_04_26-00_41_40-PDT_m6.45.png" alt="Map Plot" /></p>
-<h2 id="m66-on-19920426-041825-pdt-ucerf3-mapped-match-yes">M6.6 on 1992/04/26 04:18:25 PDT, UCERF3-mapped, match: YES</h2>
+<h2 id="m66-on-19920426-041825-pdt">M6.6 on 1992/04/26 04:18:25 PDT</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1992_04_26-04_18_25-PDT_m6.6.png" alt="Map Plot" /></p>
 <h2 id="m728-on-19920628-045734-pdt-ucerf3-mapped-match-yes">M7.28 on 1992/06/28 04:57:34 PDT, UCERF3-mapped, match: YES</h2>
@@ -1178,7 +1181,7 @@ img {
 <tr><td>1025</td><td>Kickapoo, Subsection 1</td><td><strong>YES</strong></td><td>42.32 [km^2]</td><td>83.2 [km^2]</td><td>1.97</td><td>mean=0.29 [0 0.53] [km]</td><td><strong>YES</strong></td></tr>
 </tbody>
 </table>
-<h2 id="m649-on-19920628-080530-pdt-ucerf3-mapped-match-no">M6.49 on 1992/06/28 08:05:30 PDT, UCERF3-mapped, match: NO</h2>
+<h2 id="m649-on-19920628-080530-pdt">M6.49 on 1992/06/28 08:05:30 PDT</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1992_06_28-08_05_30-PDT_m6.49.png" alt="Map Plot" /></p>
 <table>
@@ -1189,7 +1192,7 @@ img {
 <tr><td>1395</td><td>North Frontal  (East), Subsection 0</td><td><strong>YES</strong></td><td>214.85 [km^2]</td><td>132.31 [km^2]</td><td>0.62</td><td>mean=4.84 [0.31 12.36] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m611-on-19930517-162050-pdt-ucerf3-mapped-match-yes">M6.11 on 1993/05/17 16:20:50 PDT, UCERF3-mapped, match: YES</h2>
+<h2 id="m611-on-19930517-162050-pdt">M6.11 on 1993/05/17 16:20:50 PDT</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/1993_05_17-16_20_50-PDT_m6.11.png" alt="Map Plot" /></p>
 <h2 id="m665-on-19940117-043055-pst-ucerf3-mapped-match-no">M6.65 on 1994/01/17 04:30:55 PST, UCERF3-mapped, match: NO</h2>
@@ -1247,7 +1250,7 @@ img {
 <tr><td>1586</td><td>Pisgah-Bullion Mtn-Mesquite Lk, Subsection 7</td><td><strong>YES</strong></td><td>76.41 [km^2]</td><td>90.59 [km^2]</td><td>1.19</td><td>mean=0.26 [0 0.49] [km]</td><td><strong>YES</strong></td></tr>
 </tbody>
 </table>
-<h2 id="m586-on-20000316-071956-pst-ucerf3-mapped-match-no">M5.86 on 2000/03/16 07:19:56 PST, UCERF3-mapped, match: NO</h2>
+<h2 id="m586-on-20000316-071956-pst">M5.86 on 2000/03/16 07:19:56 PST</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/2000_03_16-07_19_56-PST_m5.86.png" alt="Map Plot" /></p>
 <table>
@@ -1298,7 +1301,7 @@ img {
 <tr><td>1927</td><td>San Andreas (Parkfield), Subsection 7</td><td><strong>YES</strong></td><td>4.65 [km^2]</td><td>4.18 [km^2]</td><td>0.9</td><td>mean=0.22 [0 0.44] [km]</td><td><strong>YES</strong></td></tr>
 </tbody>
 </table>
-<h2 id="m651-on-20100109-162739-pst-ucerf3-mapped-match-yes">M6.51 on 2010/01/09 16:27:39 PST, UCERF3-mapped, match: YES</h2>
+<h2 id="m651-on-20100109-162739-pst">M6.51 on 2010/01/09 16:27:39 PST</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/2010_01_09-16_27_39-PST_m6.51.png" alt="Map Plot" /></p>
 <table>
@@ -1310,7 +1313,7 @@ img {
 <tr><td>2481</td><td>Table Bluff, Subsection 4</td><td><em>NO</em></td><td>134.79 [km^2]</td><td>22.69 [km^2]</td><td>0.17</td><td>mean=16.66 [12.3 19.16] [km]</td><td><em>NO</em></td></tr>
 </tbody>
 </table>
-<h2 id="m719-on-20100404-154041-pdt-ucerf3-mapped-match-no">M7.19 on 2010/04/04 15:40:41 PDT, UCERF3-mapped, match: NO</h2>
+<h2 id="m719-on-20100404-154041-pdt">M7.19 on 2010/04/04 15:40:41 PDT</h2>
 <p><em><a href="#table-of-contents">(top)</a></em></p>
 <p><img src="resources/2010_04_04-15_40_41-PDT_m7.19.png" alt="Map Plot" /></p>
 <table>
