@@ -9,6 +9,14 @@
 
 *&ast; Ruptures are considered to reset a fault section if at least this fraction of the section's area ruptures inside its polygon*
 
+### UCERF3 Mappings Summary
+
+This catalog contains UCERF3-mapped ruptures where we can compare this algorithm against the external UCERF3 mapping
+
+| **# With UCERF3 Mappings** | 30 |
+|-----|-----|
+| **Perfect Matches** | 26 (86.67 %) |
+
 ## Table Of Contents
   * [UCERF3 Mappings Summary](#ucerf3-mappings-summary)
 * [M7.5 on 1812/12/08 08:40:39 PST, UCERF3-mapped, match: YES](#m75-on-18121208-084039-pst-ucerf3-mapped-match-yes)
@@ -80,10 +88,6 @@
 * [M5.97 on 2004/09/28 10:15:24 PDT, UCERF3-mapped, match: YES](#m597-on-20040928-101524-pdt-ucerf3-mapped-match-yes)
 * [M6.51 on 2010/01/09 16:27:39 PST](#m651-on-20100109-162739-pst)
 * [M7.19 on 2010/04/04 15:40:41 PDT](#m719-on-20100404-154041-pdt)
-### UCERF3 Mappings Summary
-
-This catalog contains UCERF3-mapped ruptures where we can compare this algorithm against the external UCERF3 mapping
-
 ## M7.5 on 1812/12/08 08:40:39 PST, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
 
