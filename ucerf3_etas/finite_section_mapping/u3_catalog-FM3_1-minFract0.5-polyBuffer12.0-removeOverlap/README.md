@@ -157,7 +157,7 @@ This catalog contains UCERF3-mapped ruptures where we can compare this algorithm
 | 1593 | Pitas Point (Lower West), Subsection 0 | *NO* | 338.41 [km^2] | 52.62 [km^2] | 34.42 [km^2] | 0.1 | mean=15.46 [7.31 28.15] [km] | *NO* |
 | 1594 | Pitas Point (Lower West), Subsection 1 | *NO* | 338.41 [km^2] | 32.95 [km^2] | 32.95 [km^2] | 0.1 | mean=16.75 [8.41 29.04] [km] | *NO* |
 | 1595 | Pitas Point (Lower West), Subsection 2 | *NO* | 338.41 [km^2] | 75.73 [km^2] | 75.73 [km^2] | 0.22 | mean=13.41 [5.37 27.6] [km] | *NO* |
-| 1596 | Pitas Point (Lower)-Montalvo, Subsection 0 | *NO* | 607.58 [km^2] | 98.6 [km^2] | 91.23 [km^2] | 0.15 | mean=15.37 [5.36 33.62] [km] | *NO* |
+| 1596 | Pitas Point (Lower)-Montalvo, Subsection 0 | *NO* | 607.58 [km^2] | 98.6 [km^2] | 90.24 [km^2] | 0.15 | mean=15.37 [5.36 33.62] [km] | *NO* |
 | 1597 | Pitas Point (Lower)-Montalvo, Subsection 1 | *NO* | 607.58 [km^2] | 227.7 [km^2] | 162.78 [km^2] | 0.27 | mean=13.13 [4.97 28.57] [km] | *NO* |
 | 2272 | Santa Cruz Island, Subsection 0 | *NO* | 75.25 [km^2] | 53.11 [km^2] | 6.88 [km^2] | 0.09 | mean=8.48 [3.48 13.93] [km] | *NO* |
 | 2273 | Santa Cruz Island, Subsection 1 | *NO* | 75.25 [km^2] | 44.26 [km^2] | 0 [km^2] | 0 | mean=9.26 [4.72 14.49] [km] | *NO* |
@@ -856,7 +856,7 @@ This catalog contains UCERF3-mapped ruptures where we can compare this algorithm
 | 1862 | San Andreas (North Branch Mill Creek), Subsection 10 | *NO* | 140.85 [km^2] | 18.3 [km^2] | 0 [km^2] | 0 | mean=5.28 [0.89 11.31] [km] | *NO* |
 | 1959 | San Andreas (San Gorgonio Pass-Garnet HIll), Subsection 2 | **YES** | 94.91 [km^2] | 67.1 [km^2] | 67.1 [km^2] | 0.71 | mean=2.21 [0.31 5.26] [km] | *NO* |
 | 1960 | San Andreas (San Gorgonio Pass-Garnet HIll), Subsection 3 | **YES** | 94.91 [km^2] | 85.4 [km^2] | 85.4 [km^2] | 0.9 | mean=2.75 [0.36 6.6] [km] | *NO* |
-| 1961 | San Andreas (San Gorgonio Pass-Garnet HIll), Subsection 4 | *NO* | 94.91 [km^2] | 12.2 [km^2] | 0 [km^2] | 0 | mean=4.44 [0.36 9.07] [km] | *NO* |
+| 1961 | San Andreas (San Gorgonio Pass-Garnet HIll), Subsection 4 | *NO* | 94.91 [km^2] | 12.2 [km^2] | 12.2 [km^2] | 0.13 | mean=4.44 [0.36 9.07] [km] | *NO* |
 
 ## M7.5 on 1952/07/21 04:52:14 PDT, UCERF3-mapped, match: YES
 *[(top)](#table-of-contents)*
@@ -1177,7 +1177,7 @@ This catalog contains UCERF3-mapped ruptures where we can compare this algorithm
 | 544 | Elysian Park (Upper), Subsection 0 | *NO* | 94.79 [km^2] | 13.99 [km^2] | 0 [km^2] | 0 | mean=7.83 [5.77 11.02] [km] | *NO* |
 | 1636 | Puente Hills, Subsection 2 | *NO* | 150.54 [km^2] | 39.99 [km^2] | 28.71 [km^2] | 0.19 | mean=6.82 [3.52 13.52] [km] | *NO* |
 | 1637 | Puente Hills, Subsection 3 | *NO* | 150.54 [km^2] | 18.16 [km^2] | 8.1 [km^2] | 0.05 | mean=7.21 [3.91 12.7] [km] | *NO* |
-| 1644 | Raymond, Subsection 0 | *NO* | 107.25 [km^2] | 8.59 [km^2] | 1.47 [km^2] | 0.01 | mean=12.98 [8.13 18.4] [km] | *NO* |
+| 1644 | Raymond, Subsection 0 | *NO* | 107.25 [km^2] | 8.59 [km^2] | 0.74 [km^2] | 0.01 | mean=12.98 [8.13 18.4] [km] | *NO* |
 | 1645 | Raymond, Subsection 1 | *NO* | 107.25 [km^2] | 39.99 [km^2] | 0 [km^2] | 0 | mean=10.45 [5.47 16.33] [km] | *NO* |
 | 1646 | Raymond, Subsection 2 | *NO* | 107.25 [km^2] | 1.23 [km^2] | 0 [km^2] | 0 | mean=11.38 [5.75 16.9] [km] | *NO* |
 
@@ -1358,7 +1358,7 @@ This catalog contains UCERF3-mapped ruptures where we can compare this algorithm
 | 880 | Homestead Valley 2011, Subsection 5 | **YES** | 109.02 [km^2] | 101.36 [km^2] | 101.36 [km^2] | 0.93 | mean=0.35 [0 0.57] [km] | **YES** |
 | 989 | Johnson Valley (No) 2011 rev, Subsection 0 | **YES** | 106.29 [km^2] | 112.93 [km^2] | 112.93 [km^2] | 1.06 | mean=0.39 [0 0.63] [km] | **YES** |
 | 990 | Johnson Valley (No) 2011 rev, Subsection 1 | **YES** | 106.29 [km^2] | 106.29 [km^2] | 106.29 [km^2] | 1 | mean=0.39 [0 0.63] [km] | **YES** |
-| 991 | Johnson Valley (No) 2011 rev, Subsection 2 | *NO* | 106.29 [km^2] | 245.61 [km^2] | 45.49 [km^2] | 0.43 | mean=0.39 [0 0.63] [km] | **YES** |
+| 991 | Johnson Valley (No) 2011 rev, Subsection 2 | *NO* | 106.29 [km^2] | 245.61 [km^2] | 26.57 [km^2] | 0.25 | mean=0.39 [0 0.63] [km] | **YES** |
 | 992 | Johnson Valley (No) 2011 rev, Subsection 3 | **YES** | 106.29 [km^2] | 109.02 [km^2] | 109.02 [km^2] | 1.03 | mean=3.32 [0 5.82] [km] | *NO* |
 | 993 | Johnson Valley (No) 2011 rev, Subsection 4 | *NO* | 106.29 [km^2] | 95.39 [km^2] | 0 [km^2] | 0 | mean=7.25 [5.95 8.29] [km] | *NO* |
 | 994 | Johnson Valley (No) 2011 rev, Subsection 5 | *NO* | 106.29 [km^2] | 114.99 [km^2] | 0 [km^2] | 0 | mean=9.62 [8.37 10.99] [km] | *NO* |
@@ -1431,13 +1431,13 @@ This catalog contains UCERF3-mapped ruptures where we can compare this algorithm
 | 170 | Bullion Mountains, Subsection 1 | *NO* | 74.02 [km^2] | 38.2 [km^2] | 0 [km^2] | 0 | mean=10.83 [10.38 11.03] [km] | *NO* |
 | 171 | Bullion Mountains, Subsection 2 | *NO* | 74.02 [km^2] | 65.49 [km^2] | 0 [km^2] | 0 | mean=9.83 [8.44 10.94] [km] | *NO* |
 | 172 | Bullion Mountains, Subsection 3 | *NO* | 74.02 [km^2] | 76.41 [km^2] | 0 [km^2] | 0 | mean=8.25 [8.09 8.41] [km] | *NO* |
-| 173 | Bullion Mountains, Subsection 4 | *NO* | 74.02 [km^2] | 76.41 [km^2] | 0 [km^2] | 0 | mean=6.83 [5.06 8.03] [km] | *NO* |
+| 173 | Bullion Mountains, Subsection 4 | **YES** | 74.02 [km^2] | 76.41 [km^2] | 54.58 [km^2] | 0.74 | mean=6.83 [5.06 8.03] [km] | *NO* |
 | 174 | Bullion Mountains, Subsection 5 | *NO* | 74.02 [km^2] | 134.21 [km^2] | 0 [km^2] | 0 | mean=3.22 [1.55 4.91] [km] | *NO* |
 | 224 | Calico-Hidalgo, Subsection 1 | *NO* | 82.14 [km^2] | 16.37 [km^2] | 0 [km^2] | 0 | mean=9.52 [8.49 11.23] [km] | *NO* |
 | 225 | Calico-Hidalgo, Subsection 2 | *NO* | 82.14 [km^2] | 76.41 [km^2] | 0 [km^2] | 0 | mean=8.59 [8.49 8.79] [km] | *NO* |
 | 226 | Calico-Hidalgo, Subsection 3 | *NO* | 82.14 [km^2] | 76.41 [km^2] | 0 [km^2] | 0 | mean=8.42 [7.89 8.84] [km] | *NO* |
 | 227 | Calico-Hidalgo, Subsection 4 | *NO* | 82.14 [km^2] | 76.41 [km^2] | 0 [km^2] | 0 | mean=7.41 [6.89 8.07] [km] | *NO* |
-| 228 | Calico-Hidalgo, Subsection 5 | *NO* | 82.14 [km^2] | 132.04 [km^2] | 0 [km^2] | 0 | mean=7.04 [6.89 7.4] [km] | *NO* |
+| 228 | Calico-Hidalgo, Subsection 5 | **YES** | 82.14 [km^2] | 132.04 [km^2] | 43.66 [km^2] | 0.53 | mean=7.04 [6.89 7.4] [km] | *NO* |
 | 229 | Calico-Hidalgo, Subsection 6 | *NO* | 82.14 [km^2] | 91.64 [km^2] | 0 [km^2] | 0 | mean=8.99 [7.16 11.36] [km] | *NO* |
 | 230 | Calico-Hidalgo, Subsection 7 | *NO* | 82.14 [km^2] | 78.55 [km^2] | 0 [km^2] | 0 | mean=11.64 [10.96 12.18] [km] | *NO* |
 | 843 | Hector Mine, Subsection 0 | **YES** | 91.64 [km^2] | 91.64 [km^2] | 91.64 [km^2] | 1 | mean=0.25 [0 0.45] [km] | **YES** |
