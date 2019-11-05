@@ -16,3 +16,8 @@
 
 ![plot](./num_events_hist_garlock.png)
 
+## By Max K values for M>=5
+
+
+![plot](./num_events_hist_max_k.png)
+
