@@ -89,7 +89,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 0.0073295822 |
-| Mean Loss (10000 random fields) | 0.01492056 |
+| Mean Loss (10000 random fields) | 0.02376797 |
 | Mean Loss using rand-field exceed probs | 0.022761 |
 
 | ![plot](resources/rup0_asset0_gmpe_dists.png) | ![plot](resources/rup0_asset0_field_losses.png) |
@@ -114,7 +114,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 15.782214 |
-| Mean Loss (10000 random fields) | 10.930483 |
+| Mean Loss (10000 random fields) | 13.184828 |
 | Mean Loss using rand-field exceed probs | 13.233748 |
 
 | ![plot](resources/rup0_asset1_gmpe_dists.png) | ![plot](resources/rup0_asset1_field_losses.png) |
@@ -139,7 +139,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 0.08566205 |
-| Mean Loss (10000 random fields) | 0.05307457 |
+| Mean Loss (10000 random fields) | 0.07073285 |
 | Mean Loss using rand-field exceed probs | 0.07050732 |
 
 | ![plot](resources/rup0_asset2_gmpe_dists.png) | ![plot](resources/rup0_asset2_field_losses.png) |
@@ -164,7 +164,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 0.46222234 |
-| Mean Loss (10000 random fields) | 0.28902528 |
+| Mean Loss (10000 random fields) | 0.42489946 |
 | Mean Loss using rand-field exceed probs | 0.421706 |
 
 | ![plot](resources/rup0_asset3_gmpe_dists.png) | ![plot](resources/rup0_asset3_field_losses.png) |
@@ -189,7 +189,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 804.4842 |
-| Mean Loss (10000 random fields) | 584.70154 |
+| Mean Loss (10000 random fields) | 708.5748 |
 | Mean Loss using rand-field exceed probs | 709.2692 |
 
 | ![plot](resources/rup0_asset4_gmpe_dists.png) | ![plot](resources/rup0_asset4_field_losses.png) |
@@ -217,7 +217,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 0.124110706 |
-| Mean Loss (10000 random fields) | 0.06418656 |
+| Mean Loss (10000 random fields) | 0.10389188 |
 | Mean Loss using rand-field exceed probs | 0.10406381 |
 
 | ![plot](resources/rup1_asset0_gmpe_dists.png) | ![plot](resources/rup1_asset0_field_losses.png) |
@@ -242,7 +242,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 0.12440571 |
-| Mean Loss (10000 random fields) | 0.10107006 |
+| Mean Loss (10000 random fields) | 0.13118029 |
 | Mean Loss using rand-field exceed probs | 0.13155662 |
 
 | ![plot](resources/rup1_asset1_gmpe_dists.png) | ![plot](resources/rup1_asset1_field_losses.png) |
@@ -267,7 +267,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 0.0025063262 |
-| Mean Loss (10000 random fields) | 0.00133858 |
+| Mean Loss (10000 random fields) | 0.0020203947 |
 | Mean Loss using rand-field exceed probs | 0.0020134381 |
 
 | ![plot](resources/rup1_asset2_gmpe_dists.png) | ![plot](resources/rup1_asset2_field_losses.png) |
@@ -292,7 +292,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 6.2615194 |
-| Mean Loss (10000 random fields) | 2.7020016 |
+| Mean Loss (10000 random fields) | 3.8056684 |
 | Mean Loss using rand-field exceed probs | 3.7963848 |
 
 | ![plot](resources/rup1_asset3_gmpe_dists.png) | ![plot](resources/rup1_asset3_field_losses.png) |
@@ -317,7 +317,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 58.49787 |
-| Mean Loss (10000 random fields) | 39.487164 |
+| Mean Loss (10000 random fields) | 51.58549 |
 | Mean Loss using rand-field exceed probs | 51.564423 |
 
 | ![plot](resources/rup1_asset4_gmpe_dists.png) | ![plot](resources/rup1_asset4_field_losses.png) |
@@ -370,7 +370,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 2.2515242 |
-| Mean Loss (10000 random fields) | 1.2803384 |
+| Mean Loss (10000 random fields) | 1.6298145 |
 | Mean Loss using rand-field exceed probs | 1.6347779 |
 
 | ![plot](resources/rup2_asset1_gmpe_dists.png) | ![plot](resources/rup2_asset1_field_losses.png) |
@@ -395,7 +395,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 0.015296124 |
-| Mean Loss (10000 random fields) | 0.00536702 |
+| Mean Loss (10000 random fields) | 0.007814231 |
 | Mean Loss using rand-field exceed probs | 0.007807671 |
 
 | ![plot](resources/rup2_asset2_gmpe_dists.png) | ![plot](resources/rup2_asset2_field_losses.png) |
@@ -420,7 +420,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 0.5250391 |
-| Mean Loss (10000 random fields) | 0.12945925 |
+| Mean Loss (10000 random fields) | 0.20249031 |
 | Mean Loss using rand-field exceed probs | 0.19938752 |
 
 | ![plot](resources/rup2_asset3_gmpe_dists.png) | ![plot](resources/rup2_asset3_field_losses.png) |
@@ -445,7 +445,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 1268.956 |
-| Mean Loss (10000 random fields) | 969.3386 |
+| Mean Loss (10000 random fields) | 1162.9244 |
 | Mean Loss using rand-field exceed probs | 1161.955 |
 
 | ![plot](resources/rup2_asset4_gmpe_dists.png) | ![plot](resources/rup2_asset4_field_losses.png) |
@@ -473,7 +473,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 301.51617 |
-| Mean Loss (10000 random fields) | 221.89885 |
+| Mean Loss (10000 random fields) | 272.17914 |
 | Mean Loss using rand-field exceed probs | 273.17523 |
 
 | ![plot](resources/rup3_asset0_gmpe_dists.png) | ![plot](resources/rup3_asset0_field_losses.png) |
@@ -498,7 +498,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 0.044866554 |
-| Mean Loss (10000 random fields) | 0.03479376 |
+| Mean Loss (10000 random fields) | 0.046772547 |
 | Mean Loss using rand-field exceed probs | 0.046590593 |
 
 | ![plot](resources/rup3_asset1_gmpe_dists.png) | ![plot](resources/rup3_asset1_field_losses.png) |
@@ -523,7 +523,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 0.0031012553 |
-| Mean Loss (10000 random fields) | 9.3472E-4 |
+| Mean Loss (10000 random fields) | 0.0014496365 |
 | Mean Loss using rand-field exceed probs | 0.0014266546 |
 
 | ![plot](resources/rup3_asset2_gmpe_dists.png) | ![plot](resources/rup3_asset2_field_losses.png) |
@@ -548,7 +548,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 273.9915 |
-| Mean Loss (10000 random fields) | 200.73106 |
+| Mean Loss (10000 random fields) | 239.01134 |
 | Mean Loss using rand-field exceed probs | 238.69286 |
 
 | ![plot](resources/rup3_asset3_gmpe_dists.png) | ![plot](resources/rup3_asset3_field_losses.png) |
@@ -573,7 +573,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 15.539383 |
-| Mean Loss (10000 random fields) | 13.277664 |
+| Mean Loss (10000 random fields) | 17.898277 |
 | Mean Loss using rand-field exceed probs | 17.80588 |
 
 | ![plot](resources/rup3_asset4_gmpe_dists.png) | ![plot](resources/rup3_asset4_field_losses.png) |
@@ -601,7 +601,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 8.919588 |
-| Mean Loss (10000 random fields) | 3.2194626 |
+| Mean Loss (10000 random fields) | 4.714175 |
 | Mean Loss using rand-field exceed probs | 4.6293383 |
 
 | ![plot](resources/rup4_asset0_gmpe_dists.png) | ![plot](resources/rup4_asset0_field_losses.png) |
@@ -626,7 +626,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 0.015267798 |
-| Mean Loss (10000 random fields) | 0.0088922 |
+| Mean Loss (10000 random fields) | 0.012079908 |
 | Mean Loss using rand-field exceed probs | 0.01214337 |
 
 | ![plot](resources/rup4_asset1_gmpe_dists.png) | ![plot](resources/rup4_asset1_field_losses.png) |
@@ -651,7 +651,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 5.0171156E-4 |
-| Mean Loss (10000 random fields) | 4.445E-5 |
+| Mean Loss (10000 random fields) | 8.997103E-5 |
 | Mean Loss using rand-field exceed probs | 9.229067E-5 |
 
 | ![plot](resources/rup4_asset2_gmpe_dists.png) | ![plot](resources/rup4_asset2_field_losses.png) |
@@ -676,7 +676,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 290.59494 |
-| Mean Loss (10000 random fields) | 275.554 |
+| Mean Loss (10000 random fields) | 325.40326 |
 | Mean Loss using rand-field exceed probs | 325.67072 |
 
 | ![plot](resources/rup4_asset3_gmpe_dists.png) | ![plot](resources/rup4_asset3_field_losses.png) |
@@ -701,7 +701,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 5.9639564 |
-| Mean Loss (10000 random fields) | 4.616757 |
+| Mean Loss (10000 random fields) | 6.1739693 |
 | Mean Loss using rand-field exceed probs | 6.1253605 |
 
 | ![plot](resources/rup4_asset4_gmpe_dists.png) | ![plot](resources/rup4_asset4_field_losses.png) |
@@ -729,7 +729,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 0.003335919 |
-| Mean Loss (10000 random fields) | 0.0098532 |
+| Mean Loss (10000 random fields) | 0.016679382 |
 | Mean Loss using rand-field exceed probs | 0.0154980915 |
 
 | ![plot](resources/rup5_asset0_gmpe_dists.png) | ![plot](resources/rup5_asset0_field_losses.png) |
@@ -754,7 +754,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 13.397572 |
-| Mean Loss (10000 random fields) | 8.565567 |
+| Mean Loss (10000 random fields) | 10.662943 |
 | Mean Loss using rand-field exceed probs | 10.657194 |
 
 | ![plot](resources/rup5_asset1_gmpe_dists.png) | ![plot](resources/rup5_asset1_field_losses.png) |
@@ -779,7 +779,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 0.03995349 |
-| Mean Loss (10000 random fields) | 0.01744345 |
+| Mean Loss (10000 random fields) | 0.023989486 |
 | Mean Loss using rand-field exceed probs | 0.024071733 |
 
 | ![plot](resources/rup5_asset2_gmpe_dists.png) | ![plot](resources/rup5_asset2_field_losses.png) |
@@ -804,7 +804,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 0.3031265 |
-| Mean Loss (10000 random fields) | 0.21250384 |
+| Mean Loss (10000 random fields) | 0.30773842 |
 | Mean Loss using rand-field exceed probs | 0.312053 |
 
 | ![plot](resources/rup5_asset3_gmpe_dists.png) | ![plot](resources/rup5_asset3_field_losses.png) |
@@ -829,7 +829,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 2354.3843 |
-| Mean Loss (10000 random fields) | 1724.6952 |
+| Mean Loss (10000 random fields) | 2063.0715 |
 | Mean Loss using rand-field exceed probs | 2060.095 |
 
 | ![plot](resources/rup5_asset4_gmpe_dists.png) | ![plot](resources/rup5_asset4_field_losses.png) |
@@ -857,7 +857,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 0.79277617 |
-| Mean Loss (10000 random fields) | 0.30629376 |
+| Mean Loss (10000 random fields) | 0.46019658 |
 | Mean Loss using rand-field exceed probs | 0.4633882 |
 
 | ![plot](resources/rup6_asset0_gmpe_dists.png) | ![plot](resources/rup6_asset0_field_losses.png) |
@@ -882,7 +882,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 30.584162 |
-| Mean Loss (10000 random fields) | 24.186916 |
+| Mean Loss (10000 random fields) | 28.506006 |
 | Mean Loss using rand-field exceed probs | 28.538744 |
 
 | ![plot](resources/rup6_asset1_gmpe_dists.png) | ![plot](resources/rup6_asset1_field_losses.png) |
@@ -907,7 +907,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 2.2303557 |
-| Mean Loss (10000 random fields) | 1.4298079 |
+| Mean Loss (10000 random fields) | 1.8403424 |
 | Mean Loss using rand-field exceed probs | 1.8411473 |
 
 | ![plot](resources/rup6_asset2_gmpe_dists.png) | ![plot](resources/rup6_asset2_field_losses.png) |
@@ -932,7 +932,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 10.055348 |
-| Mean Loss (10000 random fields) | 7.8979335 |
+| Mean Loss (10000 random fields) | 10.482937 |
 | Mean Loss using rand-field exceed probs | 10.539781 |
 
 | ![plot](resources/rup6_asset3_gmpe_dists.png) | ![plot](resources/rup6_asset3_field_losses.png) |
@@ -957,7 +957,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 2497.9104 |
-| Mean Loss (10000 random fields) | 1971.3838 |
+| Mean Loss (10000 random fields) | 2351.8123 |
 | Mean Loss using rand-field exceed probs | 2348.4858 |
 
 | ![plot](resources/rup6_asset4_gmpe_dists.png) | ![plot](resources/rup6_asset4_field_losses.png) |
@@ -985,7 +985,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 2.619622 |
-| Mean Loss (10000 random fields) | 0.9022716 |
+| Mean Loss (10000 random fields) | 1.3661263 |
 | Mean Loss using rand-field exceed probs | 1.3445386 |
 
 | ![plot](resources/rup7_asset0_gmpe_dists.png) | ![plot](resources/rup7_asset0_field_losses.png) |
@@ -1010,7 +1010,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 28.58227 |
-| Mean Loss (10000 random fields) | 23.961042 |
+| Mean Loss (10000 random fields) | 28.157475 |
 | Mean Loss using rand-field exceed probs | 28.175797 |
 
 | ![plot](resources/rup7_asset1_gmpe_dists.png) | ![plot](resources/rup7_asset1_field_losses.png) |
@@ -1035,7 +1035,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 3.008714 |
-| Mean Loss (10000 random fields) | 1.8121287 |
+| Mean Loss (10000 random fields) | 2.3632033 |
 | Mean Loss using rand-field exceed probs | 2.3613558 |
 
 | ![plot](resources/rup7_asset2_gmpe_dists.png) | ![plot](resources/rup7_asset2_field_losses.png) |
@@ -1060,7 +1060,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 24.741194 |
-| Mean Loss (10000 random fields) | 14.997117 |
+| Mean Loss (10000 random fields) | 19.983597 |
 | Mean Loss using rand-field exceed probs | 19.933731 |
 
 | ![plot](resources/rup7_asset3_gmpe_dists.png) | ![plot](resources/rup7_asset3_field_losses.png) |
@@ -1085,7 +1085,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 1600.1274 |
-| Mean Loss (10000 random fields) | 1276.2166 |
+| Mean Loss (10000 random fields) | 1528.2832 |
 | Mean Loss using rand-field exceed probs | 1526.6885 |
 
 | ![plot](resources/rup7_asset4_gmpe_dists.png) | ![plot](resources/rup7_asset4_field_losses.png) |
@@ -1113,7 +1113,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 368.84094 |
-| Mean Loss (10000 random fields) | 260.4626 |
+| Mean Loss (10000 random fields) | 321.9841 |
 | Mean Loss using rand-field exceed probs | 321.75323 |
 
 | ![plot](resources/rup8_asset0_gmpe_dists.png) | ![plot](resources/rup8_asset0_field_losses.png) |
@@ -1138,7 +1138,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 8.7348995 |
-| Mean Loss (10000 random fields) | 5.273808 |
+| Mean Loss (10000 random fields) | 6.639855 |
 | Mean Loss using rand-field exceed probs | 6.635301 |
 
 | ![plot](resources/rup8_asset1_gmpe_dists.png) | ![plot](resources/rup8_asset1_field_losses.png) |
@@ -1163,7 +1163,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 0.5317186 |
-| Mean Loss (10000 random fields) | 0.5081029 |
+| Mean Loss (10000 random fields) | 0.66957915 |
 | Mean Loss using rand-field exceed probs | 0.669143 |
 
 | ![plot](resources/rup8_asset2_gmpe_dists.png) | ![plot](resources/rup8_asset2_field_losses.png) |
@@ -1188,7 +1188,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 307.53253 |
-| Mean Loss (10000 random fields) | 263.6408 |
+| Mean Loss (10000 random fields) | 311.47488 |
 | Mean Loss using rand-field exceed probs | 311.04025 |
 
 | ![plot](resources/rup8_asset3_gmpe_dists.png) | ![plot](resources/rup8_asset3_field_losses.png) |
@@ -1213,7 +1213,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 2713.6802 |
-| Mean Loss (10000 random fields) | 2186.4678 |
+| Mean Loss (10000 random fields) | 2598.911 |
 | Mean Loss using rand-field exceed probs | 2598.0842 |
 
 | ![plot](resources/rup8_asset4_gmpe_dists.png) | ![plot](resources/rup8_asset4_field_losses.png) |
@@ -1241,7 +1241,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 5.7483997 |
-| Mean Loss (10000 random fields) | 3.0502691 |
+| Mean Loss (10000 random fields) | 4.377565 |
 | Mean Loss using rand-field exceed probs | 4.3745856 |
 
 | ![plot](resources/rup9_asset0_gmpe_dists.png) | ![plot](resources/rup9_asset0_field_losses.png) |
@@ -1266,7 +1266,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 28.430164 |
-| Mean Loss (10000 random fields) | 22.265873 |
+| Mean Loss (10000 random fields) | 26.28573 |
 | Mean Loss using rand-field exceed probs | 26.322815 |
 
 | ![plot](resources/rup9_asset1_gmpe_dists.png) | ![plot](resources/rup9_asset1_field_losses.png) |
@@ -1291,7 +1291,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 2.8872013 |
-| Mean Loss (10000 random fields) | 1.7341951 |
+| Mean Loss (10000 random fields) | 2.278384 |
 | Mean Loss using rand-field exceed probs | 2.269448 |
 
 | ![plot](resources/rup9_asset2_gmpe_dists.png) | ![plot](resources/rup9_asset2_field_losses.png) |
@@ -1316,7 +1316,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 47.11329 |
-| Mean Loss (10000 random fields) | 39.952812 |
+| Mean Loss (10000 random fields) | 50.997784 |
 | Mean Loss using rand-field exceed probs | 50.80125 |
 
 | ![plot](resources/rup9_asset3_gmpe_dists.png) | ![plot](resources/rup9_asset3_field_losses.png) |
@@ -1341,7 +1341,7 @@ Asset parameters:
 | Description | Loss Value |
 |-----|-----|
 | Mean Loss (GMPE) | 2712.5828 |
-| Mean Loss (10000 random fields) | 2334.1948 |
+| Mean Loss (10000 random fields) | 2741.7556 |
 | Mean Loss using rand-field exceed probs | 2751.964 |
 
 | ![plot](resources/rup9_asset4_gmpe_dists.png) | ![plot](resources/rup9_asset4_field_losses.png) |
