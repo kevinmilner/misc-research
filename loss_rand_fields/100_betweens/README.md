@@ -82,7 +82,7 @@ Asset parameters:
 * J-B distance to rupture: 694.690385092882
 * Vulnerability function: W1-h-RES1-DF
 * GMPE ln mean: -6.1232867
-* GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
@@ -107,7 +107,7 @@ Asset parameters:
 * J-B distance to rupture: 14.043580684469827
 * Vulnerability function: RM1L-m-RES1-DF
 * GMPE ln mean: -1.3732768
-* GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
@@ -132,7 +132,7 @@ Asset parameters:
 * J-B distance to rupture: 273.5062053170421
 * Vulnerability function: RM1L-l-RES1-DF
 * GMPE ln mean: -3.6035054
-* GMPE phi/tau/total std devs: 0.6295386/t0.35955814/t0.72498333
+* GMPE phi/tau/total std devs: 0.6295386	0.35955814	0.72498333
 
 **Loss Values**
 
@@ -157,7 +157,7 @@ Asset parameters:
 * J-B distance to rupture: 447.8401003616335
 * Vulnerability function: W1-h-RES1-DF
 * GMPE ln mean: -4.5772963
-* GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
@@ -182,7 +182,7 @@ Asset parameters:
 * J-B distance to rupture: 34.65936164836105
 * Vulnerability function: W1-m-RES1-DF
 * GMPE ln mean: -1.4465866
-* GMPE phi/tau/total std devs: 0.61022574/t0.3408569/t0.69896984
+* GMPE phi/tau/total std devs: 0.61022574	0.3408569	0.69896984
 
 **Loss Values**
 
@@ -210,7 +210,7 @@ Asset parameters:
 * J-B distance to rupture: 455.31765368287483
 * Vulnerability function: W1-h-RES1-DF
 * GMPE ln mean: -4.318542
-* GMPE phi/tau/total std devs: 0.6288648/t0.35891256/t0.7240782
+* GMPE phi/tau/total std devs: 0.6288648	0.35891256	0.7240782
 
 **Loss Values**
 
@@ -235,7 +235,7 @@ Asset parameters:
 * J-B distance to rupture: 221.97881822486164
 * Vulnerability function: RM1L-m-RES1-DF
 * GMPE ln mean: -3.7369099
-* GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
@@ -260,7 +260,7 @@ Asset parameters:
 * J-B distance to rupture: 518.5566534689463
 * Vulnerability function: RM1L-l-RES1-DF
 * GMPE ln mean: -4.848132
-* GMPE phi/tau/total std devs: 0.62986654/t0.35987222/t0.72542393
+* GMPE phi/tau/total std devs: 0.62986654	0.35987222	0.72542393
 
 **Loss Values**
 
@@ -285,7 +285,7 @@ Asset parameters:
 * J-B distance to rupture: 206.3980025623005
 * Vulnerability function: W1-h-RES1-DF
 * GMPE ln mean: -3.646181
-* GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
@@ -310,7 +310,7 @@ Asset parameters:
 * J-B distance to rupture: 154.41544744535676
 * Vulnerability function: W1-m-RES1-DF
 * GMPE ln mean: -2.8310452
-* GMPE phi/tau/total std devs: 0.62498957/t0.35519016/t0.71886855
+* GMPE phi/tau/total std devs: 0.62498957	0.35519016	0.71886855
 
 **Loss Values**
 
@@ -338,7 +338,7 @@ Asset parameters:
 * J-B distance to rupture: 620.5196004039326
 * Vulnerability function: W1-h-RES1-DF
 * GMPE ln mean: -5.006503
-* GMPE phi/tau/total std devs: 0.6294292/t0.3594534/t0.72483647
+* GMPE phi/tau/total std devs: 0.6294292	0.3594534	0.72483647
 
 **Loss Values**
 
@@ -363,7 +363,7 @@ Asset parameters:
 * J-B distance to rupture: 56.80155166346245
 * Vulnerability function: RM1L-m-RES1-DF
 * GMPE ln mean: -2.431589
-* GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
@@ -388,7 +388,7 @@ Asset parameters:
 * J-B distance to rupture: 361.62884408989186
 * Vulnerability function: RM1L-l-RES1-DF
 * GMPE ln mean: -4.2620726
-* GMPE phi/tau/total std devs: 0.6297605/t0.3597707/t0.7252815
+* GMPE phi/tau/total std devs: 0.6297605	0.3597707	0.7252815
 
 **Loss Values**
 
@@ -413,7 +413,7 @@ Asset parameters:
 * J-B distance to rupture: 374.71615824900556
 * Vulnerability function: W1-h-RES1-DF
 * GMPE ln mean: -4.5361624
-* GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
@@ -438,7 +438,7 @@ Asset parameters:
 * J-B distance to rupture: 18.314450029417543
 * Vulnerability function: W1-m-RES1-DF
 * GMPE ln mean: -1.155249
-* GMPE phi/tau/total std devs: 0.6036888/t0.3344283/t0.69013214
+* GMPE phi/tau/total std devs: 0.6036888	0.3344283	0.69013214
 
 **Loss Values**
 
@@ -466,7 +466,7 @@ Asset parameters:
 * J-B distance to rupture: 71.05894884501028
 * Vulnerability function: W1-h-RES1-DF
 * GMPE ln mean: -1.4786611
-* GMPE phi/tau/total std devs: 0.61083996/t0.3414583/t0.6997994
+* GMPE phi/tau/total std devs: 0.61083996	0.3414583	0.6997994
 
 **Loss Values**
 
@@ -491,7 +491,7 @@ Asset parameters:
 * J-B distance to rupture: 534.3368058887747
 * Vulnerability function: RM1L-m-RES1-DF
 * GMPE ln mean: -4.14995
-* GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
@@ -516,7 +516,7 @@ Asset parameters:
 * J-B distance to rupture: 791.8061611004053
 * Vulnerability function: RM1L-l-RES1-DF
 * GMPE ln mean: -4.784628
-* GMPE phi/tau/total std devs: 0.62985784/t0.35986385/t0.7254122
+* GMPE phi/tau/total std devs: 0.62985784	0.35986385	0.7254122
 
 **Loss Values**
 
@@ -541,7 +541,7 @@ Asset parameters:
 * J-B distance to rupture: 45.2838460115642
 * Vulnerability function: W1-h-RES1-DF
 * GMPE ln mean: -1.6329422
-* GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
@@ -566,7 +566,7 @@ Asset parameters:
 * J-B distance to rupture: 459.82072382638347
 * Vulnerability function: W1-m-RES1-DF
 * GMPE ln mean: -3.3911812
-* GMPE phi/tau/total std devs: 0.62713397/t0.3572519/t0.721752
+* GMPE phi/tau/total std devs: 0.62713397	0.3572519	0.721752
 
 **Loss Values**
 
@@ -594,7 +594,7 @@ Asset parameters:
 * J-B distance to rupture: 220.42899827010416
 * Vulnerability function: W1-h-RES1-DF
 * GMPE ln mean: -2.999414
-* GMPE phi/tau/total std devs: 0.6257636/t0.35593492/t0.71990955
+* GMPE phi/tau/total std devs: 0.6257636	0.35593492	0.71990955
 
 **Loss Values**
 
@@ -619,7 +619,7 @@ Asset parameters:
 * J-B distance to rupture: 459.6791921461773
 * Vulnerability function: RM1L-m-RES1-DF
 * GMPE ln mean: -4.564933
-* GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
@@ -644,7 +644,7 @@ Asset parameters:
 * J-B distance to rupture: 718.6404783019321
 * Vulnerability function: RM1L-l-RES1-DF
 * GMPE ln mean: -5.2870007
-* GMPE phi/tau/total std devs: 0.6299139/t0.35991758/t0.72548753
+* GMPE phi/tau/total std devs: 0.6299139	0.35991758	0.72548753
 
 **Loss Values**
 
@@ -669,7 +669,7 @@ Asset parameters:
 * J-B distance to rupture: 25.110251940672537
 * Vulnerability function: W1-h-RES1-DF
 * GMPE ln mean: -1.5886256
-* GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
@@ -694,7 +694,7 @@ Asset parameters:
 * J-B distance to rupture: 385.1454560877946
 * Vulnerability function: W1-m-RES1-DF
 * GMPE ln mean: -3.7677114
-* GMPE phi/tau/total std devs: 0.62803197/t0.35811388/t0.722959
+* GMPE phi/tau/total std devs: 0.62803197	0.35811388	0.722959
 
 **Loss Values**
 
@@ -722,7 +722,7 @@ Asset parameters:
 * J-B distance to rupture: 664.6072172908746
 * Vulnerability function: W1-h-RES1-DF
 * GMPE ln mean: -5.144235
-* GMPE phi/tau/total std devs: 0.62950265/t0.3595237/t0.7249351
+* GMPE phi/tau/total std devs: 0.62950265	0.3595237	0.7249351
 
 **Loss Values**
 
@@ -747,7 +747,7 @@ Asset parameters:
 * J-B distance to rupture: 17.032477551146595
 * Vulnerability function: RM1L-m-RES1-DF
 * GMPE ln mean: -1.4741915
-* GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
@@ -772,7 +772,7 @@ Asset parameters:
 * J-B distance to rupture: 289.6538168599644
 * Vulnerability function: RM1L-l-RES1-DF
 * GMPE ln mean: -3.906305
-* GMPE phi/tau/total std devs: 0.6296586/t0.3596731/t0.7251446
+* GMPE phi/tau/total std devs: 0.6296586	0.3596731	0.7251446
 
 **Loss Values**
 
@@ -797,7 +797,7 @@ Asset parameters:
 * J-B distance to rupture: 420.35845775898594
 * Vulnerability function: W1-h-RES1-DF
 * GMPE ln mean: -4.7106028
-* GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
@@ -822,7 +822,7 @@ Asset parameters:
 * J-B distance to rupture: 9.884195532220756
 * Vulnerability function: W1-m-RES1-DF
 * GMPE ln mean: -0.73613816
-* GMPE phi/tau/total std devs: 0.5905011/t0.32128924/t0.6722487
+* GMPE phi/tau/total std devs: 0.5905011	0.32128924	0.6722487
 
 **Loss Values**
 
@@ -850,7 +850,7 @@ Asset parameters:
 * J-B distance to rupture: 648.2448111411015
 * Vulnerability function: W1-h-RES1-DF
 * GMPE ln mean: -3.7983234
-* GMPE phi/tau/total std devs: 0.6280912/t0.35817072/t0.7230386
+* GMPE phi/tau/total std devs: 0.6280912	0.35817072	0.7230386
 
 **Loss Values**
 
@@ -875,7 +875,7 @@ Asset parameters:
 * J-B distance to rupture: 14.01186694590594
 * Vulnerability function: RM1L-m-RES1-DF
 * GMPE ln mean: -0.91670054
-* GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
@@ -900,7 +900,7 @@ Asset parameters:
 * J-B distance to rupture: 159.32030510236777
 * Vulnerability function: RM1L-l-RES1-DF
 * GMPE ln mean: -2.1954937
-* GMPE phi/tau/total std devs: 0.62814665/t0.35822392/t0.7231131
+* GMPE phi/tau/total std devs: 0.62814665	0.35822392	0.7231131
 
 **Loss Values**
 
@@ -925,7 +925,7 @@ Asset parameters:
 * J-B distance to rupture: 401.91212262700554
 * Vulnerability function: W1-h-RES1-DF
 * GMPE ln mean: -3.451953
-* GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
@@ -950,7 +950,7 @@ Asset parameters:
 * J-B distance to rupture: 19.491645292353013
 * Vulnerability function: W1-m-RES1-DF
 * GMPE ln mean: -0.69447255
-* GMPE phi/tau/total std devs: 0.58889043/t0.31966794/t0.6700594
+* GMPE phi/tau/total std devs: 0.58889043	0.31966794	0.6700594
 
 **Loss Values**
 
@@ -978,7 +978,7 @@ Asset parameters:
 * J-B distance to rupture: 588.4067333863293
 * Vulnerability function: W1-h-RES1-DF
 * GMPE ln mean: -3.4215524
-* GMPE phi/tau/total std devs: 0.62721956/t0.35733408/t0.721867
+* GMPE phi/tau/total std devs: 0.62721956	0.35733408	0.721867
 
 **Loss Values**
 
@@ -1003,7 +1003,7 @@ Asset parameters:
 * J-B distance to rupture: 18.002001580033287
 * Vulnerability function: RM1L-m-RES1-DF
 * GMPE ln mean: -0.96818763
-* GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
@@ -1028,7 +1028,7 @@ Asset parameters:
 * J-B distance to rupture: 159.32030510236777
 * Vulnerability function: RM1L-l-RES1-DF
 * GMPE ln mean: -2.0559607
-* GMPE phi/tau/total std devs: 0.6278766/t0.35796475/t0.7227501
+* GMPE phi/tau/total std devs: 0.6278766	0.35796475	0.7227501
 
 **Loss Values**
 
@@ -1053,7 +1053,7 @@ Asset parameters:
 * J-B distance to rupture: 339.4894788682204
 * Vulnerability function: W1-h-RES1-DF
 * GMPE ln mean: -3.0511427
-* GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
@@ -1078,7 +1078,7 @@ Asset parameters:
 * J-B distance to rupture: 44.011872161271796
 * Vulnerability function: W1-m-RES1-DF
 * GMPE ln mean: -1.0012978
-* GMPE phi/tau/total std devs: 0.59943056/t0.33021143/t0.6843658
+* GMPE phi/tau/total std devs: 0.59943056	0.33021143	0.6843658
 
 **Loss Values**
 
@@ -1106,7 +1106,7 @@ Asset parameters:
 * J-B distance to rupture: 104.41240790207684
 * Vulnerability function: W1-h-RES1-DF
 * GMPE ln mean: -1.3695776
-* GMPE phi/tau/total std devs: 0.60867107/t0.33933282/t0.69686955
+* GMPE phi/tau/total std devs: 0.60867107	0.33933282	0.69686955
 
 **Loss Values**
 
@@ -1131,7 +1131,7 @@ Asset parameters:
 * J-B distance to rupture: 91.13746388295239
 * Vulnerability function: RM1L-m-RES1-DF
 * GMPE ln mean: -1.7231846
-* GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
@@ -1156,7 +1156,7 @@ Asset parameters:
 * J-B distance to rupture: 387.0487389473328
 * Vulnerability function: RM1L-l-RES1-DF
 * GMPE ln mean: -2.8315165
-* GMPE phi/tau/total std devs: 0.62900805/t0.35904983/t0.7242706
+* GMPE phi/tau/total std devs: 0.62900805	0.35904983	0.7242706
 
 **Loss Values**
 
@@ -1181,7 +1181,7 @@ Asset parameters:
 * J-B distance to rupture: 67.7434958702235
 * Vulnerability function: W1-h-RES1-DF
 * GMPE ln mean: -1.5454055
-* GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
@@ -1206,7 +1206,7 @@ Asset parameters:
 * J-B distance to rupture: 23.249264023399178
 * Vulnerability function: W1-m-RES1-DF
 * GMPE ln mean: -0.63563156
-* GMPE phi/tau/total std devs: 0.58651066/t0.31726542/t0.66682243
+* GMPE phi/tau/total std devs: 0.58651066	0.31726542	0.66682243
 
 **Loss Values**
 
@@ -1234,7 +1234,7 @@ Asset parameters:
 * J-B distance to rupture: 498.8670034348614
 * Vulnerability function: W1-h-RES1-DF
 * GMPE ln mean: -3.1552143
-* GMPE phi/tau/total std devs: 0.62637323/t0.356521/t0.72072923
+* GMPE phi/tau/total std devs: 0.62637323	0.356521	0.72072923
 
 **Loss Values**
 
@@ -1259,7 +1259,7 @@ Asset parameters:
 * J-B distance to rupture: 18.002001580033287
 * Vulnerability function: RM1L-m-RES1-DF
 * GMPE ln mean: -0.97218823
-* GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
@@ -1284,7 +1284,7 @@ Asset parameters:
 * J-B distance to rupture: 159.32030510236777
 * Vulnerability function: RM1L-l-RES1-DF
 * GMPE ln mean: -2.0754066
-* GMPE phi/tau/total std devs: 0.6279164/t0.35800296/t0.72280365
+* GMPE phi/tau/total std devs: 0.6279164	0.35800296	0.72280365
 
 **Loss Values**
 
@@ -1309,7 +1309,7 @@ Asset parameters:
 * J-B distance to rupture: 253.60115106692265
 * Vulnerability function: W1-h-RES1-DF
 * GMPE ln mean: -2.7313051
-* GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
@@ -1334,7 +1334,7 @@ Asset parameters:
 * J-B distance to rupture: 19.491645292353013
 * Vulnerability function: W1-m-RES1-DF
 * GMPE ln mean: -0.6359203
-* GMPE phi/tau/total std devs: 0.58652264/t0.31727752/t0.6668387
+* GMPE phi/tau/total std devs: 0.58652264	0.31727752	0.6668387
 
 **Loss Values**
 
