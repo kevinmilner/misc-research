@@ -1,0 +1,1697 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Random Field Loss Debug</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="markdown.css">
+<style>
+	.markdown-body {
+		box-sizing: border-box;
+		min-width: 200px;
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 45px;
+	}
+
+	@media (max-width: 767px) {
+		.markdown-body {
+			padding: 15px;
+		}
+	}
+</style>
+</head>
+<article class="markdown-body">
+<h1 id="random-field-loss-debug">Random Field Loss Debug</h1>
+<p>Random field dubugging with the following parameters:</p>
+<ul>
+<li>10 randomly chosen ruptures</li>
+<li>5 randomly chosen assets</li>
+<li>100 random fields</li>
+<li>100 randomly sampled (from a normal distribution) between-event values</li>
+</ul>
+<p>The mean of all 100 between-event values is -0.03953218</p>
+<h2 id="table-of-contents">Table Of Contents</h2>
+<ul>
+<li><a href="#rupture-135839-m72476196">Rupture 135839, M7.2476196</a>
+<ul>
+<li><a href="#rupture-135839-asset0">Rupture 135839, Asset0</a></li>
+<li><a href="#rupture-135839-asset1">Rupture 135839, Asset1</a></li>
+<li><a href="#rupture-135839-asset2">Rupture 135839, Asset2</a></li>
+<li><a href="#rupture-135839-asset3">Rupture 135839, Asset3</a></li>
+<li><a href="#rupture-135839-asset4">Rupture 135839, Asset4</a></li>
+</ul>
+</li>
+<li><a href="#rupture-205629-m7104012">Rupture 205629, M7.104012</a>
+<ul>
+<li><a href="#rupture-205629-asset0">Rupture 205629, Asset0</a></li>
+<li><a href="#rupture-205629-asset1">Rupture 205629, Asset1</a></li>
+<li><a href="#rupture-205629-asset2">Rupture 205629, Asset2</a></li>
+<li><a href="#rupture-205629-asset3">Rupture 205629, Asset3</a></li>
+<li><a href="#rupture-205629-asset4">Rupture 205629, Asset4</a></li>
+</ul>
+</li>
+<li><a href="#rupture-81057-m70598035">Rupture 81057, M7.0598035</a>
+<ul>
+<li><a href="#rupture-81057-asset0">Rupture 81057, Asset0</a></li>
+<li><a href="#rupture-81057-asset1">Rupture 81057, Asset1</a></li>
+<li><a href="#rupture-81057-asset2">Rupture 81057, Asset2</a></li>
+<li><a href="#rupture-81057-asset3">Rupture 81057, Asset3</a></li>
+<li><a href="#rupture-81057-asset4">Rupture 81057, Asset4</a></li>
+</ul>
+</li>
+<li><a href="#rupture-215437-m7700723">Rupture 215437, M7.700723</a>
+<ul>
+<li><a href="#rupture-215437-asset0">Rupture 215437, Asset0</a></li>
+<li><a href="#rupture-215437-asset1">Rupture 215437, Asset1</a></li>
+<li><a href="#rupture-215437-asset2">Rupture 215437, Asset2</a></li>
+<li><a href="#rupture-215437-asset3">Rupture 215437, Asset3</a></li>
+<li><a href="#rupture-215437-asset4">Rupture 215437, Asset4</a></li>
+</ul>
+</li>
+<li><a href="#rupture-187237-m72455945">Rupture 187237, M7.2455945</a>
+<ul>
+<li><a href="#rupture-187237-asset0">Rupture 187237, Asset0</a></li>
+<li><a href="#rupture-187237-asset1">Rupture 187237, Asset1</a></li>
+<li><a href="#rupture-187237-asset2">Rupture 187237, Asset2</a></li>
+<li><a href="#rupture-187237-asset3">Rupture 187237, Asset3</a></li>
+<li><a href="#rupture-187237-asset4">Rupture 187237, Asset4</a></li>
+</ul>
+</li>
+<li><a href="#rupture-103472-m70620694">Rupture 103472, M7.0620694</a>
+<ul>
+<li><a href="#rupture-103472-asset0">Rupture 103472, Asset0</a></li>
+<li><a href="#rupture-103472-asset1">Rupture 103472, Asset1</a></li>
+<li><a href="#rupture-103472-asset2">Rupture 103472, Asset2</a></li>
+<li><a href="#rupture-103472-asset3">Rupture 103472, Asset3</a></li>
+<li><a href="#rupture-103472-asset4">Rupture 103472, Asset4</a></li>
+</ul>
+</li>
+<li><a href="#rupture-169293-m79014773">Rupture 169293, M7.9014773</a>
+<ul>
+<li><a href="#rupture-169293-asset0">Rupture 169293, Asset0</a></li>
+<li><a href="#rupture-169293-asset1">Rupture 169293, Asset1</a></li>
+<li><a href="#rupture-169293-asset2">Rupture 169293, Asset2</a></li>
+<li><a href="#rupture-169293-asset3">Rupture 169293, Asset3</a></li>
+<li><a href="#rupture-169293-asset4">Rupture 169293, Asset4</a></li>
+</ul>
+</li>
+<li><a href="#rupture-208188-m8023331">Rupture 208188, M8.023331</a>
+<ul>
+<li><a href="#rupture-208188-asset0">Rupture 208188, Asset0</a></li>
+<li><a href="#rupture-208188-asset1">Rupture 208188, Asset1</a></li>
+<li><a href="#rupture-208188-asset2">Rupture 208188, Asset2</a></li>
+<li><a href="#rupture-208188-asset3">Rupture 208188, Asset3</a></li>
+<li><a href="#rupture-208188-asset4">Rupture 208188, Asset4</a></li>
+</ul>
+</li>
+<li><a href="#rupture-68673-m8155491">Rupture 68673, M8.155491</a>
+<ul>
+<li><a href="#rupture-68673-asset0">Rupture 68673, Asset0</a></li>
+<li><a href="#rupture-68673-asset1">Rupture 68673, Asset1</a></li>
+<li><a href="#rupture-68673-asset2">Rupture 68673, Asset2</a></li>
+<li><a href="#rupture-68673-asset3">Rupture 68673, Asset3</a></li>
+<li><a href="#rupture-68673-asset4">Rupture 68673, Asset4</a></li>
+</ul>
+</li>
+<li><a href="#rupture-42699-m79970284">Rupture 42699, M7.9970284</a>
+<ul>
+<li><a href="#rupture-42699-asset0">Rupture 42699, Asset0</a></li>
+<li><a href="#rupture-42699-asset1">Rupture 42699, Asset1</a></li>
+<li><a href="#rupture-42699-asset2">Rupture 42699, Asset2</a></li>
+<li><a href="#rupture-42699-asset3">Rupture 42699, Asset3</a></li>
+<li><a href="#rupture-42699-asset4">Rupture 42699, Asset4</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="rupture-135839-m72476196">Rupture 135839, M7.2476196</h2>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<h3 id="rupture-135839-asset0">Rupture 135839, Asset0</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 28152.0</li>
+<li>J-B distance to rupture: 694.690385092882</li>
+<li>Vulnerability function: W1-h-RES1-DF</li>
+<li>GMPE ln mean: -6.1232867</li>
+<li>GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>2.5730964E-4</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>0.01492056</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>0.0011235964</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup0_asset0_gmpe_dists.png" target="_blank"><img src="resources/rup0_asset0_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup0_asset0_field_losses.png" target="_blank"><img src="resources/rup0_asset0_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup0_asset0_gmpe_dists_log.png" target="_blank"><img src="resources/rup0_asset0_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup0_asset0_field_losses_log.png" target="_blank"><img src="resources/rup0_asset0_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup0_asset0_betweens.png" target="_blank"><img src="resources/rup0_asset0_betweens.png" alt="plot" /></a></td><td><a href="resources/rup0_asset0_withins.png" target="_blank"><img src="resources/rup0_asset0_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup0_asset0_gmpe_exceeds.png" target="_blank"><img src="resources/rup0_asset0_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup0_asset0_cumulative_losses.png" target="_blank"><img src="resources/rup0_asset0_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-135839-asset1">Rupture 135839, Asset1</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 173.0</li>
+<li>J-B distance to rupture: 14.043580684469827</li>
+<li>Vulnerability function: RM1L-m-RES1-DF</li>
+<li>GMPE ln mean: -1.3732768</li>
+<li>GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>11.342175</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>10.930483</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>9.481983</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup0_asset1_gmpe_dists.png" target="_blank"><img src="resources/rup0_asset1_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup0_asset1_field_losses.png" target="_blank"><img src="resources/rup0_asset1_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup0_asset1_gmpe_dists_log.png" target="_blank"><img src="resources/rup0_asset1_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup0_asset1_field_losses_log.png" target="_blank"><img src="resources/rup0_asset1_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup0_asset1_betweens.png" target="_blank"><img src="resources/rup0_asset1_betweens.png" alt="plot" /></a></td><td><a href="resources/rup0_asset1_withins.png" target="_blank"><img src="resources/rup0_asset1_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup0_asset1_gmpe_exceeds.png" target="_blank"><img src="resources/rup0_asset1_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup0_asset1_cumulative_losses.png" target="_blank"><img src="resources/rup0_asset1_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-135839-asset2">Rupture 135839, Asset2</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 127.0</li>
+<li>J-B distance to rupture: 273.5062053170421</li>
+<li>Vulnerability function: RM1L-l-RES1-DF</li>
+<li>GMPE ln mean: -3.6035054</li>
+<li>GMPE phi/tau/total std devs: 0.6295386/t0.35955814/t0.72498333</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>0.14406106</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>0.05307457</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>0.11848577</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup0_asset2_gmpe_dists.png" target="_blank"><img src="resources/rup0_asset2_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup0_asset2_field_losses.png" target="_blank"><img src="resources/rup0_asset2_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup0_asset2_gmpe_dists_log.png" target="_blank"><img src="resources/rup0_asset2_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup0_asset2_field_losses_log.png" target="_blank"><img src="resources/rup0_asset2_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup0_asset2_betweens.png" target="_blank"><img src="resources/rup0_asset2_betweens.png" alt="plot" /></a></td><td><a href="resources/rup0_asset2_withins.png" target="_blank"><img src="resources/rup0_asset2_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup0_asset2_gmpe_exceeds.png" target="_blank"><img src="resources/rup0_asset2_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup0_asset2_cumulative_losses.png" target="_blank"><img src="resources/rup0_asset2_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-135839-asset3">Rupture 135839, Asset3</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 8363.0</li>
+<li>J-B distance to rupture: 447.8401003616335</li>
+<li>Vulnerability function: W1-h-RES1-DF</li>
+<li>GMPE ln mean: -4.5772963</li>
+<li>GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>0.08914284</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>0.28902528</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>0.072576545</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup0_asset3_gmpe_dists.png" target="_blank"><img src="resources/rup0_asset3_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup0_asset3_field_losses.png" target="_blank"><img src="resources/rup0_asset3_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup0_asset3_gmpe_dists_log.png" target="_blank"><img src="resources/rup0_asset3_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup0_asset3_field_losses_log.png" target="_blank"><img src="resources/rup0_asset3_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup0_asset3_betweens.png" target="_blank"><img src="resources/rup0_asset3_betweens.png" alt="plot" /></a></td><td><a href="resources/rup0_asset3_withins.png" target="_blank"><img src="resources/rup0_asset3_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup0_asset3_gmpe_exceeds.png" target="_blank"><img src="resources/rup0_asset3_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup0_asset3_cumulative_losses.png" target="_blank"><img src="resources/rup0_asset3_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-135839-asset4">Rupture 135839, Asset4</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 26997.0</li>
+<li>J-B distance to rupture: 34.65936164836105</li>
+<li>Vulnerability function: W1-m-RES1-DF</li>
+<li>GMPE ln mean: -1.4465866</li>
+<li>GMPE phi/tau/total std devs: 0.61022574/t0.3408569/t0.69896984</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>804.4842</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>584.70154</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>709.2692</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup0_asset4_gmpe_dists.png" target="_blank"><img src="resources/rup0_asset4_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup0_asset4_field_losses.png" target="_blank"><img src="resources/rup0_asset4_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup0_asset4_gmpe_dists_log.png" target="_blank"><img src="resources/rup0_asset4_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup0_asset4_field_losses_log.png" target="_blank"><img src="resources/rup0_asset4_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup0_asset4_betweens.png" target="_blank"><img src="resources/rup0_asset4_betweens.png" alt="plot" /></a></td><td><a href="resources/rup0_asset4_withins.png" target="_blank"><img src="resources/rup0_asset4_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup0_asset4_gmpe_exceeds.png" target="_blank"><img src="resources/rup0_asset4_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup0_asset4_cumulative_losses.png" target="_blank"><img src="resources/rup0_asset4_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h2 id="rupture-205629-m7104012">Rupture 205629, M7.104012</h2>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<h3 id="rupture-205629-asset0">Rupture 205629, Asset0</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 28152.0</li>
+<li>J-B distance to rupture: 455.31765368287483</li>
+<li>Vulnerability function: W1-h-RES1-DF</li>
+<li>GMPE ln mean: -4.318542</li>
+<li>GMPE phi/tau/total std devs: 0.6288648/t0.35891256/t0.7240782</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>0.7227647</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>0.06418656</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>0.6400183</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup1_asset0_gmpe_dists.png" target="_blank"><img src="resources/rup1_asset0_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup1_asset0_field_losses.png" target="_blank"><img src="resources/rup1_asset0_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup1_asset0_gmpe_dists_log.png" target="_blank"><img src="resources/rup1_asset0_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup1_asset0_field_losses_log.png" target="_blank"><img src="resources/rup1_asset0_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup1_asset0_betweens.png" target="_blank"><img src="resources/rup1_asset0_betweens.png" alt="plot" /></a></td><td><a href="resources/rup1_asset0_withins.png" target="_blank"><img src="resources/rup1_asset0_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup1_asset0_gmpe_exceeds.png" target="_blank"><img src="resources/rup1_asset0_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup1_asset0_cumulative_losses.png" target="_blank"><img src="resources/rup1_asset0_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-205629-asset1">Rupture 205629, Asset1</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 173.0</li>
+<li>J-B distance to rupture: 221.97881822486164</li>
+<li>Vulnerability function: RM1L-m-RES1-DF</li>
+<li>GMPE ln mean: -3.7369099</li>
+<li>GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>0.073542394</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>0.10107006</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>0.08015441</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup1_asset1_gmpe_dists.png" target="_blank"><img src="resources/rup1_asset1_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup1_asset1_field_losses.png" target="_blank"><img src="resources/rup1_asset1_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup1_asset1_gmpe_dists_log.png" target="_blank"><img src="resources/rup1_asset1_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup1_asset1_field_losses_log.png" target="_blank"><img src="resources/rup1_asset1_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup1_asset1_betweens.png" target="_blank"><img src="resources/rup1_asset1_betweens.png" alt="plot" /></a></td><td><a href="resources/rup1_asset1_withins.png" target="_blank"><img src="resources/rup1_asset1_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup1_asset1_gmpe_exceeds.png" target="_blank"><img src="resources/rup1_asset1_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup1_asset1_cumulative_losses.png" target="_blank"><img src="resources/rup1_asset1_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-205629-asset2">Rupture 205629, Asset2</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 127.0</li>
+<li>J-B distance to rupture: 518.5566534689463</li>
+<li>Vulnerability function: RM1L-l-RES1-DF</li>
+<li>GMPE ln mean: -4.848132</li>
+<li>GMPE phi/tau/total std devs: 0.62986654/t0.35987222/t0.72542393</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>0.0050842203</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>0.00133858</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>0.0041378876</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup1_asset2_gmpe_dists.png" target="_blank"><img src="resources/rup1_asset2_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup1_asset2_field_losses.png" target="_blank"><img src="resources/rup1_asset2_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup1_asset2_gmpe_dists_log.png" target="_blank"><img src="resources/rup1_asset2_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup1_asset2_field_losses_log.png" target="_blank"><img src="resources/rup1_asset2_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup1_asset2_betweens.png" target="_blank"><img src="resources/rup1_asset2_betweens.png" alt="plot" /></a></td><td><a href="resources/rup1_asset2_withins.png" target="_blank"><img src="resources/rup1_asset2_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup1_asset2_gmpe_exceeds.png" target="_blank"><img src="resources/rup1_asset2_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup1_asset2_cumulative_losses.png" target="_blank"><img src="resources/rup1_asset2_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-205629-asset3">Rupture 205629, Asset3</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 8363.0</li>
+<li>J-B distance to rupture: 206.3980025623005</li>
+<li>Vulnerability function: W1-h-RES1-DF</li>
+<li>GMPE ln mean: -3.646181</li>
+<li>GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>1.7082796</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>2.7020016</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>0.86503524</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup1_asset3_gmpe_dists.png" target="_blank"><img src="resources/rup1_asset3_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup1_asset3_field_losses.png" target="_blank"><img src="resources/rup1_asset3_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup1_asset3_gmpe_dists_log.png" target="_blank"><img src="resources/rup1_asset3_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup1_asset3_field_losses_log.png" target="_blank"><img src="resources/rup1_asset3_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup1_asset3_betweens.png" target="_blank"><img src="resources/rup1_asset3_betweens.png" alt="plot" /></a></td><td><a href="resources/rup1_asset3_withins.png" target="_blank"><img src="resources/rup1_asset3_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup1_asset3_gmpe_exceeds.png" target="_blank"><img src="resources/rup1_asset3_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup1_asset3_cumulative_losses.png" target="_blank"><img src="resources/rup1_asset3_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-205629-asset4">Rupture 205629, Asset4</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 26997.0</li>
+<li>J-B distance to rupture: 154.41544744535676</li>
+<li>Vulnerability function: W1-m-RES1-DF</li>
+<li>GMPE ln mean: -2.8310452</li>
+<li>GMPE phi/tau/total std devs: 0.62498957/t0.35519016/t0.71886855</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>58.49787</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>39.487164</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>51.564423</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup1_asset4_gmpe_dists.png" target="_blank"><img src="resources/rup1_asset4_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup1_asset4_field_losses.png" target="_blank"><img src="resources/rup1_asset4_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup1_asset4_gmpe_dists_log.png" target="_blank"><img src="resources/rup1_asset4_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup1_asset4_field_losses_log.png" target="_blank"><img src="resources/rup1_asset4_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup1_asset4_betweens.png" target="_blank"><img src="resources/rup1_asset4_betweens.png" alt="plot" /></a></td><td><a href="resources/rup1_asset4_withins.png" target="_blank"><img src="resources/rup1_asset4_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup1_asset4_gmpe_exceeds.png" target="_blank"><img src="resources/rup1_asset4_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup1_asset4_cumulative_losses.png" target="_blank"><img src="resources/rup1_asset4_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h2 id="rupture-81057-m70598035">Rupture 81057, M7.0598035</h2>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<h3 id="rupture-81057-asset0">Rupture 81057, Asset0</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 28152.0</li>
+<li>J-B distance to rupture: 620.5196004039326</li>
+<li>Vulnerability function: W1-h-RES1-DF</li>
+<li>GMPE ln mean: -5.006503</li>
+<li>GMPE phi/tau/total std devs: 0.6294292/t0.3594534/t0.72483647</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>0.058152128</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>0.0</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>0.0029724978</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup2_asset0_gmpe_dists.png" target="_blank"><img src="resources/rup2_asset0_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup2_asset0_field_losses.png" target="_blank"><img src="resources/rup2_asset0_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup2_asset0_gmpe_dists_log.png" target="_blank"><img src="resources/rup2_asset0_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup2_asset0_field_losses_log.png" target="_blank"><img src="resources/rup2_asset0_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup2_asset0_betweens.png" target="_blank"><img src="resources/rup2_asset0_betweens.png" alt="plot" /></a></td><td><a href="resources/rup2_asset0_withins.png" target="_blank"><img src="resources/rup2_asset0_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup2_asset0_gmpe_exceeds.png" target="_blank"><img src="resources/rup2_asset0_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup2_asset0_cumulative_losses.png" target="_blank"><img src="resources/rup2_asset0_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-81057-asset1">Rupture 81057, Asset1</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 173.0</li>
+<li>J-B distance to rupture: 56.80155166346245</li>
+<li>Vulnerability function: RM1L-m-RES1-DF</li>
+<li>GMPE ln mean: -2.431589</li>
+<li>GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>1.4616925</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>1.2803384</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>1.0433416</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup2_asset1_gmpe_dists.png" target="_blank"><img src="resources/rup2_asset1_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup2_asset1_field_losses.png" target="_blank"><img src="resources/rup2_asset1_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup2_asset1_gmpe_dists_log.png" target="_blank"><img src="resources/rup2_asset1_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup2_asset1_field_losses_log.png" target="_blank"><img src="resources/rup2_asset1_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup2_asset1_betweens.png" target="_blank"><img src="resources/rup2_asset1_betweens.png" alt="plot" /></a></td><td><a href="resources/rup2_asset1_withins.png" target="_blank"><img src="resources/rup2_asset1_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup2_asset1_gmpe_exceeds.png" target="_blank"><img src="resources/rup2_asset1_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup2_asset1_cumulative_losses.png" target="_blank"><img src="resources/rup2_asset1_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-81057-asset2">Rupture 81057, Asset2</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 127.0</li>
+<li>J-B distance to rupture: 361.62884408989186</li>
+<li>Vulnerability function: RM1L-l-RES1-DF</li>
+<li>GMPE ln mean: -4.2620726</li>
+<li>GMPE phi/tau/total std devs: 0.6297605/t0.3597707/t0.7252815</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>0.027650652</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>0.00536702</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>0.015192017</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup2_asset2_gmpe_dists.png" target="_blank"><img src="resources/rup2_asset2_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup2_asset2_field_losses.png" target="_blank"><img src="resources/rup2_asset2_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup2_asset2_gmpe_dists_log.png" target="_blank"><img src="resources/rup2_asset2_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup2_asset2_field_losses_log.png" target="_blank"><img src="resources/rup2_asset2_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup2_asset2_betweens.png" target="_blank"><img src="resources/rup2_asset2_betweens.png" alt="plot" /></a></td><td><a href="resources/rup2_asset2_withins.png" target="_blank"><img src="resources/rup2_asset2_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup2_asset2_gmpe_exceeds.png" target="_blank"><img src="resources/rup2_asset2_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup2_asset2_cumulative_losses.png" target="_blank"><img src="resources/rup2_asset2_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-81057-asset3">Rupture 81057, Asset3</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 8363.0</li>
+<li>J-B distance to rupture: 374.71615824900556</li>
+<li>Vulnerability function: W1-h-RES1-DF</li>
+<li>GMPE ln mean: -4.5361624</li>
+<li>GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>0.10313732</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>0.12945925</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>0.027721547</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup2_asset3_gmpe_dists.png" target="_blank"><img src="resources/rup2_asset3_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup2_asset3_field_losses.png" target="_blank"><img src="resources/rup2_asset3_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup2_asset3_gmpe_dists_log.png" target="_blank"><img src="resources/rup2_asset3_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup2_asset3_field_losses_log.png" target="_blank"><img src="resources/rup2_asset3_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup2_asset3_betweens.png" target="_blank"><img src="resources/rup2_asset3_betweens.png" alt="plot" /></a></td><td><a href="resources/rup2_asset3_withins.png" target="_blank"><img src="resources/rup2_asset3_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup2_asset3_gmpe_exceeds.png" target="_blank"><img src="resources/rup2_asset3_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup2_asset3_cumulative_losses.png" target="_blank"><img src="resources/rup2_asset3_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-81057-asset4">Rupture 81057, Asset4</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 26997.0</li>
+<li>J-B distance to rupture: 18.314450029417543</li>
+<li>Vulnerability function: W1-m-RES1-DF</li>
+<li>GMPE ln mean: -1.155249</li>
+<li>GMPE phi/tau/total std devs: 0.6036888/t0.3344283/t0.69013214</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>1268.956</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>969.3386</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>1161.955</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup2_asset4_gmpe_dists.png" target="_blank"><img src="resources/rup2_asset4_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup2_asset4_field_losses.png" target="_blank"><img src="resources/rup2_asset4_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup2_asset4_gmpe_dists_log.png" target="_blank"><img src="resources/rup2_asset4_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup2_asset4_field_losses_log.png" target="_blank"><img src="resources/rup2_asset4_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup2_asset4_betweens.png" target="_blank"><img src="resources/rup2_asset4_betweens.png" alt="plot" /></a></td><td><a href="resources/rup2_asset4_withins.png" target="_blank"><img src="resources/rup2_asset4_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup2_asset4_gmpe_exceeds.png" target="_blank"><img src="resources/rup2_asset4_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup2_asset4_cumulative_losses.png" target="_blank"><img src="resources/rup2_asset4_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h2 id="rupture-215437-m7700723">Rupture 215437, M7.700723</h2>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<h3 id="rupture-215437-asset0">Rupture 215437, Asset0</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 28152.0</li>
+<li>J-B distance to rupture: 71.05894884501028</li>
+<li>Vulnerability function: W1-h-RES1-DF</li>
+<li>GMPE ln mean: -1.4786611</li>
+<li>GMPE phi/tau/total std devs: 0.61083996/t0.3414583/t0.6997994</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>611.8853</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>221.89885</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>556.4222</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup3_asset0_gmpe_dists.png" target="_blank"><img src="resources/rup3_asset0_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup3_asset0_field_losses.png" target="_blank"><img src="resources/rup3_asset0_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup3_asset0_gmpe_dists_log.png" target="_blank"><img src="resources/rup3_asset0_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup3_asset0_field_losses_log.png" target="_blank"><img src="resources/rup3_asset0_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup3_asset0_betweens.png" target="_blank"><img src="resources/rup3_asset0_betweens.png" alt="plot" /></a></td><td><a href="resources/rup3_asset0_withins.png" target="_blank"><img src="resources/rup3_asset0_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup3_asset0_gmpe_exceeds.png" target="_blank"><img src="resources/rup3_asset0_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup3_asset0_cumulative_losses.png" target="_blank"><img src="resources/rup3_asset0_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-215437-asset1">Rupture 215437, Asset1</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 173.0</li>
+<li>J-B distance to rupture: 534.3368058887747</li>
+<li>Vulnerability function: RM1L-m-RES1-DF</li>
+<li>GMPE ln mean: -4.14995</li>
+<li>GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>0.025829807</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>0.03479376</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>0.026711764</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup3_asset1_gmpe_dists.png" target="_blank"><img src="resources/rup3_asset1_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup3_asset1_field_losses.png" target="_blank"><img src="resources/rup3_asset1_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup3_asset1_gmpe_dists_log.png" target="_blank"><img src="resources/rup3_asset1_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup3_asset1_field_losses_log.png" target="_blank"><img src="resources/rup3_asset1_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup3_asset1_betweens.png" target="_blank"><img src="resources/rup3_asset1_betweens.png" alt="plot" /></a></td><td><a href="resources/rup3_asset1_withins.png" target="_blank"><img src="resources/rup3_asset1_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup3_asset1_gmpe_exceeds.png" target="_blank"><img src="resources/rup3_asset1_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup3_asset1_cumulative_losses.png" target="_blank"><img src="resources/rup3_asset1_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-215437-asset2">Rupture 215437, Asset2</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 127.0</li>
+<li>J-B distance to rupture: 791.8061611004053</li>
+<li>Vulnerability function: RM1L-l-RES1-DF</li>
+<li>GMPE ln mean: -4.784628</li>
+<li>GMPE phi/tau/total std devs: 0.62985784/t0.35986385/t0.7254122</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>0.0061978516</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>9.3472E-4</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>0.0029581042</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup3_asset2_gmpe_dists.png" target="_blank"><img src="resources/rup3_asset2_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup3_asset2_field_losses.png" target="_blank"><img src="resources/rup3_asset2_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup3_asset2_gmpe_dists_log.png" target="_blank"><img src="resources/rup3_asset2_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup3_asset2_field_losses_log.png" target="_blank"><img src="resources/rup3_asset2_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup3_asset2_betweens.png" target="_blank"><img src="resources/rup3_asset2_betweens.png" alt="plot" /></a></td><td><a href="resources/rup3_asset2_withins.png" target="_blank"><img src="resources/rup3_asset2_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup3_asset2_gmpe_exceeds.png" target="_blank"><img src="resources/rup3_asset2_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup3_asset2_cumulative_losses.png" target="_blank"><img src="resources/rup3_asset2_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-215437-asset3">Rupture 215437, Asset3</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 8363.0</li>
+<li>J-B distance to rupture: 45.2838460115642</li>
+<li>Vulnerability function: W1-h-RES1-DF</li>
+<li>GMPE ln mean: -1.6329422</li>
+<li>GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>147.60178</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>200.73106</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>123.49178</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup3_asset3_gmpe_dists.png" target="_blank"><img src="resources/rup3_asset3_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup3_asset3_field_losses.png" target="_blank"><img src="resources/rup3_asset3_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup3_asset3_gmpe_dists_log.png" target="_blank"><img src="resources/rup3_asset3_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup3_asset3_field_losses_log.png" target="_blank"><img src="resources/rup3_asset3_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup3_asset3_betweens.png" target="_blank"><img src="resources/rup3_asset3_betweens.png" alt="plot" /></a></td><td><a href="resources/rup3_asset3_withins.png" target="_blank"><img src="resources/rup3_asset3_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup3_asset3_gmpe_exceeds.png" target="_blank"><img src="resources/rup3_asset3_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup3_asset3_cumulative_losses.png" target="_blank"><img src="resources/rup3_asset3_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-215437-asset4">Rupture 215437, Asset4</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 26997.0</li>
+<li>J-B distance to rupture: 459.82072382638347</li>
+<li>Vulnerability function: W1-m-RES1-DF</li>
+<li>GMPE ln mean: -3.3911812</li>
+<li>GMPE phi/tau/total std devs: 0.62713397/t0.3572519/t0.721752</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>15.539383</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>13.277664</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>17.80588</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup3_asset4_gmpe_dists.png" target="_blank"><img src="resources/rup3_asset4_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup3_asset4_field_losses.png" target="_blank"><img src="resources/rup3_asset4_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup3_asset4_gmpe_dists_log.png" target="_blank"><img src="resources/rup3_asset4_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup3_asset4_field_losses_log.png" target="_blank"><img src="resources/rup3_asset4_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup3_asset4_betweens.png" target="_blank"><img src="resources/rup3_asset4_betweens.png" alt="plot" /></a></td><td><a href="resources/rup3_asset4_withins.png" target="_blank"><img src="resources/rup3_asset4_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup3_asset4_gmpe_exceeds.png" target="_blank"><img src="resources/rup3_asset4_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup3_asset4_cumulative_losses.png" target="_blank"><img src="resources/rup3_asset4_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h2 id="rupture-187237-m72455945">Rupture 187237, M7.2455945</h2>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<h3 id="rupture-187237-asset0">Rupture 187237, Asset0</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 28152.0</li>
+<li>J-B distance to rupture: 220.42899827010416</li>
+<li>Vulnerability function: W1-h-RES1-DF</li>
+<li>GMPE ln mean: -2.999414</li>
+<li>GMPE phi/tau/total std devs: 0.6257636/t0.35593492/t0.71990955</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>30.992783</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>3.2194626</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>18.822521</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup4_asset0_gmpe_dists.png" target="_blank"><img src="resources/rup4_asset0_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup4_asset0_field_losses.png" target="_blank"><img src="resources/rup4_asset0_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup4_asset0_gmpe_dists_log.png" target="_blank"><img src="resources/rup4_asset0_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup4_asset0_field_losses_log.png" target="_blank"><img src="resources/rup4_asset0_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup4_asset0_betweens.png" target="_blank"><img src="resources/rup4_asset0_betweens.png" alt="plot" /></a></td><td><a href="resources/rup4_asset0_withins.png" target="_blank"><img src="resources/rup4_asset0_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup4_asset0_gmpe_exceeds.png" target="_blank"><img src="resources/rup4_asset0_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup4_asset0_cumulative_losses.png" target="_blank"><img src="resources/rup4_asset0_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-187237-asset1">Rupture 187237, Asset1</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 173.0</li>
+<li>J-B distance to rupture: 459.6791921461773</li>
+<li>Vulnerability function: RM1L-m-RES1-DF</li>
+<li>GMPE ln mean: -4.564933</li>
+<li>GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>0.008419954</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>0.0088922</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>0.006504195</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup4_asset1_gmpe_dists.png" target="_blank"><img src="resources/rup4_asset1_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup4_asset1_field_losses.png" target="_blank"><img src="resources/rup4_asset1_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup4_asset1_gmpe_dists_log.png" target="_blank"><img src="resources/rup4_asset1_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup4_asset1_field_losses_log.png" target="_blank"><img src="resources/rup4_asset1_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup4_asset1_betweens.png" target="_blank"><img src="resources/rup4_asset1_betweens.png" alt="plot" /></a></td><td><a href="resources/rup4_asset1_withins.png" target="_blank"><img src="resources/rup4_asset1_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup4_asset1_gmpe_exceeds.png" target="_blank"><img src="resources/rup4_asset1_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup4_asset1_cumulative_losses.png" target="_blank"><img src="resources/rup4_asset1_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-187237-asset2">Rupture 187237, Asset2</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 127.0</li>
+<li>J-B distance to rupture: 718.6404783019321</li>
+<li>Vulnerability function: RM1L-l-RES1-DF</li>
+<li>GMPE ln mean: -5.2870007</li>
+<li>GMPE phi/tau/total std devs: 0.6299139/t0.35991758/t0.72548753</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>0.0011448545</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>4.445E-5</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>3.200198E-4</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup4_asset2_gmpe_dists.png" target="_blank"><img src="resources/rup4_asset2_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup4_asset2_field_losses.png" target="_blank"><img src="resources/rup4_asset2_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup4_asset2_gmpe_dists_log.png" target="_blank"><img src="resources/rup4_asset2_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup4_asset2_field_losses_log.png" target="_blank"><img src="resources/rup4_asset2_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup4_asset2_betweens.png" target="_blank"><img src="resources/rup4_asset2_betweens.png" alt="plot" /></a></td><td><a href="resources/rup4_asset2_withins.png" target="_blank"><img src="resources/rup4_asset2_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup4_asset2_gmpe_exceeds.png" target="_blank"><img src="resources/rup4_asset2_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup4_asset2_cumulative_losses.png" target="_blank"><img src="resources/rup4_asset2_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-187237-asset3">Rupture 187237, Asset3</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 8363.0</li>
+<li>J-B distance to rupture: 25.110251940672537</li>
+<li>Vulnerability function: W1-h-RES1-DF</li>
+<li>GMPE ln mean: -1.5886256</li>
+<li>GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>158.58223</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>275.554</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>180.3552</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup4_asset3_gmpe_dists.png" target="_blank"><img src="resources/rup4_asset3_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup4_asset3_field_losses.png" target="_blank"><img src="resources/rup4_asset3_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup4_asset3_gmpe_dists_log.png" target="_blank"><img src="resources/rup4_asset3_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup4_asset3_field_losses_log.png" target="_blank"><img src="resources/rup4_asset3_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup4_asset3_betweens.png" target="_blank"><img src="resources/rup4_asset3_betweens.png" alt="plot" /></a></td><td><a href="resources/rup4_asset3_withins.png" target="_blank"><img src="resources/rup4_asset3_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup4_asset3_gmpe_exceeds.png" target="_blank"><img src="resources/rup4_asset3_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup4_asset3_cumulative_losses.png" target="_blank"><img src="resources/rup4_asset3_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-187237-asset4">Rupture 187237, Asset4</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 26997.0</li>
+<li>J-B distance to rupture: 385.1454560877946</li>
+<li>Vulnerability function: W1-m-RES1-DF</li>
+<li>GMPE ln mean: -3.7677114</li>
+<li>GMPE phi/tau/total std devs: 0.62803197/t0.35811388/t0.722959</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>5.9639564</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>4.616757</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>6.1253605</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup4_asset4_gmpe_dists.png" target="_blank"><img src="resources/rup4_asset4_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup4_asset4_field_losses.png" target="_blank"><img src="resources/rup4_asset4_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup4_asset4_gmpe_dists_log.png" target="_blank"><img src="resources/rup4_asset4_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup4_asset4_field_losses_log.png" target="_blank"><img src="resources/rup4_asset4_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup4_asset4_betweens.png" target="_blank"><img src="resources/rup4_asset4_betweens.png" alt="plot" /></a></td><td><a href="resources/rup4_asset4_withins.png" target="_blank"><img src="resources/rup4_asset4_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup4_asset4_gmpe_exceeds.png" target="_blank"><img src="resources/rup4_asset4_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup4_asset4_cumulative_losses.png" target="_blank"><img src="resources/rup4_asset4_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h2 id="rupture-103472-m70620694">Rupture 103472, M7.0620694</h2>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<h3 id="rupture-103472-asset0">Rupture 103472, Asset0</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 28152.0</li>
+<li>J-B distance to rupture: 664.6072172908746</li>
+<li>Vulnerability function: W1-h-RES1-DF</li>
+<li>GMPE ln mean: -5.144235</li>
+<li>GMPE phi/tau/total std devs: 0.62950265/t0.3595237/t0.7249351</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>0.03285042</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>0.0098532</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>0.09210193</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup5_asset0_gmpe_dists.png" target="_blank"><img src="resources/rup5_asset0_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup5_asset0_field_losses.png" target="_blank"><img src="resources/rup5_asset0_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup5_asset0_gmpe_dists_log.png" target="_blank"><img src="resources/rup5_asset0_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup5_asset0_field_losses_log.png" target="_blank"><img src="resources/rup5_asset0_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup5_asset0_betweens.png" target="_blank"><img src="resources/rup5_asset0_betweens.png" alt="plot" /></a></td><td><a href="resources/rup5_asset0_withins.png" target="_blank"><img src="resources/rup5_asset0_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup5_asset0_gmpe_exceeds.png" target="_blank"><img src="resources/rup5_asset0_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup5_asset0_cumulative_losses.png" target="_blank"><img src="resources/rup5_asset0_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-103472-asset1">Rupture 103472, Asset1</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 173.0</li>
+<li>J-B distance to rupture: 17.032477551146595</li>
+<li>Vulnerability function: RM1L-m-RES1-DF</li>
+<li>GMPE ln mean: -1.4741915</li>
+<li>GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>9.502183</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>8.565567</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>7.2377925</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup5_asset1_gmpe_dists.png" target="_blank"><img src="resources/rup5_asset1_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup5_asset1_field_losses.png" target="_blank"><img src="resources/rup5_asset1_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup5_asset1_gmpe_dists_log.png" target="_blank"><img src="resources/rup5_asset1_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup5_asset1_field_losses_log.png" target="_blank"><img src="resources/rup5_asset1_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup5_asset1_betweens.png" target="_blank"><img src="resources/rup5_asset1_betweens.png" alt="plot" /></a></td><td><a href="resources/rup5_asset1_withins.png" target="_blank"><img src="resources/rup5_asset1_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup5_asset1_gmpe_exceeds.png" target="_blank"><img src="resources/rup5_asset1_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup5_asset1_cumulative_losses.png" target="_blank"><img src="resources/rup5_asset1_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-103472-asset2">Rupture 103472, Asset2</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 127.0</li>
+<li>J-B distance to rupture: 289.6538168599644</li>
+<li>Vulnerability function: RM1L-l-RES1-DF</li>
+<li>GMPE ln mean: -3.906305</li>
+<li>GMPE phi/tau/total std devs: 0.6296586/t0.3596731/t0.7251446</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>0.0689893</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>0.01744345</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>0.04242546</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup5_asset2_gmpe_dists.png" target="_blank"><img src="resources/rup5_asset2_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup5_asset2_field_losses.png" target="_blank"><img src="resources/rup5_asset2_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup5_asset2_gmpe_dists_log.png" target="_blank"><img src="resources/rup5_asset2_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup5_asset2_field_losses_log.png" target="_blank"><img src="resources/rup5_asset2_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup5_asset2_betweens.png" target="_blank"><img src="resources/rup5_asset2_betweens.png" alt="plot" /></a></td><td><a href="resources/rup5_asset2_withins.png" target="_blank"><img src="resources/rup5_asset2_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup5_asset2_gmpe_exceeds.png" target="_blank"><img src="resources/rup5_asset2_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup5_asset2_cumulative_losses.png" target="_blank"><img src="resources/rup5_asset2_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-103472-asset3">Rupture 103472, Asset3</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 8363.0</li>
+<li>J-B distance to rupture: 420.35845775898594</li>
+<li>Vulnerability function: W1-h-RES1-DF</li>
+<li>GMPE ln mean: -4.7106028</li>
+<li>GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>0.054904424</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>0.21250384</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>0.052641045</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup5_asset3_gmpe_dists.png" target="_blank"><img src="resources/rup5_asset3_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup5_asset3_field_losses.png" target="_blank"><img src="resources/rup5_asset3_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup5_asset3_gmpe_dists_log.png" target="_blank"><img src="resources/rup5_asset3_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup5_asset3_field_losses_log.png" target="_blank"><img src="resources/rup5_asset3_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup5_asset3_betweens.png" target="_blank"><img src="resources/rup5_asset3_betweens.png" alt="plot" /></a></td><td><a href="resources/rup5_asset3_withins.png" target="_blank"><img src="resources/rup5_asset3_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup5_asset3_gmpe_exceeds.png" target="_blank"><img src="resources/rup5_asset3_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup5_asset3_cumulative_losses.png" target="_blank"><img src="resources/rup5_asset3_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-103472-asset4">Rupture 103472, Asset4</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 26997.0</li>
+<li>J-B distance to rupture: 9.884195532220756</li>
+<li>Vulnerability function: W1-m-RES1-DF</li>
+<li>GMPE ln mean: -0.73613816</li>
+<li>GMPE phi/tau/total std devs: 0.5905011/t0.32128924/t0.6722487</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>2354.3843</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>1724.6952</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>2060.095</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup5_asset4_gmpe_dists.png" target="_blank"><img src="resources/rup5_asset4_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup5_asset4_field_losses.png" target="_blank"><img src="resources/rup5_asset4_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup5_asset4_gmpe_dists_log.png" target="_blank"><img src="resources/rup5_asset4_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup5_asset4_field_losses_log.png" target="_blank"><img src="resources/rup5_asset4_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup5_asset4_betweens.png" target="_blank"><img src="resources/rup5_asset4_betweens.png" alt="plot" /></a></td><td><a href="resources/rup5_asset4_withins.png" target="_blank"><img src="resources/rup5_asset4_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup5_asset4_gmpe_exceeds.png" target="_blank"><img src="resources/rup5_asset4_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup5_asset4_cumulative_losses.png" target="_blank"><img src="resources/rup5_asset4_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h2 id="rupture-169293-m79014773">Rupture 169293, M7.9014773</h2>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<h3 id="rupture-169293-asset0">Rupture 169293, Asset0</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 28152.0</li>
+<li>J-B distance to rupture: 648.2448111411015</li>
+<li>Vulnerability function: W1-h-RES1-DF</li>
+<li>GMPE ln mean: -3.7983234</li>
+<li>GMPE phi/tau/total std devs: 0.6280912/t0.35817072/t0.7230386</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>3.651236</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>0.30629376</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>2.38132</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup6_asset0_gmpe_dists.png" target="_blank"><img src="resources/rup6_asset0_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup6_asset0_field_losses.png" target="_blank"><img src="resources/rup6_asset0_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup6_asset0_gmpe_dists_log.png" target="_blank"><img src="resources/rup6_asset0_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup6_asset0_field_losses_log.png" target="_blank"><img src="resources/rup6_asset0_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup6_asset0_betweens.png" target="_blank"><img src="resources/rup6_asset0_betweens.png" alt="plot" /></a></td><td><a href="resources/rup6_asset0_withins.png" target="_blank"><img src="resources/rup6_asset0_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup6_asset0_gmpe_exceeds.png" target="_blank"><img src="resources/rup6_asset0_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup6_asset0_cumulative_losses.png" target="_blank"><img src="resources/rup6_asset0_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-169293-asset1">Rupture 169293, Asset1</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 173.0</li>
+<li>J-B distance to rupture: 14.01186694590594</li>
+<li>Vulnerability function: RM1L-m-RES1-DF</li>
+<li>GMPE ln mean: -0.91670054</li>
+<li>GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>23.49864</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>24.186916</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>21.616611</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup6_asset1_gmpe_dists.png" target="_blank"><img src="resources/rup6_asset1_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup6_asset1_field_losses.png" target="_blank"><img src="resources/rup6_asset1_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup6_asset1_gmpe_dists_log.png" target="_blank"><img src="resources/rup6_asset1_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup6_asset1_field_losses_log.png" target="_blank"><img src="resources/rup6_asset1_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup6_asset1_betweens.png" target="_blank"><img src="resources/rup6_asset1_betweens.png" alt="plot" /></a></td><td><a href="resources/rup6_asset1_withins.png" target="_blank"><img src="resources/rup6_asset1_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup6_asset1_gmpe_exceeds.png" target="_blank"><img src="resources/rup6_asset1_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup6_asset1_cumulative_losses.png" target="_blank"><img src="resources/rup6_asset1_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-169293-asset2">Rupture 169293, Asset2</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 127.0</li>
+<li>J-B distance to rupture: 159.32030510236777</li>
+<li>Vulnerability function: RM1L-l-RES1-DF</li>
+<li>GMPE ln mean: -2.1954937</li>
+<li>GMPE phi/tau/total std devs: 0.62814665/t0.35822392/t0.7231131</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>3.4716687</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>1.4298079</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>2.8719623</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup6_asset2_gmpe_dists.png" target="_blank"><img src="resources/rup6_asset2_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup6_asset2_field_losses.png" target="_blank"><img src="resources/rup6_asset2_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup6_asset2_gmpe_dists_log.png" target="_blank"><img src="resources/rup6_asset2_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup6_asset2_field_losses_log.png" target="_blank"><img src="resources/rup6_asset2_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup6_asset2_betweens.png" target="_blank"><img src="resources/rup6_asset2_betweens.png" alt="plot" /></a></td><td><a href="resources/rup6_asset2_withins.png" target="_blank"><img src="resources/rup6_asset2_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup6_asset2_gmpe_exceeds.png" target="_blank"><img src="resources/rup6_asset2_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup6_asset2_cumulative_losses.png" target="_blank"><img src="resources/rup6_asset2_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-169293-asset3">Rupture 169293, Asset3</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 8363.0</li>
+<li>J-B distance to rupture: 401.91212262700554</li>
+<li>Vulnerability function: W1-h-RES1-DF</li>
+<li>GMPE ln mean: -3.451953</li>
+<li>GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>2.9306302</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>7.8979335</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>2.9896586</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup6_asset3_gmpe_dists.png" target="_blank"><img src="resources/rup6_asset3_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup6_asset3_field_losses.png" target="_blank"><img src="resources/rup6_asset3_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup6_asset3_gmpe_dists_log.png" target="_blank"><img src="resources/rup6_asset3_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup6_asset3_field_losses_log.png" target="_blank"><img src="resources/rup6_asset3_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup6_asset3_betweens.png" target="_blank"><img src="resources/rup6_asset3_betweens.png" alt="plot" /></a></td><td><a href="resources/rup6_asset3_withins.png" target="_blank"><img src="resources/rup6_asset3_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup6_asset3_gmpe_exceeds.png" target="_blank"><img src="resources/rup6_asset3_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup6_asset3_cumulative_losses.png" target="_blank"><img src="resources/rup6_asset3_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-169293-asset4">Rupture 169293, Asset4</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 26997.0</li>
+<li>J-B distance to rupture: 19.491645292353013</li>
+<li>Vulnerability function: W1-m-RES1-DF</li>
+<li>GMPE ln mean: -0.69447255</li>
+<li>GMPE phi/tau/total std devs: 0.58889043/t0.31966794/t0.6700594</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>2497.9104</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>1971.3838</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>2348.4858</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup6_asset4_gmpe_dists.png" target="_blank"><img src="resources/rup6_asset4_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup6_asset4_field_losses.png" target="_blank"><img src="resources/rup6_asset4_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup6_asset4_gmpe_dists_log.png" target="_blank"><img src="resources/rup6_asset4_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup6_asset4_field_losses_log.png" target="_blank"><img src="resources/rup6_asset4_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup6_asset4_betweens.png" target="_blank"><img src="resources/rup6_asset4_betweens.png" alt="plot" /></a></td><td><a href="resources/rup6_asset4_withins.png" target="_blank"><img src="resources/rup6_asset4_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup6_asset4_gmpe_exceeds.png" target="_blank"><img src="resources/rup6_asset4_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup6_asset4_cumulative_losses.png" target="_blank"><img src="resources/rup6_asset4_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h2 id="rupture-208188-m8023331">Rupture 208188, M8.023331</h2>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<h3 id="rupture-208188-asset0">Rupture 208188, Asset0</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 28152.0</li>
+<li>J-B distance to rupture: 588.4067333863293</li>
+<li>Vulnerability function: W1-h-RES1-DF</li>
+<li>GMPE ln mean: -3.4215524</li>
+<li>GMPE phi/tau/total std devs: 0.62721956/t0.35733408/t0.721867</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>10.519352</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>0.9022716</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>6.336775</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup7_asset0_gmpe_dists.png" target="_blank"><img src="resources/rup7_asset0_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup7_asset0_field_losses.png" target="_blank"><img src="resources/rup7_asset0_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup7_asset0_gmpe_dists_log.png" target="_blank"><img src="resources/rup7_asset0_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup7_asset0_field_losses_log.png" target="_blank"><img src="resources/rup7_asset0_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup7_asset0_betweens.png" target="_blank"><img src="resources/rup7_asset0_betweens.png" alt="plot" /></a></td><td><a href="resources/rup7_asset0_withins.png" target="_blank"><img src="resources/rup7_asset0_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup7_asset0_gmpe_exceeds.png" target="_blank"><img src="resources/rup7_asset0_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup7_asset0_cumulative_losses.png" target="_blank"><img src="resources/rup7_asset0_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-208188-asset1">Rupture 208188, Asset1</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 173.0</li>
+<li>J-B distance to rupture: 18.002001580033287</li>
+<li>Vulnerability function: RM1L-m-RES1-DF</li>
+<li>GMPE ln mean: -0.96818763</li>
+<li>GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>21.78749</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>23.961042</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>21.355753</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup7_asset1_gmpe_dists.png" target="_blank"><img src="resources/rup7_asset1_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup7_asset1_field_losses.png" target="_blank"><img src="resources/rup7_asset1_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup7_asset1_gmpe_dists_log.png" target="_blank"><img src="resources/rup7_asset1_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup7_asset1_field_losses_log.png" target="_blank"><img src="resources/rup7_asset1_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup7_asset1_betweens.png" target="_blank"><img src="resources/rup7_asset1_betweens.png" alt="plot" /></a></td><td><a href="resources/rup7_asset1_withins.png" target="_blank"><img src="resources/rup7_asset1_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup7_asset1_gmpe_exceeds.png" target="_blank"><img src="resources/rup7_asset1_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup7_asset1_cumulative_losses.png" target="_blank"><img src="resources/rup7_asset1_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-208188-asset2">Rupture 208188, Asset2</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 127.0</li>
+<li>J-B distance to rupture: 159.32030510236777</li>
+<li>Vulnerability function: RM1L-l-RES1-DF</li>
+<li>GMPE ln mean: -2.0559607</li>
+<li>GMPE phi/tau/total std devs: 0.6278766/t0.35796475/t0.7227501</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>4.6088448</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>1.8121287</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>3.7390568</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup7_asset2_gmpe_dists.png" target="_blank"><img src="resources/rup7_asset2_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup7_asset2_field_losses.png" target="_blank"><img src="resources/rup7_asset2_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup7_asset2_gmpe_dists_log.png" target="_blank"><img src="resources/rup7_asset2_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup7_asset2_field_losses_log.png" target="_blank"><img src="resources/rup7_asset2_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup7_asset2_betweens.png" target="_blank"><img src="resources/rup7_asset2_betweens.png" alt="plot" /></a></td><td><a href="resources/rup7_asset2_withins.png" target="_blank"><img src="resources/rup7_asset2_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup7_asset2_gmpe_exceeds.png" target="_blank"><img src="resources/rup7_asset2_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup7_asset2_cumulative_losses.png" target="_blank"><img src="resources/rup7_asset2_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-208188-asset3">Rupture 208188, Asset3</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 8363.0</li>
+<li>J-B distance to rupture: 339.4894788682204</li>
+<li>Vulnerability function: W1-h-RES1-DF</li>
+<li>GMPE ln mean: -3.0511427</li>
+<li>GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>8.29045</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>14.997117</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>5.8880134</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup7_asset3_gmpe_dists.png" target="_blank"><img src="resources/rup7_asset3_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup7_asset3_field_losses.png" target="_blank"><img src="resources/rup7_asset3_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup7_asset3_gmpe_dists_log.png" target="_blank"><img src="resources/rup7_asset3_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup7_asset3_field_losses_log.png" target="_blank"><img src="resources/rup7_asset3_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup7_asset3_betweens.png" target="_blank"><img src="resources/rup7_asset3_betweens.png" alt="plot" /></a></td><td><a href="resources/rup7_asset3_withins.png" target="_blank"><img src="resources/rup7_asset3_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup7_asset3_gmpe_exceeds.png" target="_blank"><img src="resources/rup7_asset3_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup7_asset3_cumulative_losses.png" target="_blank"><img src="resources/rup7_asset3_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-208188-asset4">Rupture 208188, Asset4</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 26997.0</li>
+<li>J-B distance to rupture: 44.011872161271796</li>
+<li>Vulnerability function: W1-m-RES1-DF</li>
+<li>GMPE ln mean: -1.0012978</li>
+<li>GMPE phi/tau/total std devs: 0.59943056/t0.33021143/t0.6843658</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>1600.1274</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>1276.2166</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>1526.6885</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup7_asset4_gmpe_dists.png" target="_blank"><img src="resources/rup7_asset4_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup7_asset4_field_losses.png" target="_blank"><img src="resources/rup7_asset4_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup7_asset4_gmpe_dists_log.png" target="_blank"><img src="resources/rup7_asset4_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup7_asset4_field_losses_log.png" target="_blank"><img src="resources/rup7_asset4_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup7_asset4_betweens.png" target="_blank"><img src="resources/rup7_asset4_betweens.png" alt="plot" /></a></td><td><a href="resources/rup7_asset4_withins.png" target="_blank"><img src="resources/rup7_asset4_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup7_asset4_gmpe_exceeds.png" target="_blank"><img src="resources/rup7_asset4_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup7_asset4_cumulative_losses.png" target="_blank"><img src="resources/rup7_asset4_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h2 id="rupture-68673-m8155491">Rupture 68673, M8.155491</h2>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<h3 id="rupture-68673-asset0">Rupture 68673, Asset0</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 28152.0</li>
+<li>J-B distance to rupture: 104.41240790207684</li>
+<li>Vulnerability function: W1-h-RES1-DF</li>
+<li>GMPE ln mean: -1.3695776</li>
+<li>GMPE phi/tau/total std devs: 0.60867107/t0.33933282/t0.69686955</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>722.1929</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>260.4626</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>655.08496</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup8_asset0_gmpe_dists.png" target="_blank"><img src="resources/rup8_asset0_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup8_asset0_field_losses.png" target="_blank"><img src="resources/rup8_asset0_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup8_asset0_gmpe_dists_log.png" target="_blank"><img src="resources/rup8_asset0_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup8_asset0_field_losses_log.png" target="_blank"><img src="resources/rup8_asset0_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup8_asset0_betweens.png" target="_blank"><img src="resources/rup8_asset0_betweens.png" alt="plot" /></a></td><td><a href="resources/rup8_asset0_withins.png" target="_blank"><img src="resources/rup8_asset0_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup8_asset0_gmpe_exceeds.png" target="_blank"><img src="resources/rup8_asset0_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup8_asset0_cumulative_losses.png" target="_blank"><img src="resources/rup8_asset0_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-68673-asset1">Rupture 68673, Asset1</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 173.0</li>
+<li>J-B distance to rupture: 91.13746388295239</li>
+<li>Vulnerability function: RM1L-m-RES1-DF</li>
+<li>GMPE ln mean: -1.7231846</li>
+<li>GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>6.0174565</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>5.273808</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>4.425468</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup8_asset1_gmpe_dists.png" target="_blank"><img src="resources/rup8_asset1_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup8_asset1_field_losses.png" target="_blank"><img src="resources/rup8_asset1_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup8_asset1_gmpe_dists_log.png" target="_blank"><img src="resources/rup8_asset1_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup8_asset1_field_losses_log.png" target="_blank"><img src="resources/rup8_asset1_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup8_asset1_betweens.png" target="_blank"><img src="resources/rup8_asset1_betweens.png" alt="plot" /></a></td><td><a href="resources/rup8_asset1_withins.png" target="_blank"><img src="resources/rup8_asset1_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup8_asset1_gmpe_exceeds.png" target="_blank"><img src="resources/rup8_asset1_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup8_asset1_cumulative_losses.png" target="_blank"><img src="resources/rup8_asset1_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-68673-asset2">Rupture 68673, Asset2</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 127.0</li>
+<li>J-B distance to rupture: 387.0487389473328</li>
+<li>Vulnerability function: RM1L-l-RES1-DF</li>
+<li>GMPE ln mean: -2.8315165</li>
+<li>GMPE phi/tau/total std devs: 0.62900805/t0.35904983/t0.7242706</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>0.8642674</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>0.5081029</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>1.1143471</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup8_asset2_gmpe_dists.png" target="_blank"><img src="resources/rup8_asset2_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup8_asset2_field_losses.png" target="_blank"><img src="resources/rup8_asset2_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup8_asset2_gmpe_dists_log.png" target="_blank"><img src="resources/rup8_asset2_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup8_asset2_field_losses_log.png" target="_blank"><img src="resources/rup8_asset2_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup8_asset2_betweens.png" target="_blank"><img src="resources/rup8_asset2_betweens.png" alt="plot" /></a></td><td><a href="resources/rup8_asset2_withins.png" target="_blank"><img src="resources/rup8_asset2_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup8_asset2_gmpe_exceeds.png" target="_blank"><img src="resources/rup8_asset2_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup8_asset2_cumulative_losses.png" target="_blank"><img src="resources/rup8_asset2_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-68673-asset3">Rupture 68673, Asset3</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 8363.0</li>
+<li>J-B distance to rupture: 67.7434958702235</li>
+<li>Vulnerability function: W1-h-RES1-DF</li>
+<li>GMPE ln mean: -1.5454055</li>
+<li>GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>169.93304</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>263.6408</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>169.32169</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup8_asset3_gmpe_dists.png" target="_blank"><img src="resources/rup8_asset3_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup8_asset3_field_losses.png" target="_blank"><img src="resources/rup8_asset3_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup8_asset3_gmpe_dists_log.png" target="_blank"><img src="resources/rup8_asset3_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup8_asset3_field_losses_log.png" target="_blank"><img src="resources/rup8_asset3_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup8_asset3_betweens.png" target="_blank"><img src="resources/rup8_asset3_betweens.png" alt="plot" /></a></td><td><a href="resources/rup8_asset3_withins.png" target="_blank"><img src="resources/rup8_asset3_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup8_asset3_gmpe_exceeds.png" target="_blank"><img src="resources/rup8_asset3_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup8_asset3_cumulative_losses.png" target="_blank"><img src="resources/rup8_asset3_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-68673-asset4">Rupture 68673, Asset4</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 26997.0</li>
+<li>J-B distance to rupture: 23.249264023399178</li>
+<li>Vulnerability function: W1-m-RES1-DF</li>
+<li>GMPE ln mean: -0.63563156</li>
+<li>GMPE phi/tau/total std devs: 0.58651066/t0.31726542/t0.66682243</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>2713.6802</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>2186.4678</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>2598.0842</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup8_asset4_gmpe_dists.png" target="_blank"><img src="resources/rup8_asset4_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup8_asset4_field_losses.png" target="_blank"><img src="resources/rup8_asset4_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup8_asset4_gmpe_dists_log.png" target="_blank"><img src="resources/rup8_asset4_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup8_asset4_field_losses_log.png" target="_blank"><img src="resources/rup8_asset4_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup8_asset4_betweens.png" target="_blank"><img src="resources/rup8_asset4_betweens.png" alt="plot" /></a></td><td><a href="resources/rup8_asset4_withins.png" target="_blank"><img src="resources/rup8_asset4_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup8_asset4_gmpe_exceeds.png" target="_blank"><img src="resources/rup8_asset4_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup8_asset4_cumulative_losses.png" target="_blank"><img src="resources/rup8_asset4_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h2 id="rupture-42699-m79970284">Rupture 42699, M7.9970284</h2>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<h3 id="rupture-42699-asset0">Rupture 42699, Asset0</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 28152.0</li>
+<li>J-B distance to rupture: 498.8670034348614</li>
+<li>Vulnerability function: W1-h-RES1-DF</li>
+<li>GMPE ln mean: -3.1552143</li>
+<li>GMPE phi/tau/total std devs: 0.62637323/t0.356521/t0.72072923</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>21.071074</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>3.0502691</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>18.037693</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup9_asset0_gmpe_dists.png" target="_blank"><img src="resources/rup9_asset0_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup9_asset0_field_losses.png" target="_blank"><img src="resources/rup9_asset0_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup9_asset0_gmpe_dists_log.png" target="_blank"><img src="resources/rup9_asset0_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup9_asset0_field_losses_log.png" target="_blank"><img src="resources/rup9_asset0_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup9_asset0_betweens.png" target="_blank"><img src="resources/rup9_asset0_betweens.png" alt="plot" /></a></td><td><a href="resources/rup9_asset0_withins.png" target="_blank"><img src="resources/rup9_asset0_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup9_asset0_gmpe_exceeds.png" target="_blank"><img src="resources/rup9_asset0_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup9_asset0_cumulative_losses.png" target="_blank"><img src="resources/rup9_asset0_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-42699-asset1">Rupture 42699, Asset1</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 173.0</li>
+<li>J-B distance to rupture: 18.002001580033287</li>
+<li>Vulnerability function: RM1L-m-RES1-DF</li>
+<li>GMPE ln mean: -0.97218823</li>
+<li>GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>21.658276</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>22.265873</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>19.776833</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup9_asset1_gmpe_dists.png" target="_blank"><img src="resources/rup9_asset1_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup9_asset1_field_losses.png" target="_blank"><img src="resources/rup9_asset1_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup9_asset1_gmpe_dists_log.png" target="_blank"><img src="resources/rup9_asset1_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup9_asset1_field_losses_log.png" target="_blank"><img src="resources/rup9_asset1_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup9_asset1_betweens.png" target="_blank"><img src="resources/rup9_asset1_betweens.png" alt="plot" /></a></td><td><a href="resources/rup9_asset1_withins.png" target="_blank"><img src="resources/rup9_asset1_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup9_asset1_gmpe_exceeds.png" target="_blank"><img src="resources/rup9_asset1_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup9_asset1_cumulative_losses.png" target="_blank"><img src="resources/rup9_asset1_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-42699-asset2">Rupture 42699, Asset2</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 127.0</li>
+<li>J-B distance to rupture: 159.32030510236777</li>
+<li>Vulnerability function: RM1L-l-RES1-DF</li>
+<li>GMPE ln mean: -2.0754066</li>
+<li>GMPE phi/tau/total std devs: 0.6279164/t0.35800296/t0.72280365</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>4.433204</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>1.7341951</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>3.6287713</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup9_asset2_gmpe_dists.png" target="_blank"><img src="resources/rup9_asset2_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup9_asset2_field_losses.png" target="_blank"><img src="resources/rup9_asset2_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup9_asset2_gmpe_dists_log.png" target="_blank"><img src="resources/rup9_asset2_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup9_asset2_field_losses_log.png" target="_blank"><img src="resources/rup9_asset2_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup9_asset2_betweens.png" target="_blank"><img src="resources/rup9_asset2_betweens.png" alt="plot" /></a></td><td><a href="resources/rup9_asset2_withins.png" target="_blank"><img src="resources/rup9_asset2_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup9_asset2_gmpe_exceeds.png" target="_blank"><img src="resources/rup9_asset2_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup9_asset2_cumulative_losses.png" target="_blank"><img src="resources/rup9_asset2_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-42699-asset3">Rupture 42699, Asset3</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 8363.0</li>
+<li>J-B distance to rupture: 253.60115106692265</li>
+<li>Vulnerability function: W1-h-RES1-DF</li>
+<li>GMPE ln mean: -2.7313051</li>
+<li>GMPE phi/tau/total std devs: 0.63/t0.36/t0.7256032</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>17.680477</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>39.952812</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>17.935112</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup9_asset3_gmpe_dists.png" target="_blank"><img src="resources/rup9_asset3_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup9_asset3_field_losses.png" target="_blank"><img src="resources/rup9_asset3_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup9_asset3_gmpe_dists_log.png" target="_blank"><img src="resources/rup9_asset3_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup9_asset3_field_losses_log.png" target="_blank"><img src="resources/rup9_asset3_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup9_asset3_betweens.png" target="_blank"><img src="resources/rup9_asset3_betweens.png" alt="plot" /></a></td><td><a href="resources/rup9_asset3_withins.png" target="_blank"><img src="resources/rup9_asset3_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup9_asset3_gmpe_exceeds.png" target="_blank"><img src="resources/rup9_asset3_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup9_asset3_cumulative_losses.png" target="_blank"><img src="resources/rup9_asset3_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+<h3 id="rupture-42699-asset4">Rupture 42699, Asset4</h3>
+<p><em><a href="#table-of-contents">(top)</a></em></p>
+<p>Asset parameters:</p>
+<ul>
+<li>value: 26997.0</li>
+<li>J-B distance to rupture: 19.491645292353013</li>
+<li>Vulnerability function: W1-m-RES1-DF</li>
+<li>GMPE ln mean: -0.6359203</li>
+<li>GMPE phi/tau/total std devs: 0.58652264/t0.31727752/t0.6668387</li>
+</ul>
+<p><strong>Loss Values</strong></p>
+<table>
+<thead>
+<tr><th>Description</th><th>Loss Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Mean Loss (GMPE)</td><td>2712.5828</td></tr>
+<tr><td>Mean Loss (10000 random fields)</td><td>2334.1948</td></tr>
+<tr><td>Mean Loss using rand-field exceed probs</td><td>2751.964</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th><a href="resources/rup9_asset4_gmpe_dists.png" target="_blank"><img src="resources/rup9_asset4_gmpe_dists.png" alt="plot" /></a></th><th><a href="resources/rup9_asset4_field_losses.png" target="_blank"><img src="resources/rup9_asset4_field_losses.png" alt="plot" /></a></th></tr>
+</thead>
+<tbody>
+<tr><td><a href="resources/rup9_asset4_gmpe_dists_log.png" target="_blank"><img src="resources/rup9_asset4_gmpe_dists_log.png" alt="plot" /></a></td><td><a href="resources/rup9_asset4_field_losses_log.png" target="_blank"><img src="resources/rup9_asset4_field_losses_log.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup9_asset4_betweens.png" target="_blank"><img src="resources/rup9_asset4_betweens.png" alt="plot" /></a></td><td><a href="resources/rup9_asset4_withins.png" target="_blank"><img src="resources/rup9_asset4_withins.png" alt="plot" /></a></td></tr>
+<tr><td><a href="resources/rup9_asset4_gmpe_exceeds.png" target="_blank"><img src="resources/rup9_asset4_gmpe_exceeds.png" alt="plot" /></a></td><td><a href="resources/rup9_asset4_cumulative_losses.png" target="_blank"><img src="resources/rup9_asset4_cumulative_losses.png" alt="plot" /></a></td></tr>
+</tbody>
+</table>
+</article>
+</html>
