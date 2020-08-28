@@ -81,16 +81,16 @@ Asset parameters:
 * value: 28152.0
 * J-B distance to rupture: 694.690385092882
 * Vulnerability function: W1-h-RES1-DF
-* GMPE ln mean: -6.1232867
+* GMPE ln mean: -5.4811554
 * GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 2.5730964E-4 |
+| Mean Loss (GMPE) | 0.0073295822 |
 | Mean Loss (100000 random fields) | 0.019453032 |
-| Mean Loss using rand-field exceed probs | 0.0012151059 |
+| Mean Loss using rand-field exceed probs | 0.027706414 |
 
 | ![plot](resources/rup0_asset0_gmpe_dists.png) | ![plot](resources/rup0_asset0_field_losses.png) |
 |-----|-----|
@@ -106,16 +106,16 @@ Asset parameters:
 * value: 173.0
 * J-B distance to rupture: 14.043580684469827
 * Vulnerability function: RM1L-m-RES1-DF
-* GMPE ln mean: -1.3732768
-* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
+* GMPE ln mean: -1.169849
+* GMPE phi/tau/total std devs: 0.62504166	0.35524026	0.7189386
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 11.342175 |
+| Mean Loss (GMPE) | 15.782214 |
 | Mean Loss (100000 random fields) | 11.725416 |
-| Mean Loss using rand-field exceed probs | 10.205882 |
+| Mean Loss using rand-field exceed probs | 14.177285 |
 
 | ![plot](resources/rup0_asset1_gmpe_dists.png) | ![plot](resources/rup0_asset1_field_losses.png) |
 |-----|-----|
@@ -131,16 +131,16 @@ Asset parameters:
 * value: 127.0
 * J-B distance to rupture: 273.5062053170421
 * Vulnerability function: RM1L-l-RES1-DF
-* GMPE ln mean: -3.6035054
-* GMPE phi/tau/total std devs: 0.6295386	0.35955814	0.72498333
+* GMPE ln mean: -3.8194346
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 0.14406106 |
+| Mean Loss (GMPE) | 0.08566205 |
 | Mean Loss (100000 random fields) | 0.059422918 |
-| Mean Loss using rand-field exceed probs | 0.13138944 |
+| Mean Loss using rand-field exceed probs | 0.07874804 |
 
 | ![plot](resources/rup0_asset2_gmpe_dists.png) | ![plot](resources/rup0_asset2_field_losses.png) |
 |-----|-----|
@@ -156,16 +156,16 @@ Asset parameters:
 * value: 8363.0
 * J-B distance to rupture: 447.8401003616335
 * Vulnerability function: W1-h-RES1-DF
-* GMPE ln mean: -4.5772963
-* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
+* GMPE ln mean: -4.0803275
+* GMPE phi/tau/total std devs: 0.62855977	0.3586201	0.7236683
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 0.08914284 |
+| Mean Loss (GMPE) | 0.46222234 |
 | Mean Loss (100000 random fields) | 0.33296448 |
-| Mean Loss using rand-field exceed probs | 0.08804993 |
+| Mean Loss using rand-field exceed probs | 0.48902166 |
 
 | ![plot](resources/rup0_asset3_gmpe_dists.png) | ![plot](resources/rup0_asset3_field_losses.png) |
 |-----|-----|
@@ -209,16 +209,16 @@ Asset parameters:
 * value: 28152.0
 * J-B distance to rupture: 455.31765368287483
 * Vulnerability function: W1-h-RES1-DF
-* GMPE ln mean: -4.318542
-* GMPE phi/tau/total std devs: 0.6288648	0.35891256	0.7240782
+* GMPE ln mean: -4.816326
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 0.7227647 |
+| Mean Loss (GMPE) | 0.124110706 |
 | Mean Loss (100000 random fields) | 0.079163425 |
-| Mean Loss using rand-field exceed probs | 0.75079924 |
+| Mean Loss using rand-field exceed probs | 0.12592804 |
 
 | ![plot](resources/rup1_asset0_gmpe_dists.png) | ![plot](resources/rup1_asset0_field_losses.png) |
 |-----|-----|
@@ -234,16 +234,16 @@ Asset parameters:
 * value: 173.0
 * J-B distance to rupture: 221.97881822486164
 * Vulnerability function: RM1L-m-RES1-DF
-* GMPE ln mean: -3.7369099
-* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
+* GMPE ln mean: -3.5210862
+* GMPE phi/tau/total std devs: 0.6294992	0.3595204	0.7249304
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 0.073542394 |
+| Mean Loss (GMPE) | 0.12440571 |
 | Mean Loss (100000 random fields) | 0.11113554 |
-| Mean Loss using rand-field exceed probs | 0.08858034 |
+| Mean Loss using rand-field exceed probs | 0.14569584 |
 
 | ![plot](resources/rup1_asset1_gmpe_dists.png) | ![plot](resources/rup1_asset1_field_losses.png) |
 |-----|-----|
@@ -259,16 +259,16 @@ Asset parameters:
 * value: 127.0
 * J-B distance to rupture: 518.5566534689463
 * Vulnerability function: RM1L-l-RES1-DF
-* GMPE ln mean: -4.848132
-* GMPE phi/tau/total std devs: 0.62986654	0.35987222	0.72542393
+* GMPE ln mean: -5.0649376
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 0.0050842203 |
+| Mean Loss (GMPE) | 0.0025063262 |
 | Mean Loss (100000 random fields) | 0.00156972 |
-| Mean Loss using rand-field exceed probs | 0.0047403295 |
+| Mean Loss using rand-field exceed probs | 0.002342492 |
 
 | ![plot](resources/rup1_asset2_gmpe_dists.png) | ![plot](resources/rup1_asset2_field_losses.png) |
 |-----|-----|
@@ -284,16 +284,16 @@ Asset parameters:
 * value: 8363.0
 * J-B distance to rupture: 206.3980025623005
 * Vulnerability function: W1-h-RES1-DF
-* GMPE ln mean: -3.646181
-* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
+* GMPE ln mean: -3.1550865
+* GMPE phi/tau/total std devs: 0.62637275	0.35652056	0.72072864
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 1.7082796 |
+| Mean Loss (GMPE) | 6.2615194 |
 | Mean Loss (100000 random fields) | 3.13053 |
-| Mean Loss using rand-field exceed probs | 1.0046855 |
+| Mean Loss using rand-field exceed probs | 4.361303 |
 
 | ![plot](resources/rup1_asset3_gmpe_dists.png) | ![plot](resources/rup1_asset3_field_losses.png) |
 |-----|-----|
@@ -337,16 +337,16 @@ Asset parameters:
 * value: 28152.0
 * J-B distance to rupture: 620.5196004039326
 * Vulnerability function: W1-h-RES1-DF
-* GMPE ln mean: -5.006503
-* GMPE phi/tau/total std devs: 0.6294292	0.3594534	0.72483647
+* GMPE ln mean: -5.5057936
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 0.058152128 |
+| Mean Loss (GMPE) | 0.006521991 |
 | Mean Loss (100000 random fields) | 0.0 |
-| Mean Loss using rand-field exceed probs | 0.0035447183 |
+| Mean Loss using rand-field exceed probs | 0.0 |
 
 | ![plot](resources/rup2_asset0_gmpe_dists.png) | ![plot](resources/rup2_asset0_field_losses.png) |
 |-----|-----|
@@ -362,16 +362,16 @@ Asset parameters:
 * value: 173.0
 * J-B distance to rupture: 56.80155166346245
 * Vulnerability function: RM1L-m-RES1-DF
-* GMPE ln mean: -2.431589
-* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
+* GMPE ln mean: -2.219313
+* GMPE phi/tau/total std devs: 0.62818927	0.3582648	0.7231704
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 1.4616925 |
+| Mean Loss (GMPE) | 2.2515242 |
 | Mean Loss (100000 random fields) | 1.4006596 |
-| Mean Loss using rand-field exceed probs | 1.1446087 |
+| Mean Loss using rand-field exceed probs | 1.7865195 |
 
 | ![plot](resources/rup2_asset1_gmpe_dists.png) | ![plot](resources/rup2_asset1_field_losses.png) |
 |-----|-----|
@@ -387,16 +387,16 @@ Asset parameters:
 * value: 127.0
 * J-B distance to rupture: 361.62884408989186
 * Vulnerability function: RM1L-l-RES1-DF
-* GMPE ln mean: -4.2620726
-* GMPE phi/tau/total std devs: 0.6297605	0.3597707	0.7252815
+* GMPE ln mean: -4.4785953
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 0.027650652 |
+| Mean Loss (GMPE) | 0.015296124 |
 | Mean Loss (100000 random fields) | 0.006195695 |
-| Mean Loss using rand-field exceed probs | 0.017293284 |
+| Mean Loss using rand-field exceed probs | 0.0089679025 |
 
 | ![plot](resources/rup2_asset2_gmpe_dists.png) | ![plot](resources/rup2_asset2_field_losses.png) |
 |-----|-----|
@@ -412,16 +412,16 @@ Asset parameters:
 * value: 8363.0
 * J-B distance to rupture: 374.71615824900556
 * Vulnerability function: W1-h-RES1-DF
-* GMPE ln mean: -4.5361624
-* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
+* GMPE ln mean: -4.0393543
+* GMPE phi/tau/total std devs: 0.6284996	0.3585624	0.72358745
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 0.10313732 |
+| Mean Loss (GMPE) | 0.5250391 |
 | Mean Loss (100000 random fields) | 0.15675607 |
-| Mean Loss using rand-field exceed probs | 0.033051375 |
+| Mean Loss using rand-field exceed probs | 0.24069926 |
 
 | ![plot](resources/rup2_asset3_gmpe_dists.png) | ![plot](resources/rup2_asset3_field_losses.png) |
 |-----|-----|
@@ -465,16 +465,16 @@ Asset parameters:
 * value: 28152.0
 * J-B distance to rupture: 71.05894884501028
 * Vulnerability function: W1-h-RES1-DF
-* GMPE ln mean: -1.4786611
-* GMPE phi/tau/total std devs: 0.61083996	0.3414583	0.6997994
+* GMPE ln mean: -1.9264812
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 611.8853 |
+| Mean Loss (GMPE) | 301.51617 |
 | Mean Loss (100000 random fields) | 239.63196 |
-| Mean Loss using rand-field exceed probs | 591.9932 |
+| Mean Loss using rand-field exceed probs | 293.81006 |
 
 | ![plot](resources/rup3_asset0_gmpe_dists.png) | ![plot](resources/rup3_asset0_field_losses.png) |
 |-----|-----|
@@ -490,16 +490,16 @@ Asset parameters:
 * value: 173.0
 * J-B distance to rupture: 534.3368058887747
 * Vulnerability function: RM1L-m-RES1-DF
-* GMPE ln mean: -4.14995
-* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
+* GMPE ln mean: -3.9336748
+* GMPE phi/tau/total std devs: 0.62966776	0.3596819	0.72515696
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 0.025829807 |
+| Mean Loss (GMPE) | 0.044866554 |
 | Mean Loss (100000 random fields) | 0.03875321 |
-| Mean Loss using rand-field exceed probs | 0.03001006 |
+| Mean Loss using rand-field exceed probs | 0.052306935 |
 
 | ![plot](resources/rup3_asset1_gmpe_dists.png) | ![plot](resources/rup3_asset1_field_losses.png) |
 |-----|-----|
@@ -515,16 +515,16 @@ Asset parameters:
 * value: 127.0
 * J-B distance to rupture: 791.8061611004053
 * Vulnerability function: RM1L-l-RES1-DF
-* GMPE ln mean: -4.784628
-* GMPE phi/tau/total std devs: 0.62985784	0.35986385	0.7254122
+* GMPE ln mean: -5.00141
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 0.0061978516 |
+| Mean Loss (GMPE) | 0.0031012553 |
 | Mean Loss (100000 random fields) | 0.001103376 |
-| Mean Loss using rand-field exceed probs | 0.0034931907 |
+| Mean Loss using rand-field exceed probs | 0.0016615932 |
 
 | ![plot](resources/rup3_asset2_gmpe_dists.png) | ![plot](resources/rup3_asset2_field_losses.png) |
 |-----|-----|
@@ -540,16 +540,16 @@ Asset parameters:
 * value: 8363.0
 * J-B distance to rupture: 45.2838460115642
 * Vulnerability function: W1-h-RES1-DF
-* GMPE ln mean: -1.6329422
-* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
+* GMPE ln mean: -1.2025274
+* GMPE phi/tau/total std devs: 0.6048769	0.33560073	0.6917398
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 147.60178 |
+| Mean Loss (GMPE) | 273.9915 |
 | Mean Loss (100000 random fields) | 212.47745 |
-| Mean Loss using rand-field exceed probs | 132.83281 |
+| Mean Loss using rand-field exceed probs | 252.15826 |
 
 | ![plot](resources/rup3_asset3_gmpe_dists.png) | ![plot](resources/rup3_asset3_field_losses.png) |
 |-----|-----|
@@ -593,16 +593,16 @@ Asset parameters:
 * value: 28152.0
 * J-B distance to rupture: 220.42899827010416
 * Vulnerability function: W1-h-RES1-DF
-* GMPE ln mean: -2.999414
-* GMPE phi/tau/total std devs: 0.6257636	0.35593492	0.71990955
+* GMPE ln mean: -3.4888635
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 30.992783 |
+| Mean Loss (GMPE) | 8.919588 |
 | Mean Loss (100000 random fields) | 3.7998724 |
-| Mean Loss using rand-field exceed probs | 21.548 |
+| Mean Loss using rand-field exceed probs | 5.4283786 |
 
 | ![plot](resources/rup4_asset0_gmpe_dists.png) | ![plot](resources/rup4_asset0_field_losses.png) |
 |-----|-----|
@@ -618,16 +618,16 @@ Asset parameters:
 * value: 173.0
 * J-B distance to rupture: 459.6791921461773
 * Vulnerability function: RM1L-m-RES1-DF
-* GMPE ln mean: -4.564933
-* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
+* GMPE ln mean: -4.348357
+* GMPE phi/tau/total std devs: 0.62978023	0.3597896	0.725308
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 0.008419954 |
+| Mean Loss (GMPE) | 0.015267798 |
 | Mean Loss (100000 random fields) | 0.010000092 |
-| Mean Loss using rand-field exceed probs | 0.007501959 |
+| Mean Loss using rand-field exceed probs | 0.013683956 |
 
 | ![plot](resources/rup4_asset1_gmpe_dists.png) | ![plot](resources/rup4_asset1_field_losses.png) |
 |-----|-----|
@@ -643,16 +643,16 @@ Asset parameters:
 * value: 127.0
 * J-B distance to rupture: 718.6404783019321
 * Vulnerability function: RM1L-l-RES1-DF
-* GMPE ln mean: -5.2870007
-* GMPE phi/tau/total std devs: 0.6299139	0.35991758	0.72548753
+* GMPE ln mean: -5.5039325
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 0.0011448545 |
+| Mean Loss (GMPE) | 5.0171156E-4 |
 | Mean Loss (100000 random fields) | 4.9911E-5 |
-| Mean Loss using rand-field exceed probs | 3.9510013E-4 |
+| Mean Loss using rand-field exceed probs | 1.1166614E-4 |
 
 | ![plot](resources/rup4_asset2_gmpe_dists.png) | ![plot](resources/rup4_asset2_field_losses.png) |
 |-----|-----|
@@ -668,16 +668,16 @@ Asset parameters:
 * value: 8363.0
 * J-B distance to rupture: 25.110251940672537
 * Vulnerability function: W1-h-RES1-DF
-* GMPE ln mean: -1.5886256
-* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
+* GMPE ln mean: -1.1612767
+* GMPE phi/tau/total std devs: 0.6038432	0.3345808	0.6903412
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 158.58223 |
+| Mean Loss (GMPE) | 290.59494 |
 | Mean Loss (100000 random fields) | 291.16467 |
-| Mean Loss using rand-field exceed probs | 192.62454 |
+| Mean Loss using rand-field exceed probs | 343.34393 |
 
 | ![plot](resources/rup4_asset3_gmpe_dists.png) | ![plot](resources/rup4_asset3_field_losses.png) |
 |-----|-----|
@@ -721,16 +721,16 @@ Asset parameters:
 * value: 28152.0
 * J-B distance to rupture: 664.6072172908746
 * Vulnerability function: W1-h-RES1-DF
-* GMPE ln mean: -5.144235
-* GMPE phi/tau/total std devs: 0.62950265	0.3595237	0.7249351
+* GMPE ln mean: -5.643721
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 0.03285042 |
+| Mean Loss (GMPE) | 0.003335919 |
 | Mean Loss (100000 random fields) | 0.01351296 |
-| Mean Loss using rand-field exceed probs | 0.10213157 |
+| Mean Loss using rand-field exceed probs | 0.020431144 |
 
 | ![plot](resources/rup5_asset0_gmpe_dists.png) | ![plot](resources/rup5_asset0_field_losses.png) |
 |-----|-----|
@@ -746,16 +746,16 @@ Asset parameters:
 * value: 173.0
 * J-B distance to rupture: 17.032477551146595
 * Vulnerability function: RM1L-m-RES1-DF
-* GMPE ln mean: -1.4741915
-* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
+* GMPE ln mean: -1.2694901
+* GMPE phi/tau/total std devs: 0.6254843	0.3556662	0.71953386
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 9.502183 |
+| Mean Loss (GMPE) | 13.397572 |
 | Mean Loss (100000 random fields) | 9.3404045 |
-| Mean Loss using rand-field exceed probs | 7.9232564 |
+| Mean Loss using rand-field exceed probs | 11.568785 |
 
 | ![plot](resources/rup5_asset1_gmpe_dists.png) | ![plot](resources/rup5_asset1_field_losses.png) |
 |-----|-----|
@@ -771,16 +771,16 @@ Asset parameters:
 * value: 127.0
 * J-B distance to rupture: 289.6538168599644
 * Vulnerability function: RM1L-l-RES1-DF
-* GMPE ln mean: -3.906305
-* GMPE phi/tau/total std devs: 0.6296586	0.3596731	0.7251446
+* GMPE ln mean: -4.1225557
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 0.0689893 |
+| Mean Loss (GMPE) | 0.03995349 |
 | Mean Loss (100000 random fields) | 0.019786982 |
-| Mean Loss using rand-field exceed probs | 0.04746604 |
+| Mean Loss using rand-field exceed probs | 0.02718265 |
 
 | ![plot](resources/rup5_asset2_gmpe_dists.png) | ![plot](resources/rup5_asset2_field_losses.png) |
 |-----|-----|
@@ -796,16 +796,16 @@ Asset parameters:
 * value: 8363.0
 * J-B distance to rupture: 420.35845775898594
 * Vulnerability function: W1-h-RES1-DF
-* GMPE ln mean: -4.7106028
-* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
+* GMPE ln mean: -4.2131553
+* GMPE phi/tau/total std devs: 0.62873876	0.3587917	0.7239088
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 0.054904424 |
+| Mean Loss (GMPE) | 0.3031265 |
 | Mean Loss (100000 random fields) | 0.24211721 |
-| Mean Loss using rand-field exceed probs | 0.06517174 |
+| Mean Loss using rand-field exceed probs | 0.35940528 |
 
 | ![plot](resources/rup5_asset3_gmpe_dists.png) | ![plot](resources/rup5_asset3_field_losses.png) |
 |-----|-----|
@@ -849,16 +849,16 @@ Asset parameters:
 * value: 28152.0
 * J-B distance to rupture: 648.2448111411015
 * Vulnerability function: W1-h-RES1-DF
-* GMPE ln mean: -3.7983234
-* GMPE phi/tau/total std devs: 0.6280912	0.35817072	0.7230386
+* GMPE ln mean: -4.294038
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 3.651236 |
+| Mean Loss (GMPE) | 0.79277617 |
 | Mean Loss (100000 random fields) | 0.35007012 |
-| Mean Loss using rand-field exceed probs | 2.7883196 |
+| Mean Loss using rand-field exceed probs | 0.52643746 |
 
 | ![plot](resources/rup6_asset0_gmpe_dists.png) | ![plot](resources/rup6_asset0_field_losses.png) |
 |-----|-----|
@@ -874,16 +874,16 @@ Asset parameters:
 * value: 173.0
 * J-B distance to rupture: 14.01186694590594
 * Vulnerability function: RM1L-m-RES1-DF
-* GMPE ln mean: -0.91670054
-* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
+* GMPE ln mean: -0.72076213
+* GMPE phi/tau/total std devs: 0.6225097	0.35279965	0.7155319
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 23.49864 |
+| Mean Loss (GMPE) | 30.584162 |
 | Mean Loss (100000 random fields) | 25.708382 |
-| Mean Loss using rand-field exceed probs | 23.035704 |
+| Mean Loss using rand-field exceed probs | 30.1446 |
 
 | ![plot](resources/rup6_asset1_gmpe_dists.png) | ![plot](resources/rup6_asset1_field_losses.png) |
 |-----|-----|
@@ -899,16 +899,16 @@ Asset parameters:
 * value: 127.0
 * J-B distance to rupture: 159.32030510236777
 * Vulnerability function: RM1L-l-RES1-DF
-* GMPE ln mean: -2.1954937
-* GMPE phi/tau/total std devs: 0.62814665	0.35822392	0.7231131
+* GMPE ln mean: -2.407653
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 3.4716687 |
+| Mean Loss (GMPE) | 2.2303557 |
 | Mean Loss (100000 random fields) | 1.573672 |
-| Mean Loss using rand-field exceed probs | 3.153947 |
+| Mean Loss using rand-field exceed probs | 2.0242932 |
 
 | ![plot](resources/rup6_asset2_gmpe_dists.png) | ![plot](resources/rup6_asset2_field_losses.png) |
 |-----|-----|
@@ -924,16 +924,16 @@ Asset parameters:
 * value: 8363.0
 * J-B distance to rupture: 401.91212262700554
 * Vulnerability function: W1-h-RES1-DF
-* GMPE ln mean: -3.451953
-* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
+* GMPE ln mean: -2.9629278
+* GMPE phi/tau/total std devs: 0.6256067	0.35578397	0.71969855
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 2.9306302 |
+| Mean Loss (GMPE) | 10.055348 |
 | Mean Loss (100000 random fields) | 8.811842 |
-| Mean Loss using rand-field exceed probs | 3.4011173 |
+| Mean Loss using rand-field exceed probs | 11.7521 |
 
 | ![plot](resources/rup6_asset3_gmpe_dists.png) | ![plot](resources/rup6_asset3_field_losses.png) |
 |-----|-----|
@@ -977,16 +977,16 @@ Asset parameters:
 * value: 28152.0
 * J-B distance to rupture: 588.4067333863293
 * Vulnerability function: W1-h-RES1-DF
-* GMPE ln mean: -3.4215524
-* GMPE phi/tau/total std devs: 0.62721956	0.35733408	0.721867
+* GMPE ln mean: -3.9149275
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 10.519352 |
+| Mean Loss (GMPE) | 2.619622 |
 | Mean Loss (100000 random fields) | 1.0666792 |
-| Mean Loss using rand-field exceed probs | 7.2884626 |
+| Mean Loss using rand-field exceed probs | 1.5738227 |
 
 | ![plot](resources/rup7_asset0_gmpe_dists.png) | ![plot](resources/rup7_asset0_field_losses.png) |
 |-----|-----|
@@ -1002,16 +1002,16 @@ Asset parameters:
 * value: 173.0
 * J-B distance to rupture: 18.002001580033287
 * Vulnerability function: RM1L-m-RES1-DF
-* GMPE ln mean: -0.96818763
-* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
+* GMPE ln mean: -0.7712426
+* GMPE phi/tau/total std devs: 0.62284297	0.3531213	0.71598047
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 21.78749 |
+| Mean Loss (GMPE) | 28.58227 |
 | Mean Loss (100000 random fields) | 25.379559 |
-| Mean Loss using rand-field exceed probs | 22.724823 |
+| Mean Loss using rand-field exceed probs | 29.729813 |
 
 | ![plot](resources/rup7_asset1_gmpe_dists.png) | ![plot](resources/rup7_asset1_field_losses.png) |
 |-----|-----|
@@ -1027,16 +1027,16 @@ Asset parameters:
 * value: 127.0
 * J-B distance to rupture: 159.32030510236777
 * Vulnerability function: RM1L-l-RES1-DF
-* GMPE ln mean: -2.0559607
-* GMPE phi/tau/total std devs: 0.6278766	0.35796475	0.7227501
+* GMPE ln mean: -2.2673786
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 4.6088448 |
+| Mean Loss (GMPE) | 3.008714 |
 | Mean Loss (100000 random fields) | 2.0189385 |
-| Mean Loss using rand-field exceed probs | 4.122661 |
+| Mean Loss using rand-field exceed probs | 2.6229517 |
 
 | ![plot](resources/rup7_asset2_gmpe_dists.png) | ![plot](resources/rup7_asset2_field_losses.png) |
 |-----|-----|
@@ -1052,16 +1052,16 @@ Asset parameters:
 * value: 8363.0
 * J-B distance to rupture: 339.4894788682204
 * Vulnerability function: W1-h-RES1-DF
-* GMPE ln mean: -3.0511427
-* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
+* GMPE ln mean: -2.567874
+* GMPE phi/tau/total std devs: 0.62348837	0.35374385	0.71684897
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 8.29045 |
+| Mean Loss (GMPE) | 24.741194 |
 | Mean Loss (100000 random fields) | 16.8998 |
-| Mean Loss using rand-field exceed probs | 6.7079396 |
+| Mean Loss using rand-field exceed probs | 22.261518 |
 
 | ![plot](resources/rup7_asset3_gmpe_dists.png) | ![plot](resources/rup7_asset3_field_losses.png) |
 |-----|-----|
@@ -1105,16 +1105,16 @@ Asset parameters:
 * value: 28152.0
 * J-B distance to rupture: 104.41240790207684
 * Vulnerability function: W1-h-RES1-DF
-* GMPE ln mean: -1.3695776
-* GMPE phi/tau/total std devs: 0.60867107	0.33933282	0.69686955
+* GMPE ln mean: -1.8111215
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 722.1929 |
+| Mean Loss (GMPE) | 368.84094 |
 | Mean Loss (100000 random fields) | 282.86264 |
-| Mean Loss using rand-field exceed probs | 696.09863 |
+| Mean Loss using rand-field exceed probs | 347.85233 |
 
 | ![plot](resources/rup8_asset0_gmpe_dists.png) | ![plot](resources/rup8_asset0_field_losses.png) |
 |-----|-----|
@@ -1130,16 +1130,16 @@ Asset parameters:
 * value: 173.0
 * J-B distance to rupture: 91.13746388295239
 * Vulnerability function: RM1L-m-RES1-DF
-* GMPE ln mean: -1.7231846
-* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
+* GMPE ln mean: -1.5158098
+* GMPE phi/tau/total std devs: 0.62642473	0.35657054	0.7207985
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 6.0174565 |
+| Mean Loss (GMPE) | 8.7348995 |
 | Mean Loss (100000 random fields) | 5.776178 |
-| Mean Loss using rand-field exceed probs | 4.836875 |
+| Mean Loss using rand-field exceed probs | 7.2475667 |
 
 | ![plot](resources/rup8_asset1_gmpe_dists.png) | ![plot](resources/rup8_asset1_field_losses.png) |
 |-----|-----|
@@ -1155,16 +1155,16 @@ Asset parameters:
 * value: 127.0
 * J-B distance to rupture: 387.0487389473328
 * Vulnerability function: RM1L-l-RES1-DF
-* GMPE ln mean: -2.8315165
-* GMPE phi/tau/total std devs: 0.62900805	0.35904983	0.7242706
+* GMPE ln mean: -3.0460186
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 0.8642674 |
+| Mean Loss (GMPE) | 0.5317186 |
 | Mean Loss (100000 random fields) | 0.5671309 |
-| Mean Loss using rand-field exceed probs | 1.2344216 |
+| Mean Loss using rand-field exceed probs | 0.7478022 |
 
 | ![plot](resources/rup8_asset2_gmpe_dists.png) | ![plot](resources/rup8_asset2_field_losses.png) |
 |-----|-----|
@@ -1180,16 +1180,16 @@ Asset parameters:
 * value: 8363.0
 * J-B distance to rupture: 67.7434958702235
 * Vulnerability function: W1-h-RES1-DF
-* GMPE ln mean: -1.5454055
-* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
+* GMPE ln mean: -1.12117
+* GMPE phi/tau/total std devs: 0.6027987	0.3335488	0.6889275
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 169.93304 |
+| Mean Loss (GMPE) | 307.53253 |
 | Mean Loss (100000 random fields) | 278.15805 |
-| Mean Loss using rand-field exceed probs | 181.18063 |
+| Mean Loss using rand-field exceed probs | 327.49118 |
 
 | ![plot](resources/rup8_asset3_gmpe_dists.png) | ![plot](resources/rup8_asset3_field_losses.png) |
 |-----|-----|
@@ -1233,16 +1233,16 @@ Asset parameters:
 * value: 28152.0
 * J-B distance to rupture: 498.8670034348614
 * Vulnerability function: W1-h-RES1-DF
-* GMPE ln mean: -3.1552143
-* GMPE phi/tau/total std devs: 0.62637323	0.356521	0.72072923
+* GMPE ln mean: -3.6463103
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 21.071074 |
+| Mean Loss (GMPE) | 5.7483997 |
 | Mean Loss (100000 random fields) | 3.4930158 |
-| Mean Loss using rand-field exceed probs | 20.575985 |
+| Mean Loss using rand-field exceed probs | 5.0182056 |
 
 | ![plot](resources/rup9_asset0_gmpe_dists.png) | ![plot](resources/rup9_asset0_field_losses.png) |
 |-----|-----|
@@ -1258,16 +1258,16 @@ Asset parameters:
 * value: 173.0
 * J-B distance to rupture: 18.002001580033287
 * Vulnerability function: RM1L-m-RES1-DF
-* GMPE ln mean: -0.97218823
-* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
+* GMPE ln mean: -0.77516687
+* GMPE phi/tau/total std devs: 0.62286836	0.35314578	0.7160146
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 21.658276 |
+| Mean Loss (GMPE) | 28.430164 |
 | Mean Loss (100000 random fields) | 23.632566 |
-| Mean Loss using rand-field exceed probs | 21.094027 |
+| Mean Loss using rand-field exceed probs | 27.781096 |
 
 | ![plot](resources/rup9_asset1_gmpe_dists.png) | ![plot](resources/rup9_asset1_field_losses.png) |
 |-----|-----|
@@ -1283,16 +1283,16 @@ Asset parameters:
 * value: 127.0
 * J-B distance to rupture: 159.32030510236777
 * Vulnerability function: RM1L-l-RES1-DF
-* GMPE ln mean: -2.0754066
-* GMPE phi/tau/total std devs: 0.6279164	0.35800296	0.72280365
+* GMPE ln mean: -2.2869341
+* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 4.433204 |
+| Mean Loss (GMPE) | 2.8872013 |
 | Mean Loss (100000 random fields) | 1.9385916 |
-| Mean Loss using rand-field exceed probs | 4.0111947 |
+| Mean Loss using rand-field exceed probs | 2.5266547 |
 
 | ![plot](resources/rup9_asset2_gmpe_dists.png) | ![plot](resources/rup9_asset2_field_losses.png) |
 |-----|-----|
@@ -1308,16 +1308,16 @@ Asset parameters:
 * value: 8363.0
 * J-B distance to rupture: 253.60115106692265
 * Vulnerability function: W1-h-RES1-DF
-* GMPE ln mean: -2.7313051
-* GMPE phi/tau/total std devs: 0.63	0.36	0.7256032
+* GMPE ln mean: -2.2545636
+* GMPE phi/tau/total std devs: 0.6211083	0.35144582	0.71364534
 
 **Loss Values**
 
 | Description | Loss Value |
 |-----|-----|
-| Mean Loss (GMPE) | 17.680477 |
+| Mean Loss (GMPE) | 47.11329 |
 | Mean Loss (100000 random fields) | 43.96194 |
-| Mean Loss using rand-field exceed probs | 20.081882 |
+| Mean Loss using rand-field exceed probs | 55.607235 |
 
 | ![plot](resources/rup9_asset3_gmpe_dists.png) | ![plot](resources/rup9_asset3_field_losses.png) |
 |-----|-----|
